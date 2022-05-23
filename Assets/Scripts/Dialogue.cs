@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Dialogue")]
 public class Dialogue : ScriptableObject
 {
-    [SerializeField] string[] dialogueText;
+    [TextArea(9, 1)] [SerializeField] string[] dialogueText;
 
     // this is the text that will repeat if the player hasn't completed the quest
     [SerializeField] string repeatingText;

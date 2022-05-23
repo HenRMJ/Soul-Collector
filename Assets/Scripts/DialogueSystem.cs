@@ -2,21 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] TMP_Text dialogueText;
     [SerializeField] Dialogue dialogue;
 
-    // Start is called before the first frame update
-    void Start()
+    bool closeEnough;
+    int pressed;
+
+    private GenereationGameJam2022 playerInputAction;
+
+    private void Awake()
     {
-        
+        playerInputAction = new GenereationGameJam2022();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        playerInputAction.Player.Interact.performed += NextText;
+        playerInputAction.Player.Interact.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInputAction.Player.Interact.Disable();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        closeEnough = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        closeEnough = false;
+    }
+
+    private void NextText(InputAction.CallbackContext obj)
+    {
+        if (!closeEnough) { return; }
+
+        if (pressed < dialogue.GetDialogueText().Length - 1)
+        {
+            pressed++;
+            dialogueText.text = dialogue.GetDialogueText()[pressed];
+        }
     }
 }

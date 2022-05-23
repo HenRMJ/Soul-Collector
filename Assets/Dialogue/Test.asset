@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText:
   - 'Flame: Hello There'
-  - 'You: Hi... Where are we?'
+  - 'Flame: Hello There'
+  - 'You: Hi... Where are we?
+
+
+'
   - 'Flame: You''re dead. I know it''s a bit of a shock. It shocked me when I first
     found out.'
+  - 'You: Really? I don''t feel dead.'
+  - 'Flame: Oh really! I didn''t know you were an expert on what being dead feels
+    like.'
+  - 'You: Ok asshole... I get your point.'
   repeatingText: I don't know how to help you...
   successText: YES! Now I can help you!
