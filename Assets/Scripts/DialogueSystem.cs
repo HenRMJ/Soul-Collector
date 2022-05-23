@@ -11,12 +11,14 @@ public class DialogueSystem : MonoBehaviour
 
     bool closeEnough;
     int pressed;
+    GameObject canvas;
 
     private GenereationGameJam2022 playerInputAction;
 
     private void Awake()
     {
         playerInputAction = new GenereationGameJam2022();
+        canvas = FindObjectOfType<Canvas>().gameObject;
     }
 
     private void OnEnable()
@@ -38,6 +40,20 @@ public class DialogueSystem : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         closeEnough = false;
+    }
+
+    private void Update()
+    {
+        if (closeEnough)
+        {
+            canvas.SetActive(true);
+        }
+        else
+        {
+            pressed = 1;
+            dialogueText.text = dialogue.GetDialogueText()[pressed];
+            canvas.SetActive(false);
+        }
     }
 
     private void NextText(InputAction.CallbackContext obj)
