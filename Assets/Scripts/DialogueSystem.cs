@@ -64,6 +64,9 @@ public class DialogueSystem : MonoBehaviour
         {
             pressed++;
             dialogueText.text = dialogue.GetDialogueText()[pressed];
+        } else
+        {
+            dialogueText.text = dialogue.GetRepeatingText();
         }
     }
 }

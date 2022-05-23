@@ -25,5 +25,5 @@ MonoBehaviour:
   - 'Flame: Oh really! I didn''t know you were an expert on what being dead feels
     like.'
   - 'You: Ok asshole... I get your point.'
-  repeatingText: I don't know how to help you...
-  successText: YES! Now I can help you!
+  repeatingText: 'Flame: I don''t know how to help you...'
+  successText: 'Flame: YES! Now I can help you!'
