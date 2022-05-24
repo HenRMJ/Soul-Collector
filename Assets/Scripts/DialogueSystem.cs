@@ -57,7 +57,6 @@ public class DialogueSystem : MonoBehaviour
         }
         else
         {
-            pressed = 1;
             dialogueText.text = dialogue.GetDialogueText()[pressed];
             canvas.SetActive(false);
         }
