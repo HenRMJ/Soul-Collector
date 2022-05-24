@@ -22,4 +22,9 @@ public class GameLogic : MonoBehaviour
     {
         numberOfCollectables--;
     }
+
+    public int GetNumberOfCollectables()
+    {
+        return numberOfCollectables;
+    }
 }

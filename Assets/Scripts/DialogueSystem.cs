@@ -9,6 +9,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] TMP_Text dialogueText;
     [SerializeField] Dialogue dialogue;
     [SerializeField] GameObject canvas;
+    [SerializeField] GameLogic gameLogic;
 
     bool closeEnough;
     int pressed;
@@ -73,6 +74,11 @@ public class DialogueSystem : MonoBehaviour
         } else
         {
             dialogueText.text = dialogue.GetRepeatingText();
+        }
+
+        if (gameLogic.GetNumberOfCollectables() == 0)
+        {
+            dialogueText.text = dialogue.GetSuccessText();
         }
     }
 }

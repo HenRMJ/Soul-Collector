@@ -25,5 +25,9 @@ MonoBehaviour:
   - 'Flame: Oh really! I didn''t know you were an expert on what being dead feels
     like.'
   - 'You: Ok asshole... I get your point.'
-  repeatingText: 'Flame: I don''t know how to help you...'
+  - 'Flame: EXCUSE ME! I''M THE ASSHOLE!?! Now I''m not going to tell you how to
+    get back to your body'
+  - 'You: WHAT?!?! NO! I''m sorry please help me'
+  - 'Flame: Ok, but now it''s going to cost you...'
+  repeatingText: 'Flame: You have to collect 4 coins in order for me to help you'
   successText: 'Flame: YES! Now I can help you!'

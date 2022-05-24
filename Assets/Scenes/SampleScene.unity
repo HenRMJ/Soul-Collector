@@ -4326,6 +4326,7 @@ MonoBehaviour:
   dialogueText: {fileID: 538737440}
   dialogue: {fileID: 11400000, guid: a20d2510bbad8c84da65bd6f6355ce3f, type: 2}
   canvas: {fileID: 1768516014}
+  gameLogic: {fileID: 786880649}
 --- !u!61 &2129857048
 BoxCollider2D:
   m_ObjectHideFlags: 0
