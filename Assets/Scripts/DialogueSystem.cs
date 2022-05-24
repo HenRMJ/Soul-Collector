@@ -34,12 +34,18 @@ public class DialogueSystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        closeEnough = true;
+        if (collision.CompareTag("Player"))
+        {
+            closeEnough = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        closeEnough = false;
+        if (collision.CompareTag("Player"))
+        {
+            closeEnough = false;
+        }
     }
 
     private void Update()
