@@ -8,17 +8,17 @@ public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] TMP_Text dialogueText;
     [SerializeField] Dialogue dialogue;
+    [SerializeField] GameObject canvas;
 
     bool closeEnough;
     int pressed;
-    GameObject canvas;
+
 
     private GenereationGameJam2022 playerInputAction;
 
     private void Awake()
     {
         playerInputAction = new GenereationGameJam2022();
-        canvas = FindObjectOfType<Canvas>().gameObject;
     }
 
     private void OnEnable()
