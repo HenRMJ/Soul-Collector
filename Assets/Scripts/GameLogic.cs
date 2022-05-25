@@ -6,7 +6,7 @@ public class GameLogic : MonoBehaviour
 {
     GameObject[] collectables;
 
-    AudioManager audio;
+    AudioManager audioManager;
 
     int numberOfCollectables;
     int startingCollectables;
@@ -14,7 +14,7 @@ public class GameLogic : MonoBehaviour
 
     private void Start()
     {
-        audio = FindObjectOfType<AudioManager>();
+        audioManager = FindObjectOfType<AudioManager>();
 
         collectables = GameObject.FindGameObjectsWithTag("collectable"); // fills collectables array with object that have the tag "collectable"
 
@@ -49,6 +49,6 @@ public class GameLogic : MonoBehaviour
 
     public AudioManager GetAudio()
     {
-        return audio;
+        return audioManager;
     }
 }
