@@ -6,8 +6,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     // Adjust the move speed of the player with a slider
-    [Range(0f, 10f)] [SerializeField] float moveSpeed;
-    [Range(0f, 10f)] [SerializeField] float jumpHeight;
+    [Range(0f, 20f)] [SerializeField] float moveSpeed;
+    [Range(0f, 20f)] [SerializeField] float jumpHeight;
 
 
     [SerializeField] Rigidbody2D myBody;

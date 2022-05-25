@@ -164,7 +164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.77487606, y: 0.26975638}
+  m_Size: {x: 0.9357226, y: 0.26975638}
   m_EdgeRadius: 0
 --- !u!4 &13610398
 Transform:
@@ -463,8 +463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad567624233679142aa905732b6dd8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpHeight: 10
+  moveSpeed: 7
+  jumpHeight: 16
   myBody: {fileID: 116063744}
   groundCheck: {fileID: 13610397}
   gameLogic: {fileID: 786880649}
