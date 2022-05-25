@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Range(0f, 10f)] [SerializeField] float moveSpeed;
     [Range(0f, 10f)] [SerializeField] float jumpHeight;
 
+
     [SerializeField] Rigidbody2D myBody;
     [SerializeField] BoxCollider2D groundCheck;
     
@@ -22,11 +23,11 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (groundCheck.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if (groundCheck.IsTouchingLayers(LayerMask.GetMask("Ground"))) // checks if the player is touching the ground
         {
-            Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y + jumpHeight);
+            Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y + jumpHeight); // makes a new variable that adds jump height to the velocity
 
-            myBody.velocity = playerVelocity;
+            myBody.velocity = playerVelocity; // replaces the player velocity with (player velocity + jump height)
         }
     }
 

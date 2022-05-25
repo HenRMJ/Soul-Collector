@@ -29,5 +29,6 @@ MonoBehaviour:
     get back to your body'
   - 'You: WHAT?!?! NO! I''m sorry please help me'
   - 'Flame: Ok, but now it''s going to cost you...'
-  repeatingText: 'Flame: You have to collect 4 coins in order for me to help you'
+  repeatingText: 'Flame: You have to collect (number) coins in order for me to help
+    you'
   successText: 'Flame: YES! Now I can help you!'

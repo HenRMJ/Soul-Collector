@@ -6,16 +6,20 @@ public class GameLogic : MonoBehaviour
 {
     GameObject[] collectables;
 
-    public int numberOfCollectables;
+    int numberOfCollectables;
+    int startingCollectables;
+
 
     private void Start()
     {
-        collectables = GameObject.FindGameObjectsWithTag("collectable");
+        collectables = GameObject.FindGameObjectsWithTag("collectable"); // fills collectables array with object that have the tag "collectable"
 
-        foreach (GameObject collectable in collectables)
+        foreach (GameObject collectable in collectables) // for every object in collectablers it increase numberOfCollectables variable by 1
         {
             numberOfCollectables++;
         }
+
+        startingCollectables = numberOfCollectables; // this just sets the staring number of collectables to the number of collectables in the beginning
     }
 
     public void Collect()
@@ -26,5 +30,16 @@ public class GameLogic : MonoBehaviour
     public int GetNumberOfCollectables()
     {
         return numberOfCollectables;
+    }
+
+    public bool HaveCollected()
+    {
+        if (numberOfCollectables == startingCollectables)
+        {
+            return false;
+        } else
+        {
+            return true;
+        }
     }
 }
