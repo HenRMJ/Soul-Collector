@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Rigidbody2D myBody;
     [SerializeField] BoxCollider2D groundCheck;
+    [SerializeField] GameLogic gameLogic;
     
     Vector2 moveInput;
 
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
             Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y + jumpHeight); // makes a new variable that adds jump height to the velocity
 
             myBody.velocity = playerVelocity; // replaces the player velocity with (player velocity + jump height)
+            gameLogic.GetAudio().PlaySound("jump");
         }
     }
 

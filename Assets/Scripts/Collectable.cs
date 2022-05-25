@@ -20,7 +20,11 @@ public class Collectable : MonoBehaviour
 
             if (gameLogic.GetNumberOfCollectables() == 0) // this destroys the parent if there is no more collectables
             {
+                gameLogic.GetAudio().PlaySound("last");
                 Destroy(gameObject.transform.parent.gameObject);
+            } else
+            {
+                gameLogic.GetAudio().PlaySound("pickup");
             }
 
             Destroy(gameObject);

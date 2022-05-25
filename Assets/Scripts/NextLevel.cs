@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    // This is just a field to turn alpha to 1
+    Color on = new Color(1,1,1,1);
+
+    SpriteRenderer render;
     GameLogic gameLogic;
     int nextScene;
 
@@ -13,6 +17,18 @@ public class NextLevel : MonoBehaviour
     {
         gameLogic = FindObjectOfType<GameLogic>();
         nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+        render = GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if (render.color.a == 1) { return; } // if the portal is already visually on, this stops the rest of the code
+
+        // If the player has collected all the collectables, this visually turns on the portal
+        if (gameLogic.GetNumberOfCollectables() == 0)
+        {
+            render.color = on;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

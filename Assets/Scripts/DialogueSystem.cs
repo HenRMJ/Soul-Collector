@@ -89,7 +89,7 @@ public class DialogueSystem : MonoBehaviour
         }
 
         // if the player has collected all the collectables it shows the success text stored in the dialogue scriptable object
-        if (gameLogic.GetNumberOfCollectables() == 0)
+        if (gameLogic.GetNumberOfCollectables() == 0 && pressed == dialogue.GetDialogueText().Length - 1)
         {
             dialogueText.text = dialogue.GetSuccessText();
         }

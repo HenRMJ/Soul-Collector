@@ -6,12 +6,16 @@ public class GameLogic : MonoBehaviour
 {
     GameObject[] collectables;
 
+    AudioManager audio;
+
     int numberOfCollectables;
     int startingCollectables;
 
 
     private void Start()
     {
+        audio = FindObjectOfType<AudioManager>();
+
         collectables = GameObject.FindGameObjectsWithTag("collectable"); // fills collectables array with object that have the tag "collectable"
 
         foreach (GameObject collectable in collectables) // for every object in collectablers it increase numberOfCollectables variable by 1
@@ -41,5 +45,10 @@ public class GameLogic : MonoBehaviour
         {
             return true;
         }
+    }
+
+    public AudioManager GetAudio()
+    {
+        return audio;
     }
 }

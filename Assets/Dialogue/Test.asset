@@ -31,4 +31,5 @@ MonoBehaviour:
   - 'Flame: Ok, but now it''s going to cost you...'
   repeatingText: 'Flame: You have to collect (number) coins in order for me to help
     you'
-  successText: 'Flame: YES! Now I can help you!'
+  successText: 'Flame: You brought me 6 coins... I guess I can help you. I opened
+    a portal all the way to the left. Go to it and I''ll meet you on the other side.'
