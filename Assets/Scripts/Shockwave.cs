@@ -27,7 +27,6 @@ public class Shockwave : MonoBehaviour
         yield return new WaitForSeconds(delayInSeconds);
         Vector2 direction = (player.transform.position - this.transform.position);
         direction.Normalize();
-        Debug.Log(direction);
         playerBody.AddForce(direction * knockback, ForceMode2D.Impulse);
         Destroy(gameObject);
     }
