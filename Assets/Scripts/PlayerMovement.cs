@@ -9,17 +9,17 @@ public class PlayerMovement : MonoBehaviour
     [Range(0f, 20f)] [SerializeField] float moveSpeed;
     [Range(0f, 20f)] [SerializeField] float jumpHeight;
 
-
     [SerializeField] Rigidbody2D myBody;
     [SerializeField] BoxCollider2D groundCheck;
     [SerializeField] GameLogic gameLogic;
-    
+
     Vector2 moveInput;
 
     // Update is called once per frame
     void Update()
     {
         Run();
+        FlipPlayer();
     }
 
     void OnJump(InputValue value)
@@ -42,9 +42,19 @@ public class PlayerMovement : MonoBehaviour
     void Run()
     {
         // Prevents player from flying
-        Vector2 playerVelocity = new Vector2(moveInput.x*moveSpeed, myBody.velocity.y);
+        Vector2 playerVelocity = new Vector2(Mathf.Clamp(myBody.velocity.x + moveInput.x*moveSpeed, -moveSpeed, moveSpeed), myBody.velocity.y);
 
         // Adds velocity to player's X value
         myBody.velocity = playerVelocity;
+    }
+
+    private void FlipPlayer()
+    {
+        bool playerIsMoving = Mathf.Abs(myBody.velocity.x) > Mathf.Epsilon;
+
+        if (playerIsMoving)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(myBody.velocity.x), 1f);
+        }
     }
 }
