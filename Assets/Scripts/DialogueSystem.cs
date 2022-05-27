@@ -12,6 +12,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] GameObject canvas;
     [SerializeField] GameLogic gameLogic;
 
+    string currentText;
     bool closeEnough;
     int pressed = 1; // This is set to one so it skips over the first element. The unity GUI doesn't display element 0 well for string in an array
 
@@ -79,19 +80,29 @@ public class DialogueSystem : MonoBehaviour
         if (pressed < dialogue.GetDialogueText().Length - 1)
         {
             pressed++;
-            dialogueText.text = dialogue.GetDialogueText()[pressed];
+            currentText = dialogue.GetDialogueText()[pressed].Replace("(number)", gameLogic.GetNumberOfCollectables().ToString());
+            currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
+            dialogueText.text = currentText;
         } else if (!gameLogic.HaveCollected()) // this section checks if the player has collected any collectable and if they have it adds the more in the string
         {
-            dialogueText.text = dialogue.GetRepeatingText().Replace("(number)", gameLogic.GetNumberOfCollectables().ToString());
+            currentText = dialogue.GetRepeatingText().Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
+            currentText = currentText.Replace("(number)", gameLogic.GetNumberOfCollectables().ToString());
+            dialogueText.text = currentText;
+            
         } else
         {
-            dialogueText.text = dialogue.GetRepeatingText().Replace("(number)", gameLogic.GetNumberOfCollectables().ToString() + " more");
+            currentText = dialogue.GetRepeatingText().Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
+            currentText = currentText.Replace("(number)", gameLogic.GetNumberOfCollectables().ToString() + " more");
+            dialogueText.text = currentText;
         }
 
         // if the player has collected all the collectables it shows the success text stored in the dialogue scriptable object
         if (gameLogic.GetNumberOfCollectables() == 0 && pressed == dialogue.GetDialogueText().Length - 1)
         {
-            dialogueText.text = dialogue.GetSuccessText();
+            currentText = dialogue.GetSuccessText().Replace("(number)", gameLogic.GetNumberOfCollectables().ToString());
+            currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
+            dialogueText.text = currentText;
         }
     }
+
 }

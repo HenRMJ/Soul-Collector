@@ -36,6 +36,11 @@ public class GameLogic : MonoBehaviour
         return numberOfCollectables;
     }
 
+    public int GetTotalCollectables()
+    {
+        return startingCollectables;
+    }
+
     public bool HaveCollected()
     {
         if (numberOfCollectables == startingCollectables)
