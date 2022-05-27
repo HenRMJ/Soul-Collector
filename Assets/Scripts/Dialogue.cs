@@ -8,10 +8,10 @@ public class Dialogue : ScriptableObject
     [TextArea(9, 1)] [SerializeField] string[] dialogueText;
 
     // this is the text that will repeat if the player hasn't completed the quest
-    [SerializeField] string repeatingText;
+    [TextArea(9, 1)] [SerializeField] string repeatingText;
 
     // this is the text that will appear once the player complete's the quest
-    [SerializeField] string successText;
+    [TextArea(9, 1)] [SerializeField] string successText;
 
     // Get methods for object information
     public string[] GetDialogueText() { return dialogueText; }
