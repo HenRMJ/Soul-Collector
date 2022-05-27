@@ -76,7 +76,7 @@ public class DialogueSystem : MonoBehaviour
         // this checks if the player is close enough. If not then the rest of the code doesn't run
         if (!closeEnough) { return; }
 
-        // this code block determines what text to show in the UI
+        // this code block determines what text to show in the UI and dynamically updates the text to put in the correct values
         if (pressed < dialogue.GetDialogueText().Length - 1)
         {
             pressed++;

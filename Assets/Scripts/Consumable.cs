@@ -11,6 +11,13 @@ public class Consumable : MonoBehaviour
     [SerializeField] GameObject itemFour;
     [SerializeField] GameObject spawn;
 
+    string selectedItem;
+
+    const string _ONE = "one";
+    const string _TWO = "two";
+    const string _THREE = "three";
+    const string _FOUR = "four";
+
     int oneCount;
     int twoCount;
     int threeCount;
@@ -54,18 +61,22 @@ public class Consumable : MonoBehaviour
     {
         if (value.Get<Vector2>() == up)
         {
+            selectedItem = _ONE;
             currentItem = itemOne;
             currentCount = oneCount;
         } else if (value.Get<Vector2>() == right)
         {
+            selectedItem = _TWO;
             currentItem = itemTwo;
             currentCount = twoCount;
         } else if (value.Get<Vector2>() == down)
         {
+            selectedItem = _THREE;
             currentItem = itemThree;
             currentCount = threeCount;
         } else if (value.Get<Vector2>() == left)
         {
+            selectedItem = _FOUR;
             currentItem = itemFour;
             currentCount = fourCount;
         }
@@ -90,5 +101,27 @@ public class Consumable : MonoBehaviour
             fourCount++;
             Destroy(collision.gameObject);
         }
+    }
+
+    public int GetOneCount()
+    {
+        return oneCount;
+    }
+    public int GetTwoCount()
+    {
+        return twoCount;
+    }
+    public int GetThreeCount()
+    {
+        return threeCount;
+    }
+    public int GetFourCount()
+    {
+        return fourCount;
+    }
+
+    public string GetSelectedItem()
+    {
+        return selectedItem;
     }
 }

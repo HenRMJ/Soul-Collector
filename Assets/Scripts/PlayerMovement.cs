@@ -13,12 +13,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody2D myBody;
     [SerializeField] BoxCollider2D groundCheck;
     [SerializeField] GameLogic gameLogic;
-    [SerializeField] Image[] imgs;
-    [SerializeField] Sprite gamepadUI;
-    [SerializeField] Sprite keyboardUI;
-
-    const string _KEY = "Keyboard&Mouse";
-    const string _PAD = "Gamepad";
 
     Vector2 moveInput;
 
@@ -62,23 +56,6 @@ public class PlayerMovement : MonoBehaviour
         if (playerIsMoving)
         {
             transform.localScale = new Vector2(Mathf.Sign(myBody.velocity.x), 1f);
-        }
-    }
-
-    void OnControlsChanged()
-    {
-        var controls = GetComponent<PlayerInput>().currentControlScheme;
-
-        foreach (Image img in imgs)
-        {
-            if (controls == _PAD)
-            {
-                img.sprite = gamepadUI;
-            }
-            else if (controls == _KEY)
-            {
-                img.sprite = keyboardUI;
-            }
         }
     }
 }
