@@ -18,10 +18,7 @@ public class GameLogic : MonoBehaviour
 
         collectables = GameObject.FindGameObjectsWithTag("collectable"); // fills collectables array with object that have the tag "collectable"
 
-        foreach (GameObject collectable in collectables) // for every object in collectablers it increase numberOfCollectables variable by 1
-        {
-            numberOfCollectables++;
-        }
+        numberOfCollectables = collectables.Length;
 
         startingCollectables = numberOfCollectables; // this just sets the staring number of collectables to the number of collectables in the beginning
     }
