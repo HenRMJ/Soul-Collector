@@ -9,17 +9,10 @@ public class PlayerMovement : MonoBehaviour
     [Range(0f, 10f)] [SerializeField] float moveSpeed;
     [Range(0f, 10f)] [SerializeField] float jumpHeight;
 
-    Rigidbody2D myBody;
+    [SerializeField] Rigidbody2D myBody;
+    [SerializeField] BoxCollider2D groundCheck;
+    
     Vector2 moveInput;
-    BoxCollider2D groundCheck;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        myBody = GetComponent<Rigidbody2D>();
-        groundCheck = GetComponent<BoxCollider2D>();
-    }
 
     // Update is called once per frame
     void Update()
@@ -29,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (groundCheck.IsTouchingLayers())
+        if (groundCheck.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y + jumpHeight);
 
