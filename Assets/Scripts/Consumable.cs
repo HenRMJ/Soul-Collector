@@ -36,25 +36,33 @@ public class Consumable : MonoBehaviour
         if (currentCount <= 0) { return; }
 
         GameObject item = Instantiate(currentItem, spawn.transform.position, Quaternion.identity);
-        item.GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, GetComponent<Rigidbody2D>().velocity.y);
 
         if (currentItem == itemOne)
         {
             oneCount--;
             currentCount = oneCount;
-        } else if (currentItem == itemTwo)
+        }
+        else if (currentItem == itemTwo)
         {
             twoCount--;
             currentCount = twoCount;
-        } else if (currentItem == itemThree)
+        }
+        else if (currentItem == itemThree)
         {
             threeCount--;
             currentCount = threeCount;
-        } else if (currentItem == itemFour)
+        }
+        else if (currentItem == itemFour)
         {
             fourCount--;
             currentCount = fourCount;
         }
+
+        if (item.GetComponent<Rigidbody2D>() == null) { return; }
+
+        item.GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, GetComponent<Rigidbody2D>().velocity.y);
+
+        
     }
 
     void OnChoose(InputValue value)

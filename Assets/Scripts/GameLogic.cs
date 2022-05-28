@@ -8,10 +8,11 @@ public class GameLogic : MonoBehaviour
 
     AudioManager audioManager;
 
+    [Tooltip("If 0, you have to collect all collectables")] [SerializeField] int collectsLeftToWin;
+
     int numberOfCollectables;
     int startingCollectables;
-
-
+    
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
@@ -46,6 +47,17 @@ public class GameLogic : MonoBehaviour
         } else
         {
             return true;
+        }
+    }
+
+    public bool HasWon()
+    {
+        if (numberOfCollectables <= collectsLeftToWin)
+        {
+            return true;
+        } else
+        { 
+            return false;
         }
     }
 
