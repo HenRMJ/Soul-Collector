@@ -1130,7 +1130,7 @@ GameObject:
   - component: {fileID: 355448970}
   - component: {fileID: 355448969}
   m_Layer: 5
-  m_Name: Interact
+  m_Name: Use
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3793,7 +3793,7 @@ GameObject:
   - component: {fileID: 1401751496}
   - component: {fileID: 1401751495}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Use Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3816,8 +3816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 146.4, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 225, y: -0.0000021458}
+  m_SizeDelta: {x: 339.8188, y: 56.986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401751495
 MonoBehaviour:
@@ -3839,10 +3839,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use Item
+  m_text: Use Crystal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc494c2430477e942a44ed1ab9719edd, type: 2}
+  m_sharedMaterial: {fileID: -7778509657421606249, guid: dc494c2430477e942a44ed1ab9719edd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3866,8 +3866,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

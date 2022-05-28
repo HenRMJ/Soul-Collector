@@ -29,8 +29,8 @@ MonoBehaviour:
     get back to your body'
   - 'You: WHAT?!?! NO! I''m sorry please help me'
   - 'Flame: Ok, but now it''s going to cost you...'
-  repeatingText: 'Flame: You have to collect (number) coins in order for me to help
-    you'
-  successText: 'Flame: There are (number) coins left on the map. You brought me (total
-    number) coins... I guess I can help you. I opened a portal all the way to the
-    left. Go to it and I''ll meet you on the other side.'
+  repeatingText: 'Flame: You have to collect (current to win) coins in order for
+    me to help you'
+  successText: 'Flame: There are (current number) coins left on the map. You brought
+    me (collected number) coins... I guess I can help you. I opened a portal all
+    the way to the left. Go to it and I''ll meet you on the other side.'
