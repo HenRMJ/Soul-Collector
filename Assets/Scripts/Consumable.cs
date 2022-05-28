@@ -82,25 +82,21 @@ public class Consumable : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void AddPickup(string cTag)
     {
 
-        if (collision.CompareTag("one"))
+        if (cTag == "one")
         {
             oneCount++;
-            Destroy(collision.gameObject);
-        } else if (collision.CompareTag("two"))
+        } else if (cTag == "two")
         {
             twoCount++;
-            Destroy(collision.gameObject);
-        } else if (collision.CompareTag("three"))
+        } else if (cTag == "three")
         {
             threeCount++;
-            Destroy(collision.gameObject);
-        } else if (collision.CompareTag("four"))
+        } else if (cTag == "four")
         {
             fourCount++;
-            Destroy(collision.gameObject);
         }
     }
 
