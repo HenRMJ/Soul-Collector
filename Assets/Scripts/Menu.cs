@@ -5,14 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    [SerializeField] GameObject canvas;
+
     public void StartGame()
     {
         SceneManager.LoadScene(2);
+        Time.timeScale = 1;
     }
 
     public void Credits()
     {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 
     public void QuitGame()
@@ -23,11 +27,29 @@ public class Menu : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+    }
+
+    void OnPause()
+    {
+        if (canvas == null) { return; }
+
+        if (Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            canvas.SetActive(true);
+        } else
+        {
+            Time.timeScale = 1;
+            canvas.SetActive(false);
+        }
+        
     }
 }
 

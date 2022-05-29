@@ -69,6 +69,8 @@ public class OverlayUI : MonoBehaviour
 
     private void UpdateConsumablesUI()
     {
+        if (Time.timeScale == 0) { return; }
+
         checkOne = consumables.GetOneCount();
         checkTwo = consumables.GetTwoCount();
         checkThree = consumables.GetThreeCount();
@@ -130,6 +132,8 @@ public class OverlayUI : MonoBehaviour
 
     private void WhatsSelected()
     {
+        if (Time.timeScale == 0) { return; }
+
         if (checkOne == 0 && checkTwo == 0 && checkThree == 0 && checkFour == 0) { return; }
 
         selectedItem = consumables.GetSelectedItem();
