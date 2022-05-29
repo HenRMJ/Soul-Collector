@@ -643,16 +643,16 @@ MonoBehaviour:
   - {fileID: 597996417}
   - {fileID: 355448969}
   keyboardUI:
-  - {fileID: 21300000, guid: 0aaaa779f1010c941824c0f20ab8d2c1, type: 3}
-  - {fileID: 21300000, guid: 0aaaa779f1010c941824c0f20ab8d2c1, type: 3}
+  - {fileID: 1793202250, guid: 408253163a215e346ae68ffa9d45a30c, type: 3}
+  - {fileID: 1793202250, guid: 408253163a215e346ae68ffa9d45a30c, type: 3}
   - {fileID: -1008586246, guid: dc7e52a4ab0f9b3419c95d2fb7acb249, type: 3}
   - {fileID: -167810056, guid: b112e758cf4f0f049af1a00a61ee88e4, type: 3}
   - {fileID: -401819378, guid: 888aba770337a07419766f0bb691d306, type: 3}
   - {fileID: -1058411064, guid: 15475ab46fd336a44a9eba28e7d1bc21, type: 3}
   - {fileID: 1863277026, guid: 92ed56b8d873b7d49919bebc5c4a4165, type: 3}
   gamepadUI:
-  - {fileID: 21300000, guid: cf4e2b9a32691a542ae8ab9e15aa9484, type: 3}
-  - {fileID: 21300000, guid: cf4e2b9a32691a542ae8ab9e15aa9484, type: 3}
+  - {fileID: -647693876, guid: 408253163a215e346ae68ffa9d45a30c, type: 3}
+  - {fileID: -647693876, guid: 408253163a215e346ae68ffa9d45a30c, type: 3}
   - {fileID: 1451311519, guid: dc7e52a4ab0f9b3419c95d2fb7acb249, type: 3}
   - {fileID: 73463906, guid: b112e758cf4f0f049af1a00a61ee88e4, type: 3}
   - {fileID: -326735341, guid: 888aba770337a07419766f0bb691d306, type: 3}
