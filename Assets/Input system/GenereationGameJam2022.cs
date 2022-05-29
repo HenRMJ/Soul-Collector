@@ -80,6 +80,15 @@ public partial class @GenereationGameJam2022 : IInputActionCollection2, IDisposa
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""061f2b12-78ec-45f2-8143-04c00d6b63bf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -423,6 +432,28 @@ public partial class @GenereationGameJam2022 : IInputActionCollection2, IDisposa
                     ""action"": ""Choose"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a8d8144e-7f77-45a3-81f5-7499630bf7da"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""66027e4f-3982-428e-a60f-bd561b7e94c6"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -1014,6 +1045,7 @@ public partial class @GenereationGameJam2022 : IInputActionCollection2, IDisposa
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Item = m_Player.FindAction("Item", throwIfNotFound: true);
         m_Player_Choose = m_Player.FindAction("Choose", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1091,6 +1123,7 @@ public partial class @GenereationGameJam2022 : IInputActionCollection2, IDisposa
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Item;
     private readonly InputAction m_Player_Choose;
+    private readonly InputAction m_Player_Pause;
     public struct PlayerActions
     {
         private @GenereationGameJam2022 m_Wrapper;
@@ -1101,6 +1134,7 @@ public partial class @GenereationGameJam2022 : IInputActionCollection2, IDisposa
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @Item => m_Wrapper.m_Player_Item;
         public InputAction @Choose => m_Wrapper.m_Player_Choose;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1128,6 +1162,9 @@ public partial class @GenereationGameJam2022 : IInputActionCollection2, IDisposa
                 @Choose.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoose;
                 @Choose.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoose;
                 @Choose.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChoose;
+                @Pause.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -1150,6 +1187,9 @@ public partial class @GenereationGameJam2022 : IInputActionCollection2, IDisposa
                 @Choose.started += instance.OnChoose;
                 @Choose.performed += instance.OnChoose;
                 @Choose.canceled += instance.OnChoose;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -1312,6 +1352,7 @@ public partial class @GenereationGameJam2022 : IInputActionCollection2, IDisposa
         void OnInteract(InputAction.CallbackContext context);
         void OnItem(InputAction.CallbackContext context);
         void OnChoose(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

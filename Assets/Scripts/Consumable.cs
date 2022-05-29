@@ -11,6 +11,13 @@ public class Consumable : MonoBehaviour
     [SerializeField] GameObject itemFour;
     [SerializeField] GameObject spawn;
 
+    string selectedItem;
+
+    const string _ONE = "one";
+    const string _TWO = "two";
+    const string _THREE = "three";
+    const string _FOUR = "four";
+
     int oneCount;
     int twoCount;
     int threeCount;
@@ -29,66 +36,97 @@ public class Consumable : MonoBehaviour
         if (currentCount <= 0) { return; }
 
         GameObject item = Instantiate(currentItem, spawn.transform.position, Quaternion.identity);
-        item.GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, GetComponent<Rigidbody2D>().velocity.y);
 
         if (currentItem == itemOne)
         {
             oneCount--;
             currentCount = oneCount;
-        } else if (currentItem == itemTwo)
+        }
+        else if (currentItem == itemTwo)
         {
             twoCount--;
             currentCount = twoCount;
-        } else if (currentItem == itemThree)
+        }
+        else if (currentItem == itemThree)
         {
             threeCount--;
             currentCount = threeCount;
-        } else if (currentItem == itemFour)
+        }
+        else if (currentItem == itemFour)
         {
             fourCount--;
             currentCount = fourCount;
         }
+
+        if (item.GetComponent<Rigidbody2D>() == null) { return; }
+
+        item.GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, GetComponent<Rigidbody2D>().velocity.y);
+
+        
     }
 
     void OnChoose(InputValue value)
     {
         if (value.Get<Vector2>() == up)
         {
+            selectedItem = _ONE;
             currentItem = itemOne;
             currentCount = oneCount;
         } else if (value.Get<Vector2>() == right)
         {
+            selectedItem = _TWO;
             currentItem = itemTwo;
             currentCount = twoCount;
         } else if (value.Get<Vector2>() == down)
         {
+            selectedItem = _THREE;
             currentItem = itemThree;
             currentCount = threeCount;
         } else if (value.Get<Vector2>() == left)
         {
+            selectedItem = _FOUR;
             currentItem = itemFour;
             currentCount = fourCount;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void AddPickup(string cTag)
     {
-        if (collision.CompareTag("one"))
+
+        if (cTag == "one")
         {
             oneCount++;
-            Destroy(collision.gameObject);
-        } else if (collision.CompareTag("two"))
+        } else if (cTag == "two")
         {
             twoCount++;
-            Destroy(collision.gameObject);
-        } else if (collision.CompareTag("three"))
+        } else if (cTag == "three")
         {
             threeCount++;
-            Destroy(collision.gameObject);
-        } else if (collision.CompareTag("four"))
+        } else if (cTag == "four")
         {
             fourCount++;
-            Destroy(collision.gameObject);
         }
+    }
+
+    public int GetOneCount()
+    {
+        return oneCount;
+    }
+    public int GetTwoCount()
+    {
+        return twoCount;
+    }
+    public int GetThreeCount()
+    {
+        return threeCount;
+    }
+    public int GetFourCount()
+    {
+        return fourCount;
+    }
+
+    public string GetSelectedItem()
+    {
+        return selectedItem;
     }
 }

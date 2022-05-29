@@ -25,7 +25,7 @@ public class NextLevel : MonoBehaviour
         if (render.color.a == 1) { return; } // if the portal is already visually on, this stops the rest of the code
 
         // If the player has collected all the collectables, this visually turns on the portal
-        if (gameLogic.GetNumberOfCollectables() == 0)
+        if (gameLogic.HasWon())
         {
             render.color = on;
         }
@@ -41,7 +41,7 @@ public class NextLevel : MonoBehaviour
             return; 
         }
         
-        if (isPlayer && gameLogic.GetNumberOfCollectables() == 0) // this checks if the player touched the exit and if the player collected all the collectables
+        if (isPlayer && gameLogic.HasWon()) // this checks if the player touched the exit and if the player collected all the collectables
         {
             SceneManager.LoadScene(nextScene); // this loads the next level
         }

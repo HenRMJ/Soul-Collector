@@ -8,20 +8,18 @@ public class GameLogic : MonoBehaviour
 
     AudioManager audioManager;
 
+    [Tooltip("If 0, you have to collect all collectables")] [SerializeField] int collectsLeftToWin;
+
     int numberOfCollectables;
     int startingCollectables;
-
-
+    
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
 
         collectables = GameObject.FindGameObjectsWithTag("collectable"); // fills collectables array with object that have the tag "collectable"
 
-        foreach (GameObject collectable in collectables) // for every object in collectablers it increase numberOfCollectables variable by 1
-        {
-            numberOfCollectables++;
-        }
+        numberOfCollectables = collectables.Length;
 
         startingCollectables = numberOfCollectables; // this just sets the staring number of collectables to the number of collectables in the beginning
     }
@@ -36,6 +34,32 @@ public class GameLogic : MonoBehaviour
         return numberOfCollectables;
     }
 
+    public int GetTotalCollectables()
+    {
+        return startingCollectables;
+    }
+
+    public int GetCollected()
+    {
+        return (startingCollectables - numberOfCollectables);
+    }
+
+    public int GetTotalToWin()
+    {
+        return (startingCollectables - collectsLeftToWin);
+    }
+
+    public int GetCurrentToWin()
+    {
+        if (numberOfCollectables - collectsLeftToWin <= 0)
+        {
+            return 0;
+        } else
+        {
+            return (numberOfCollectables - collectsLeftToWin);
+        }
+    }
+
     public bool HaveCollected()
     {
         if (numberOfCollectables == startingCollectables)
@@ -44,6 +68,17 @@ public class GameLogic : MonoBehaviour
         } else
         {
             return true;
+        }
+    }
+
+    public bool HasWon()
+    {
+        if (numberOfCollectables <= collectsLeftToWin)
+        {
+            return true;
+        } else
+        { 
+            return false;
         }
     }
 

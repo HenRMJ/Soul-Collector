@@ -1,37 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
 public class ChangeUI : MonoBehaviour
 {
-    /*
-    [SerializeField] Sprite gamepadUI;
-    [SerializeField] Sprite keyboardUI;
-
-    PlayerInput player;
-    Image img;
+    [SerializeField] Image[] images;
+    [SerializeField] Sprite[] keyboardUI;
+    [SerializeField] Sprite[] gamepadUI;
 
     const string _KEY = "Keyboard&Mouse";
     const string _PAD = "Gamepad";
 
-    private void Start()
+    void OnControlsChanged()
     {
-        player = FindObjectOfType<PlayerInput>();
-        img = GetComponent<Image>();
-    }
+        var controls = GetComponent<PlayerInput>().currentControlScheme;
 
-    void onControlsChanged()
-    {
-        Debug.Log(player.currentControlScheme);
-
-        if (player.currentControlScheme == _PAD)
+        for (int i = 0; i < images.Length; i++)
         {
-            img.source = gamepadUI;
-        } else if (player.currentControlScheme == _KEY)
-        {
-            img.overrideSprite = keyboardUI;
+            if (controls == _KEY)
+            {
+                images[i].sprite = keyboardUI[i];
+            } else if (controls == _PAD)
+            {
+                images[i].sprite = gamepadUI[i];
+            }
         }
-    } */
+    }
 }
