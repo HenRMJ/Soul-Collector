@@ -10,7 +10,9 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] TMP_Text dialogueText;
     [SerializeField] Dialogue dialogue;
     [SerializeField] GameObject canvas;
-    [SerializeField] GameLogic gameLogic;
+    
+    GameLogic gameLogic;
+    Animator animator;
 
     string currentText;
     bool closeEnough;
@@ -22,6 +24,8 @@ public class DialogueSystem : MonoBehaviour
     private void Awake()
     {
         playerInputAction = new GenereationGameJam2022();
+        animator = FindObjectOfType<PlayerMovement>().gameObject.GetComponent<Animator>();
+        gameLogic = FindObjectOfType<GameLogic>();
     }
 
     private void OnEnable()
@@ -75,6 +79,8 @@ public class DialogueSystem : MonoBehaviour
     {
         // this checks if the player is close enough. If not then the rest of the code doesn't run
         if (!closeEnough) { return; }
+
+        animator.SetTrigger("talked");
 
         // this code block determines what text to show in the UI and dynamically updates the text to put in the correct values
         if (pressed < dialogue.GetDialogueText().Length - 1)

@@ -586,6 +586,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 8610846817899903335}
-  dialogue: {fileID: 11400000, guid: a20d2510bbad8c84da65bd6f6355ce3f, type: 2}
+  dialogue: {fileID: 0}
   canvas: {fileID: 8610846819125881833}
-  gameLogic: {fileID: 0}
