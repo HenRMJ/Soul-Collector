@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Purple Crystal
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'Flame: That purple crystal is really something huh.'
+  - 'You: Yeah, it''s pretty cool. I wonder what the last crystal will be?'
+  - 'Flame: Last crystal? What do you mean?'
+  - 'You: Well, I''ve used a blue, green, and now purple crystal now. So I wonder
+    what the last crystal will be. '
+  - 'Flame: Oh yeah, there''s a red crystal. I don''t know if there are other crystals
+    beyond that. '
+  - 'You: Is there anything else about the purple crystal I should know?'
+  repeatingText: 'Flame: If I think of anything, I''ll let you know.'
+  successText: 'Flame: Oh yes! The purple crystal is resistant against gravity and
+    activates after 2 seconds.'
