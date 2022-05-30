@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Sad
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'Flame: What do you want?'
+  - 'You: Whoa. That''s a little hostile. I''ve met plenty of flames already. They
+    were all pretty nice. What''s up with you?'
+  - 'Flame: I just found out I died... how am I supposed to act?'
+  - 'You: Oh... I''m sorry... are you new here too?'
+  - 'Flame: I don''t know. I guess. I talked to a few other people and they said
+    that they''ve been here a lot longer.'
+  - 'You: What''s your name?'
+  - 'Carlos: It''s Carlos... I hate that everyone here doesn''t have names. I don''t
+    want to become like them. What''s your name?'
+  - 'You: Well uh... I don''t know...'
+  - 'Carlos: Oh of course another one. You''ve been here so long you can''t even
+    remember your name.'
+  - 'You: I''m new here too. I''m just a soul collector. Soul collectors don''t get
+    to keep their memories after death.'
+  - 'Carlos: What? Aren''t you curious about who you were? Are you even sure that
+    you were alive?'
+  - 'You: I am a little curious but I know I was alive. I don''t know how to explain
+    it but... I just know I had a past with the living. '
+  - 'Carlos: How are you not in distress right now? How can you just BE without knowing
+    who you were?'
+  - 'You: I don''t know who I was before but... now I feel like I have purpose here.
+    Every soul that I free feels like I''m finally offering relief to someone who
+    has been suffering for a long time.'
+  - 'Carlos: It''s different for me. I remember my son. I''ll never be able to see
+    him grow. I had a wife that I loved. I''ll never be able to hold her again.'
+  - 'You: I''m sorry... I don''t know what you''re going through. I can''t know but...
+    I hope you find some purpose here in the afterlife.'
+  repeatingText: 'Carlos: Please just leave... I need some time alone.'
+  successText: 'Carlos: Thank you.'
