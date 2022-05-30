@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Flame (2) Dialogue
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'Flame: I can''t reach them. *Reaches toward the above you and to the left*'
+  - 'You: What?'
+  - 'Flame: There are souls up there. I can''t reach them though.'
+  - 'You: Ah, well, don''t know what you''ll do with souls, I collect them.'
+  - 'Flame: I like to look at them, they''re shiny. The screams are soothing and
+    the fire helps me sleep.'
+  - 'You: That''s pretty dark...'
+  repeatingText: I want to grab them. *Continues reaching above you*
+  successText: You stole my souls. *tiny sob*
