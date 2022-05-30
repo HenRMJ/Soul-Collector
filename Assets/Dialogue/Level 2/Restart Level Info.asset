@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Restart Level Info
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'Flame: Listen... the end of the game jam is about 18 hours away... I don''t
+    know how to word this.'
+  - 'Flame: If you mess up, you can restart the level by pausing either by pressing
+    escape on keyboard or start on a controller.'
+  - 'Flame: If you accidentally waste your crystals just restart the level and you''ll
+    be fine. The levels are short anyways... uh... I mean dimensions not levels... '
+  - 'Flame: Listen since we''re already breaking the fourth wall might as well tell
+    you your stats.'
+  repeatingText: 'Flame: You''ve collected (collected number) souls so far. You need
+    to collect (current to win) souls to go to the next dimension. There are (current
+    number) souls left in this dimension.'
+  successText: 'Flame: Nice you got all the souls you need to go to the next dimension.
+    There are (current number) souls in this dimension.'
