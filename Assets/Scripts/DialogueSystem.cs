@@ -70,6 +70,12 @@ public class DialogueSystem : MonoBehaviour
         }
         else
         {
+            if (dialogue == null)
+            {
+                Debug.LogWarning("There is no dialogue in " + gameObject.transform.parent.name);
+                return;
+            }
+
             dialogueText.text = dialogue.GetDialogueText()[pressed];
             canvas.SetActive(false);
         }
@@ -79,6 +85,7 @@ public class DialogueSystem : MonoBehaviour
     {
         // this checks if the player is close enough. If not then the rest of the code doesn't run
         if (!closeEnough) { return; }
+        if (dialogue == null) { return; }
 
         animator.SetTrigger("talked");
 

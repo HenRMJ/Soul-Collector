@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Green Crystal
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'Flame: Hello Soul Collector! Are you going to use the green crystal?'
+  - 'You: I''m not sure. What does it do?'
+  - 'Flame: Oh the green crystal is one of my favorite to see a soul collector use.'
+  - 'You: What''s so great about it?'
+  - 'Flame: You throw it and after three seconds it teleports you to it''s position.
+    It''s really a hoot to see someone use.'
+  repeatingText: 'You: Wow that does sound cool!'
+  successText: 'Flame: WOW!!! THAT WAS AMAAZZIINNNGGG!!!'

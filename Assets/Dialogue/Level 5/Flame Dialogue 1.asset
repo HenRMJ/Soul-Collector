@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Flame Dialogue 1
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'You: Hey, what''s that behind you?'
+  - 'Flame: The portal and a red crystal.'
+  - 'You: Well... what does it do?'
+  - 'Flame: The portal, it gets us out of here.'
+  - 'You: ...'
+  - 'Flame: ...'
+  - 'You: ... what about the crystal?'
+  - 'Flame: Oh, that''s like a respawn crystal, it teleports you back to where you
+    put it down after a little bit. Try to be fast about what you want to do though.'
+  - 'You: Why would I need that here?'
+  - 'Flame: I here there''s a pit with a flame stuck down there, don''t talk to them,
+    they''re pretty weird...'
+  - 'You: Awesome... so how many souls do we need to activate the portal?'
+  - 'Flame: ... um... one sec.'
+  repeatingText: 'Flame: We need (current to win) souls to active the portal.'
+  successText: 'Flame: The portals activated but, I think I still feel (current number)
+    souls left.'

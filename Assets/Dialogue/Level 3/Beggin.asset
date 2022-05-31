@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Beggin
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'Flame: Soul Collector please collect all the souls on this map!'
+  - 'You: Well I always try to. Do you know how many I need to open the portal?'
+  - 'Flame: I think you need (current to win) souls to move on but please. I beg.
+    I think my brother is one of these souls.'
+  - 'You: How do you know?'
+  - 'Flame: I don''t. But I just have a feeling please collect all (total number)
+    souls. I believe one of them is my brother please save him.'
+  - 'You: I''ll try but I can''t promise anything. Finding souls is sometimes harder
+    than it seems.'
+  - 'Flame: Please there are (current number) souls left on the map.'
+  repeatingText: 'Flame: You still need (current to win) souls to move on. But please
+    please please get the other (current number) souls in this dimension. Please
+    I beg.'
+  successText: 'Flame: I see you collected the souls you needed. There are (current
+    number) souls in this dimension... I hope one of the ones you collected was my
+    brother.'

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Introduction
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'Flame: Hello.'
+  - 'You: Hello... where are we?'
+  - 'Flame: This is the afterlife.'
+  - 'You: The afterlife? So I''m... I''m dead?'
+  - 'Flame: Yeah but it''s not as bad as it could''ve been. At least your mind and
+    soul are still connected.'
+  - 'You: What do you mean? It seems like your mind and soul are connected too. It
+    doesn''t seem to be that special.'
+  - 'Flame: You''re right. I would say, I might even be luckier than you. I''ve even
+    kept all my memories from my life. Try to remember who you are.'
+  - 'You: That''s easy I''m... I uh... I know I was alive.'
+  - 'Flame: Well your definitely right about that. No one knows how its decided but
+    some people die and become flames like myself. As a flame, I''ve kept all my
+    memories and personality.'
+  - 'You: What am I?'
+  - 'Flame: From the looks of it, you seem to be a soul collector. You''ve kept your
+    mind and soul but no memories. Most people don''t even get that.'
+  - 'You: What do most people get?'
+  - 'Flame: Most are separated from their soul and spend an eternity suffering in
+    silence. I''ve never experienced it but I''ve heard stories of it being the worst
+    thing ever.'
+  - 'You: That''s horrible! There''s nothing we can do to help them?'
+  - 'Flame: Haha whenever I meet a new soul collector they always ask that question.
+    I guess thats why you were chosen to be one. I can''t do anything about it. But
+    I see you already freed (collected number).'
+  - 'You: Is that what those things were? I just saw one and picked it up but it
+    disappeared.'
+  - 'Flame: Yeah those are lost souls. They are everywhere. In this dimension there
+    were (total number) souls.'
+  - 'You: This dimension?'
+  - 'Flame: Yes you need to collect a certain number of souls to move on to the next
+    dimension. There''s a portal in every dimension that takes you to the next one.'
+  - 'You: So how many more souls do I need to travel to the next dimension.'
+  repeatingText: 'Flame: You need (current to win) souls to move on to the next dimension.
+    There are still (current number) more souls in this dimension. You should try
+    to save them all.'
+  successText: 'Flame: You did it! The portal to the next dimension should be open
+    now. It''s all the way on the top right cliff. There are (current number) souls
+    left in this dimension.'

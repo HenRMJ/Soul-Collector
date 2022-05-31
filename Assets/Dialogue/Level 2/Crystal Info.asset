@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe4bec4c3f53d548991d5a8e5b1ac15, type: 3}
+  m_Name: Crystal Info
+  m_EditorClassIdentifier: 
+  dialogueText:
+  - 
+  - 'Flame: Wow you have a blue crystal!'
+  - 'You: Nice!... what does it do?'
+  - 'Flame: Oh you must be a new. Crystals are items that only soul collectors can
+    use. The blue crystal pushes you away from it.'
+  - 'You: That doesn''t sound too useful.'
+  - 'Flame: Well, I''ve seen other soul collectors time the their jump over the crystal
+    giving them a sort of boost to their jump. The crystal activates after 1 second.'
+  - 'You: Oh wow! Okay so... why would I need a super jump?'
+  repeatingText: 'Flame: Certain dimensions have areas that are only acccesable using
+    the crystal so use it wisely.'
+  successText: 'Actual Developer of this game: I have no clue how you got back up
+    here. This is just filler text but if you made it up here. Good job. You''ve
+    got crazy movement'
