@@ -16,8 +16,9 @@ MonoBehaviour:
   - 
   - 'Flame: Wow you have a blue crystal!'
   - 'You: Nice!... what does it do?'
-  - 'Flame: Oh you must be a new. Crystals are items that only soul collectors can
-    use. The blue crystal pushes you away from it.'
+  - 'Flame: You have to select the crystal you want to use before using it! Crystals
+    are items that only soul collectors can use. The blue crystal pushes you away
+    from it.'
   - 'You: That doesn''t sound too useful.'
   - 'Flame: Well, I''ve seen other soul collectors time the their jump over the crystal
     giving them a sort of boost to their jump. The crystal activates after 1 second.'
