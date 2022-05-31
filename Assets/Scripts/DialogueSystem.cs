@@ -10,6 +10,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] TMP_Text dialogueText;
     [SerializeField] Dialogue dialogue;
     [SerializeField] GameObject canvas;
+    [SerializeField] GameObject continueUI;
     
     GameLogic gameLogic;
     Animator animator;
@@ -48,6 +49,13 @@ public class DialogueSystem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             closeEnough = true;
+            continueUI.SetActive(true);
+            currentText = dialogue.GetDialogueText()[pressed].Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
+            currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
+            currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
+            currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
+            currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
+            dialogueText.text = currentText;
         }
     }
 
@@ -88,6 +96,7 @@ public class DialogueSystem : MonoBehaviour
         if (dialogue == null) { return; }
 
         animator.SetTrigger("talked");
+        continueUI.SetActive(true);
 
         // this code block determines what text to show in the UI and dynamically updates the text to put in the correct values
         if (pressed < dialogue.GetDialogueText().Length - 1)
@@ -101,15 +110,17 @@ public class DialogueSystem : MonoBehaviour
             dialogueText.text = currentText;
         } else if (!gameLogic.HaveCollected()) // this section checks if the player has collected any collectable and if they have it adds the more in the string
         {
+            continueUI.SetActive(false);
             currentText = dialogue.GetRepeatingText().Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
             currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
             currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
             currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
             currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
             dialogueText.text = currentText;
-            
+
         } else
         {
+            continueUI.SetActive(false);
             currentText = dialogue.GetRepeatingText().Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
             currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
             currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
@@ -121,6 +132,7 @@ public class DialogueSystem : MonoBehaviour
         // if the player has collected all the collectables it shows the success text stored in the dialogue scriptable object
         if (gameLogic.HasWon() && pressed == dialogue.GetDialogueText().Length - 1)
         {
+            continueUI.SetActive(false);
             currentText = dialogue.GetSuccessText().Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
             currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
             currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());

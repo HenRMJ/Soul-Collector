@@ -724,3 +724,4 @@ MonoBehaviour:
   dialogueText: {fileID: 8610846817899903335}
   dialogue: {fileID: 0}
   canvas: {fileID: 8610846819125881833}
+  continueUI: {fileID: 8610846818650292024}
