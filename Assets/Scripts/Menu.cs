@@ -7,6 +7,13 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] GameObject canvas;
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene(2);
@@ -34,6 +41,11 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
+    }
+
+    public void SelectSound()
+    {
+        audioManager.PlaySound("select");
     }
 
     void OnPause()

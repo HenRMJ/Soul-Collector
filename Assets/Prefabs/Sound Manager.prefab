@@ -50,14 +50,38 @@ MonoBehaviour:
     volume: 0
     source: {fileID: 0}
   - name: pickup
-    clip: {fileID: 8300000, guid: e898c1a9d1fc95e48bb1997301877b47, type: 3}
+    clip: {fileID: 8300000, guid: e2d8e4be401aebf4fb4decf662e694f9, type: 3}
     volume: 0.246
     source: {fileID: 0}
   - name: jump
     clip: {fileID: 8300000, guid: ae8297e5ca2e58c48b5fc1f7bf11e9de, type: 3}
-    volume: 0.192
+    volume: 0.091
     source: {fileID: 0}
   - name: last
-    clip: {fileID: 8300000, guid: e568c4d0a2424a149b669d5e25a23a7e, type: 3}
+    clip: {fileID: 8300000, guid: 432e7b8ddde9e824e8f112ace66dacb7, type: 3}
     volume: 0.186
+    source: {fileID: 0}
+  - name: next
+    clip: {fileID: 8300000, guid: 397a88833cca5ab4b83e41236090aa28, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: select
+    clip: {fileID: 8300000, guid: 36ed8dd29c1271b4b85cb982c13bc5e9, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: blue
+    clip: {fileID: 8300000, guid: 5d73eaca8c80a6c469274e720b76bcbb, type: 3}
+    volume: 0.37
+    source: {fileID: 0}
+  - name: green
+    clip: {fileID: 8300000, guid: d51d8dc476bc4db40a6bc216efdb3bfe, type: 3}
+    volume: 0.37
+    source: {fileID: 0}
+  - name: purple
+    clip: {fileID: 8300000, guid: 50a4d119f7b44d8429fde5765a6b6da7, type: 3}
+    volume: 0.37
+    source: {fileID: 0}
+  - name: red
+    clip: {fileID: 8300000, guid: 86d5d09385dd98b48985cc72f26c86f4, type: 3}
+    volume: 0.37
     source: {fileID: 0}
