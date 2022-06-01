@@ -109,14 +109,8 @@ public class DialogueSystem : MonoBehaviour
             pressed++;
 
             // This block is the dynamic dialogue syntax system (DDSS)
-            currentText = dialogue.GetDialogueText()[pressed].Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
-            currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
-            currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
-            currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
-            currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
-
-            // This plays the animation only if the player is talking
-            if (currentText.Contains("You:")) { animator.SetTrigger("talked"); }
+            currentText = dialogue.GetDialogueText()[pressed];
+            DynamicDialogueSystem();
 
             // This actually changes the text to the correct text
             dialogueText.text = currentText;
@@ -126,11 +120,10 @@ public class DialogueSystem : MonoBehaviour
             continueUI.SetActive(false);
 
             // DDSS ^^^ Read line 111
-            currentText = dialogue.GetRepeatingText().Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
-            currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
-            currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
-            currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
-            currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
+            currentText = dialogue.GetRepeatingText();
+            DynamicDialogueSystem();
+
+            // If the text is the same, there is no need to play the next sound or replace the text
             if (dialogueText.text == currentText) { return; }
             audioManager.PlaySound("next");
             dialogueText.text = currentText;
@@ -138,11 +131,16 @@ public class DialogueSystem : MonoBehaviour
         } else
         {
             continueUI.SetActive(false);
+
+            // Very slight adjustment on the DynamicDialogueSystem code with the addition of " more"
             currentText = dialogue.GetRepeatingText().Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
             currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
             currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
             currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString() + " more");
             currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
+
+            if (currentText.Contains("You:")) { animator.SetTrigger("talked"); }
+
             if (dialogueText.text == currentText) { return; }
             audioManager.PlaySound("next");
             dialogueText.text = currentText;
@@ -152,15 +150,25 @@ public class DialogueSystem : MonoBehaviour
         if (gameLogic.HasWon() && pressed == dialogue.GetDialogueText().Length - 1)
         {
             continueUI.SetActive(false);
-            currentText = dialogue.GetSuccessText().Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
-            currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
-            currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
-            currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
-            currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
+            currentText = dialogue.GetSuccessText();
+            DynamicDialogueSystem();
+
             if (dialogueText.text == currentText) { return; }
             audioManager.PlaySound("next");
             dialogueText.text = currentText;
         }
+    }
+
+    private void DynamicDialogueSystem()
+    {
+        currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
+        currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
+        currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
+        currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
+        currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
+
+        // Makes the players mouth move if the player is talking
+        if (currentText.Contains("You:")) { animator.SetTrigger("talked"); }
     }
 
 }
