@@ -119,7 +119,6 @@ public class DialogueSystem : MonoBehaviour
             // This turns off the continue UI so players don't think there's more text
             continueUI.SetActive(false);
 
-            // DDSS ^^^ Read line 111
             currentText = dialogue.GetRepeatingText();
             DynamicDialogueSystem();
 
