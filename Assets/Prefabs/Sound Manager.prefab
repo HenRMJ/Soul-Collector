@@ -54,8 +54,8 @@ MonoBehaviour:
     volume: 0.246
     source: {fileID: 0}
   - name: jump
-    clip: {fileID: 8300000, guid: ae8297e5ca2e58c48b5fc1f7bf11e9de, type: 3}
-    volume: 0.091
+    clip: {fileID: 8300000, guid: 52e6bc36edc89aa48a7b2e84a412542b, type: 3}
+    volume: 0.204
     source: {fileID: 0}
   - name: last
     clip: {fileID: 8300000, guid: 432e7b8ddde9e824e8f112ace66dacb7, type: 3}
