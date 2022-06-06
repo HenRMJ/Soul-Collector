@@ -104,7 +104,7 @@ public class DialogueSystem : MonoBehaviour
         {
             // Plays UI sound
             audioManager.PlaySound("next");
-            
+
             // Iterates pressed to go to the next piece of dialogue
             pressed++;
 
@@ -127,7 +127,7 @@ public class DialogueSystem : MonoBehaviour
             audioManager.PlaySound("next");
             dialogueText.text = currentText;
 
-        } else
+        } else if (gameLogic.HaveCollected() && !gameLogic.HasWon())
         {
             continueUI.SetActive(false);
 
@@ -146,7 +146,7 @@ public class DialogueSystem : MonoBehaviour
         }
 
         // if the player has collected all the collectables it shows the success text stored in the dialogue scriptable object
-        if (gameLogic.HasWon() && pressed == dialogue.GetDialogueText().Length - 1)
+        else if (gameLogic.HasWon() && pressed == dialogue.GetDialogueText().Length - 1)
         {
             continueUI.SetActive(false);
             currentText = dialogue.GetSuccessText();
