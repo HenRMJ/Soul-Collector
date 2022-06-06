@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class SingletonBackgroundAudio : MonoBehaviour
 {
-    public static SingletonBackgroundAudio Instance { get; private set; }
-    private void Start()
+    private void Awake()
     {
-        // If there is an instance, and it's not me, delete myself.
-        if (Instance != null && Instance != this)
+        int numBackgroundAudio = FindObjectsOfType<SingletonBackgroundAudio>().Length;
+
+        if (numBackgroundAudio > 1)
         {
-            Destroy(this);
-        }
-        else
+            Destroy(gameObject);
+        } else
         {
-            Instance = this;
-            DontDestroyOnLoad(transform.gameObject);
+            DontDestroyOnLoad(gameObject);
         }
     }
 }
