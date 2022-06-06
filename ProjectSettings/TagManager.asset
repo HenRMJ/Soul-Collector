@@ -9,9 +9,7 @@ TagManager:
   - two
   - three
   - four
-  - flame1
-  - flame2
-  - flame3
+  - flame
   layers:
   - Default
   - TransparentFX

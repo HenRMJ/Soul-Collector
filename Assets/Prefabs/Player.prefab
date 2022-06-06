@@ -3936,6 +3936,7 @@ GameObject:
   - component: {fileID: 7512619170333333679}
   - component: {fileID: 7512619170333333676}
   - component: {fileID: 7512619170333333678}
+  - component: {fileID: 23393350551857350}
   m_Layer: 0
   m_Name: Collision Check
   m_TagString: Untagged
@@ -3997,6 +3998,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   consumable: {fileID: 7512619170302217010}
+--- !u!114 &23393350551857350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7512619170333333677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d3ad9a52b546749b558c6c44da256f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  follow: {fileID: 0}
+  dialogue: []
 --- !u!1 &7512619170339143658
 GameObject:
   m_ObjectHideFlags: 0
