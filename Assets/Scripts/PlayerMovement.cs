@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (coyoteTimer > 0f && jumpBufferTimer > 0f) // checks if the player is touching the ground
         {
-            Vector2 playerVelocity = new Vector2(myBody.velocity.x, jumpHeight); // makes a new variable that adds jump height to the velocity
+            Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y + jumpHeight); // makes a new variable that adds jump height to the velocity
 
             myBody.velocity = playerVelocity; // replaces the player velocity with (player velocity + jump height)
             gameLogic.GetAudio().PlaySound("jump");
