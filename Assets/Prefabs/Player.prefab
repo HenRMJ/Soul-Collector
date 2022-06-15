@@ -3723,6 +3723,7 @@ MonoBehaviour:
   jumpHeight: 16
   cancelJumpAmount: 0.557
   coyoteTime: 0.3
+  jumpBufferTime: 0.15
   myBody: {fileID: 7512619170302217009}
   groundCheck: {fileID: 7512619170333333676}
   gameLogic: {fileID: 0}

@@ -11,14 +11,17 @@ public class PlayerMovement : MonoBehaviour
     [Range(0f, 20f)] [SerializeField] float jumpHeight;
     [Tooltip("Lower the more severe")][Range(0f, 1f)][SerializeField] float cancelJumpAmount;
     [SerializeField] float coyoteTime;
+    [SerializeField] float jumpBufferTime;
 
     [SerializeField] Rigidbody2D myBody;
     [SerializeField] BoxCollider2D groundCheck;
     [SerializeField] GameLogic gameLogic;
 
     Vector2 moveInput;
-    float coyoteTimer;
     GenereationGameJam2022 playerInputAction;
+
+    float coyoteTimer;
+    float jumpBufferTimer;
 
     private void Awake()
     {
@@ -49,18 +52,30 @@ public class PlayerMovement : MonoBehaviour
             coyoteTimer -= Time.deltaTime;
         }
 
+        if (jumpBufferTimer > 0f)
+        {
+            jumpBufferTimer -= Time.deltaTime;
+        }
+
+        Jump();
         Run();
         FlipPlayer();
     }
 
     void StartJump(InputAction.CallbackContext value)
     {
-        if (coyoteTimer > 0f) // checks if the player is touching the ground
+        jumpBufferTimer = jumpBufferTime;
+    }
+
+    private void Jump()
+    {
+        if (coyoteTimer > 0f && jumpBufferTimer > 0f) // checks if the player is touching the ground
         {
             Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y + jumpHeight); // makes a new variable that adds jump height to the velocity
 
             myBody.velocity = playerVelocity; // replaces the player velocity with (player velocity + jump height)
             gameLogic.GetAudio().PlaySound("jump");
+            jumpBufferTimer = 0f;
         }
     }
 
