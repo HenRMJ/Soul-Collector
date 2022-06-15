@@ -3721,6 +3721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpHeight: 16
+  cancelJumpAmount: 0.557
+  coyoteTime: 0.3
   myBody: {fileID: 7512619170302217009}
   groundCheck: {fileID: 7512619170333333676}
   gameLogic: {fileID: 0}
@@ -4011,7 +4013,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   follow: {fileID: 0}
-  dialogue: []
 --- !u!1 &7512619170339143658
 GameObject:
   m_ObjectHideFlags: 0

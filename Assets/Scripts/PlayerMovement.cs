@@ -9,28 +9,70 @@ public class PlayerMovement : MonoBehaviour
     // Adjust the move speed of the player with a slider
     [Range(0f, 20f)] [SerializeField] float moveSpeed;
     [Range(0f, 20f)] [SerializeField] float jumpHeight;
+    [Tooltip("Lower the more severe")][Range(0f, 1f)][SerializeField] float cancelJumpAmount;
+    [SerializeField] float coyoteTime;
 
     [SerializeField] Rigidbody2D myBody;
     [SerializeField] BoxCollider2D groundCheck;
     [SerializeField] GameLogic gameLogic;
 
     Vector2 moveInput;
+    float coyoteTimer;
+    GenereationGameJam2022 playerInputAction;
+
+    private void Awake()
+    {
+        playerInputAction = new GenereationGameJam2022();
+    }
+
+    private void OnEnable()
+    {
+        // this just subscribes to an event to check if they pressed the interact key
+        playerInputAction.Player.Jump.started += StartJump;
+        playerInputAction.Player.Jump.canceled += EndJump;
+        playerInputAction.Player.Jump.Enable();
+    }
+
+    private void OnDisable()
+    {
+        // when this object is disabled this disables the subscription to the interact key
+        playerInputAction.Player.Jump.performed -= StartJump;
+        playerInputAction.Player.Jump.canceled -= EndJump;
+        playerInputAction.Player.Jump.Disable();
+    }
 
     // Update is called once per frame
     void Update()
     {
+        if (groundCheck.IsTouchingLayers(LayerMask.GetMask("Ground"))) { coyoteTimer = coyoteTime; } else
+        {
+            coyoteTimer -= Time.deltaTime;
+        }
+
         Run();
         FlipPlayer();
     }
 
-    void OnJump(InputValue value)
+    void StartJump(InputAction.CallbackContext value)
     {
-        if (groundCheck.IsTouchingLayers(LayerMask.GetMask("Ground"))) // checks if the player is touching the ground
+        if (coyoteTimer > 0f) // checks if the player is touching the ground
         {
             Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y + jumpHeight); // makes a new variable that adds jump height to the velocity
 
             myBody.velocity = playerVelocity; // replaces the player velocity with (player velocity + jump height)
             gameLogic.GetAudio().PlaySound("jump");
+        }
+    }
+
+    void EndJump(InputAction.CallbackContext value)
+    {
+        if (myBody.velocity.y > Mathf.Epsilon)
+        {
+            Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y * cancelJumpAmount);
+
+            myBody.velocity = playerVelocity;
+
+            coyoteTimer = 0f;
         }
     }
 
@@ -42,8 +84,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Run()
     {
+        if (myBody.velocity.x >= moveSpeed && moveInput.x > Mathf.Epsilon) { return; }
+        if (myBody.velocity.x <= -moveSpeed && moveInput.x < Mathf.Epsilon) { return; }
         // Prevents player from flying
-        Vector2 playerVelocity = new Vector2(Mathf.Clamp(myBody.velocity.x + moveInput.x*moveSpeed, -moveSpeed, moveSpeed), myBody.velocity.y);
+        Vector2 playerVelocity = new Vector2(myBody.velocity.x + moveInput.x*moveSpeed, myBody.velocity.y);
 
         // Adds velocity to player's X value
         myBody.velocity = playerVelocity;
