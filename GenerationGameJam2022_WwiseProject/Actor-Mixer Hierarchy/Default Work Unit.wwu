@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{90097377-6236-4CBC-8674-5DCD3194FDA8}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{90097377-6236-4CBC-8674-5DCD3194FDA8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Medium_Jump_v3_wav" ID="{25ADF37F-92BE-4F23-BD4D-3A470980E4D1}" ShortID="621553330">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Medium_Jump_v3_wav" ID="{C402EBA5-218A-49DD-B348-982B6F646A25}">
+							<Language>SFX</Language>
+							<AudioFile>Medium_Jump_v3_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="71373671"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Medium_Jump_v3_wav" ID="{C402EBA5-218A-49DD-B348-982B6F646A25}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Ghost_Laugh_v2_wav" ID="{A31CA51B-C8CA-4555-9008-87AD6C04B697}" ShortID="32724489">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>44</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>28</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ghost_Laugh_v2_wav" ID="{DE86711C-99D9-4854-8083-C613EC97FF9D}">
+							<Language>SFX</Language>
+							<AudioFile>Ghost_Laugh_v2_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="73961009"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Ghost_Laugh_v2_wav" ID="{DE86711C-99D9-4854-8083-C613EC97FF9D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Find_Item_Press_Button_Reverb_v1_wav" ID="{0F46B901-E8C4-493F-88C7-0223F09E05C9}" ShortID="554140734">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>33</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-1290</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Find_Item_Press_Button_Reverb_v1_wav" ID="{738CB33C-AF94-4AB4-9082-BBEC9D4980AE}">
+							<Language>SFX</Language>
+							<AudioFile>Find_Item_Press_Button_Reverb_v1_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="546864073"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Find_Item_Press_Button_Reverb_v1_wav" ID="{738CB33C-AF94-4AB4-9082-BBEC9D4980AE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Big_Gun_charge_v2_wav" ID="{A593FE6A-0A93-4BC6-99C0-1F252A087EFA}" ShortID="168203131">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>29</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>1640</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Big_Gun_charge_v2_wav" ID="{7502CCD3-5BD8-44AD-A6A6-F908804F55C3}">
+							<Language>SFX</Language>
+							<AudioFile>Big_Gun_charge_v2_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="978633786"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Big_Gun_charge_v2_wav" ID="{7502CCD3-5BD8-44AD-A6A6-F908804F55C3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Balloon sound (Balloon pop) 1" ID="{5BDD547F-9907-4E6F-9F34-5600F09DB5CF}" ShortID="626931442">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Balloon sound (Balloon pop) 1" ID="{1D3C778E-ADF2-4899-846B-D2D6858C2046}">
+							<Language>SFX</Language>
+							<AudioFile>Balloon sound (Balloon pop) 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="555851401"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Balloon sound (Balloon pop) 1" ID="{1D3C778E-ADF2-4899-846B-D2D6858C2046}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

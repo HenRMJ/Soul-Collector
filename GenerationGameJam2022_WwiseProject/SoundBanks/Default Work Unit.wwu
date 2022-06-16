@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7560CF5B-2B18-4DAE-B9BF-9CB0F06ABB4D}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{7560CF5B-2B18-4DAE-B9BF-9CB0F06ABB4D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main_Soundbank" ID="{8E6BE217-D9B9-4CFF-8B5C-75C260583718}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Jump_Event" ID="{B62C4C09-12F3-43E8-973E-88ADF9BDD231}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Blue_Explode" ID="{40551123-CD3C-4BE8-9134-EFB59FE435D1}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Soul_Pickup_Event" ID="{68885488-5655-4D7F-8253-9622F85B6CBB}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Next_Event" ID="{0119711B-6785-4E61-9D4A-CEFF210EC112}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Blue_Charge" ID="{EA089948-38E0-4E73-B80A-49EAC28427ED}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

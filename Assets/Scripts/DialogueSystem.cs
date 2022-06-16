@@ -103,7 +103,7 @@ public class DialogueSystem : MonoBehaviour
         if (pressed < dialogue.GetDialogueText().Length - 1)
         {
             // Plays UI sound
-            audioManager.PlaySound("next");
+            AkSoundEngine.PostEvent("Next_Event", gameObject);
 
             // Iterates pressed to go to the next piece of dialogue
             pressed++;
@@ -124,7 +124,7 @@ public class DialogueSystem : MonoBehaviour
 
             // If the text is the same, there is no need to play the next sound or replace the text
             if (dialogueText.text == currentText) { return; }
-            audioManager.PlaySound("next");
+            AkSoundEngine.PostEvent("Next_Event", gameObject);
             dialogueText.text = currentText;
 
         } else if (gameLogic.HaveCollected() && !gameLogic.HasWon())
@@ -141,7 +141,7 @@ public class DialogueSystem : MonoBehaviour
             if (currentText.Contains("You:")) { animator.SetTrigger("talked"); }
 
             if (dialogueText.text == currentText) { return; }
-            audioManager.PlaySound("next");
+            AkSoundEngine.PostEvent("Next_Event", gameObject);
             dialogueText.text = currentText;
         }
 
@@ -153,7 +153,7 @@ public class DialogueSystem : MonoBehaviour
             DynamicDialogueSystem();
 
             if (dialogueText.text == currentText) { return; }
-            audioManager.PlaySound("next");
+            AkSoundEngine.PostEvent("Next_Event", gameObject);
             dialogueText.text = currentText;
         }
     }

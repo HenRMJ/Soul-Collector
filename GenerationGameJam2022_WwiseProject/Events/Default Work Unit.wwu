@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Jump_Event" ID="{B62C4C09-12F3-43E8-973E-88ADF9BDD231}">
+					<ChildrenList>
+						<Action Name="" ID="{FEB2E38A-A422-4074-988E-B55C537A25D4}" ShortID="1022634880">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Medium_Jump_v3_wav" ID="{25ADF37F-92BE-4F23-BD4D-3A470980E4D1}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Soul_Pickup_Event" ID="{68885488-5655-4D7F-8253-9622F85B6CBB}">
+					<ChildrenList>
+						<Action Name="" ID="{0AEDC7BD-F81F-4BCB-96EC-374F3858D8C7}" ShortID="855628010">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ghost_Laugh_v2_wav" ID="{A31CA51B-C8CA-4555-9008-87AD6C04B697}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Next_Event" ID="{0119711B-6785-4E61-9D4A-CEFF210EC112}">
+					<ChildrenList>
+						<Action Name="" ID="{2B6F3A3F-2B79-452E-A163-8A360D8942FA}" ShortID="467021356">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Find_Item_Press_Button_Reverb_v1_wav" ID="{0F46B901-E8C4-493F-88C7-0223F09E05C9}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blue_Charge" ID="{EA089948-38E0-4E73-B80A-49EAC28427ED}">
+					<ChildrenList>
+						<Action Name="" ID="{4512EC7C-C9A9-4BAA-9AF4-AE4AD42BAE0B}" ShortID="408845213">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Big_Gun_charge_v2_wav" ID="{A593FE6A-0A93-4BC6-99C0-1F252A087EFA}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blue_Explode" ID="{40551123-CD3C-4BE8-9134-EFB59FE435D1}">
+					<ChildrenList>
+						<Action Name="" ID="{D11C269E-AE97-4592-95F8-4B2D71DB2768}" ShortID="300135321">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Balloon sound (Balloon pop) 1" ID="{5BDD547F-9907-4E6F-9F34-5600F09DB5CF}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

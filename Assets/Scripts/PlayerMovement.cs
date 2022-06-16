@@ -74,7 +74,8 @@ public class PlayerMovement : MonoBehaviour
             Vector2 playerVelocity = new Vector2(myBody.velocity.x, myBody.velocity.y + jumpHeight); // makes a new variable that adds jump height to the velocity
 
             myBody.velocity = playerVelocity; // replaces the player velocity with (player velocity + jump height)
-            gameLogic.GetAudio().PlaySound("jump");
+            AkSoundEngine.PostEvent("Jump_Event", gameObject);
+            // gameLogic.GetAudio().PlaySound("jump");
             jumpBufferTimer = 0f;
         }
     }

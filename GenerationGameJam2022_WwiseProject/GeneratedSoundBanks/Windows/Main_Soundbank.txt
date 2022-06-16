@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	262701974	Soul_Pickup_Event			\Default Work Unit\Soul_Pickup_Event	
+	585247752	Blue_Charge			\Default Work Unit\Blue_Charge	
+	623275868	Jump_Event			\Default Work Unit\Jump_Event	
+	3037934171	Next_Event			\Default Work Unit\Next_Event	
+	3547709259	Blue_Explode			\Default Work Unit\Blue_Explode	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	71373671	Medium_Jump_v3_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Medium_Jump_v3_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Medium_Jump_v3_wav		99292
+	73961009	Ghost_Laugh_v2_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Ghost_Laugh_v2_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ghost_Laugh_v2_wav		264664
+	546864073	Find_Item_Press_Button_Reverb_v1_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Find_Item_Press_Button_Reverb_v1_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Find_Item_Press_Button_Reverb_v1_wav		220564
+	555851401	Balloon sound (Balloon pop) 1	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Balloon sound (Balloon pop) 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balloon sound (Balloon pop) 1		192064
+	978633786	Big_Gun_charge_v2_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Big_Gun_charge_v2_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Big_Gun_charge_v2_wav		463116
+
