@@ -4,6 +4,21 @@
 		<WorkUnit Name="Default Work Unit" ID="{90097377-6236-4CBC-8674-5DCD3194FDA8}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Medium_Jump_v3_wav" ID="{25ADF37F-92BE-4F23-BD4D-3A470980E4D1}" ShortID="621553330">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AC75E5C6-98D5-4B1C-990B-457110CD5A1C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
@@ -24,41 +39,6 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Medium_Jump_v3_wav" ID="{C402EBA5-218A-49DD-B348-982B6F646A25}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Ghost_Laugh_v2_wav" ID="{A31CA51B-C8CA-4555-9008-87AD6C04B697}" ShortID="32724489">
-					<PropertyList>
-						<Property Name="Highpass" Type="int16">
-							<ValueList>
-								<Value>44</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Lowpass" Type="int16">
-							<ValueList>
-								<Value>28</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Ghost_Laugh_v2_wav" ID="{DE86711C-99D9-4854-8083-C613EC97FF9D}">
-							<Language>SFX</Language>
-							<AudioFile>Ghost_Laugh_v2_wav.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="73961009"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Ghost_Laugh_v2_wav" ID="{DE86711C-99D9-4854-8083-C613EC97FF9D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Find_Item_Press_Button_Reverb_v1_wav" ID="{0F46B901-E8C4-493F-88C7-0223F09E05C9}" ShortID="554140734">
@@ -101,21 +81,57 @@
 						<ActiveSource Name="Find_Item_Press_Button_Reverb_v1_wav" ID="{738CB33C-AF94-4AB4-9082-BBEC9D4980AE}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Big_Gun_charge_v2_wav" ID="{A593FE6A-0A93-4BC6-99C0-1F252A087EFA}" ShortID="168203131">
+				<Sound Name="Magical_Loot_No_Chest_v1_wav" ID="{B0D7AE50-2450-46F2-9F7F-BCE2EE6E1EE2}" ShortID="103977554">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Magical_Loot_No_Chest_v1_wav" ID="{0D8CD393-08D1-4F48-8833-82C8A124CBF8}">
+							<Language>SFX</Language>
+							<AudioFile>Magical_Loot_No_Chest_v1_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="152754635"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Magical_Loot_No_Chest_v1_wav" ID="{0D8CD393-08D1-4F48-8833-82C8A124CBF8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Shooting Magic 11" ID="{C1F4E906-785D-45AF-BFD4-2A3358729583}" ShortID="96133705">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Shooting Magic 11" ID="{F4191122-7015-4139-BF07-D6EABF9B965E}">
+							<Language>SFX</Language>
+							<AudioFile>Shooting Magic 11.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="476986453"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Shooting Magic 11" ID="{F4191122-7015-4139-BF07-D6EABF9B965E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="mk_mft_magic_12" ID="{D4D460C0-6778-45C3-B055-A16ADBAFF93A}" ShortID="145166709">
 					<PropertyList>
-						<Property Name="Highpass" Type="int16">
-							<ValueList>
-								<Value>29</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
-								<Value>1640</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-8</Value>
+								<Value>730</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -128,20 +144,20 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Big_Gun_charge_v2_wav" ID="{7502CCD3-5BD8-44AD-A6A6-F908804F55C3}">
+						<AudioFileSource Name="mk_mft_magic_12" ID="{0E8E78AC-99C3-467A-A574-2AAC3D10BDFD}">
 							<Language>SFX</Language>
-							<AudioFile>Big_Gun_charge_v2_wav.wav</AudioFile>
+							<AudioFile>mk_mft_magic_12.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="978633786"/>
+								<MediaID ID="849408175"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="Big_Gun_charge_v2_wav" ID="{7502CCD3-5BD8-44AD-A6A6-F908804F55C3}" Platform="Linked"/>
+						<ActiveSource Name="mk_mft_magic_12" ID="{0E8E78AC-99C3-467A-A574-2AAC3D10BDFD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Balloon sound (Balloon pop) 1" ID="{5BDD547F-9907-4E6F-9F34-5600F09DB5CF}" ShortID="626931442">
+				<Sound Name="Destroy_Piece_Magical_v1_variation_01_wav" ID="{341B2033-39BC-4C63-B7B9-BB5B266D5BC8}" ShortID="229506303">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
@@ -151,19 +167,369 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Balloon sound (Balloon pop) 1" ID="{1D3C778E-ADF2-4899-846B-D2D6858C2046}">
+						<AudioFileSource Name="Destroy_Piece_Magical_v1_variation_01_wav" ID="{602DC00D-65FD-40A0-A305-56BD774099C5}">
 							<Language>SFX</Language>
-							<AudioFile>Balloon sound (Balloon pop) 1.wav</AudioFile>
+							<AudioFile>Destroy_Piece_Magical_v1_variation_01_wav.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="555851401"/>
+								<MediaID ID="824454925"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="Balloon sound (Balloon pop) 1" ID="{1D3C778E-ADF2-4899-846B-D2D6858C2046}" Platform="Linked"/>
+						<ActiveSource Name="Destroy_Piece_Magical_v1_variation_01_wav" ID="{602DC00D-65FD-40A0-A305-56BD774099C5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Destroy_Piece_Magical_v1_variation_02_wav" ID="{C86C7315-DC6B-4402-A075-1B0EC4EEDA75}" ShortID="558565578">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Destroy_Piece_Magical_v1_variation_02_wav" ID="{935B3418-F603-412D-A618-2A3481FE5899}">
+							<Language>SFX</Language>
+							<AudioFile>Destroy_Piece_Magical_v1_variation_02_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="90842670"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Destroy_Piece_Magical_v1_variation_02_wav" ID="{935B3418-F603-412D-A618-2A3481FE5899}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Destroy_Piece_Magical_v1_variation_03_wav" ID="{B4441FCF-859A-49DB-B1F4-776A42C205D9}" ShortID="688705661">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Destroy_Piece_Magical_v1_variation_03_wav" ID="{1D19F2D4-DD61-41F9-A029-430F26E2623D}">
+							<Language>SFX</Language>
+							<AudioFile>Destroy_Piece_Magical_v1_variation_03_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="390129946"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Destroy_Piece_Magical_v1_variation_03_wav" ID="{1D19F2D4-DD61-41F9-A029-430F26E2623D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Destroy_Piece_Magical_v1_wav" ID="{870D1BFE-CF89-4689-A6FA-08F3D42A3494}" ShortID="225306080">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Destroy_Piece_Magical_v1_wav" ID="{2BDB2F17-B277-4EFA-9EEA-EB07187C201B}">
+							<Language>SFX</Language>
+							<AudioFile>Destroy_Piece_Magical_v1_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="990071857"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Destroy_Piece_Magical_v1_wav" ID="{2BDB2F17-B277-4EFA-9EEA-EB07187C201B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Riser_v3_wav" ID="{180D83A5-3F28-4334-B8FD-645BFE6102AE}" ShortID="337698449">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>45</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>200</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Riser_v3_wav" ID="{575EACE4-1564-4161-9CBB-A1097D228002}">
+							<Language>SFX</Language>
+							<AudioFile>Riser_v3_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="113620854"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Riser_v3_wav" ID="{575EACE4-1564-4161-9CBB-A1097D228002}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Flame" ID="{656B0152-C30F-49FD-BEB7-B2D86157F548}" ShortID="665956701">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2C67B13C-A4EA-4807-93E4-50724BD9A85A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Magical_Creature_v1_wav" ID="{19C8DA98-2EB5-4A4A-9977-39E7890CB615}" ShortID="875228376">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Magical_Creature_v1_wav" ID="{F943987E-D71A-4689-ACF2-368E8A1AC456}">
+									<Language>SFX</Language>
+									<AudioFile>Magical_Creature_v1_wav.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="177275669"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Magical_Creature_v1_wav" ID="{F943987E-D71A-4689-ACF2-368E8A1AC456}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Magical_Creature_v4_wav" ID="{3F48CF4B-6720-4D38-819E-15356C277797}" ShortID="859371200">
+							<PropertyList>
+								<Property Name="OutputBusLowpass" Type="int16">
+									<ValueList>
+										<Value>21</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Magical_Creature_v4_wav" ID="{1BE6D912-CB1F-4DA4-B79C-9A5E71739753}">
+									<Language>SFX</Language>
+									<AudioFile>Magical_Creature_v4_wav.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="816316675"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Magical_Creature_v4_wav" ID="{1BE6D912-CB1F-4DA4-B79C-9A5E71739753}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Pickup" ID="{C69AC262-8DCA-4B3F-BC0F-904F99FDBFEE}" ShortID="680028066">
+					<PropertyList>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ghost_Laugh_v2_wav" ID="{A31CA51B-C8CA-4555-9008-87AD6C04B697}" ShortID="32724489">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>44</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ghost_Laugh_v2_wav" ID="{DE86711C-99D9-4854-8083-C613EC97FF9D}">
+									<Language>SFX</Language>
+									<AudioFile>Ghost_Laugh_v2_wav.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="73961009"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ghost_Laugh_v2_wav" ID="{DE86711C-99D9-4854-8083-C613EC97FF9D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ghost_Pass_By_v1_variation_02_wav" ID="{B5554E50-2205-4193-BFF9-D6275509691D}" ShortID="58191012">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ghost_Pass_By_v1_variation_02_wav" ID="{7D22C8D1-2501-4DFC-8F68-9C0CE2FB5A4B}">
+									<Language>SFX</Language>
+									<AudioFile>Ghost_Pass_By_v1_variation_02_wav.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="881408917"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ghost_Pass_By_v1_variation_02_wav" ID="{7D22C8D1-2501-4DFC-8F68-9C0CE2FB5A4B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ghost_Pass_By_v2_variation_02_wav" ID="{30523D36-745C-4FBD-94D6-6EE43E720E90}" ShortID="94409724">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ghost_Pass_By_v2_variation_02_wav" ID="{B0FAD237-A6B5-4972-8FC7-97F80EDE740A}">
+									<Language>SFX</Language>
+									<AudioFile>Ghost_Pass_By_v2_variation_02_wav.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1071928721"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ghost_Pass_By_v2_variation_02_wav" ID="{B0FAD237-A6B5-4972-8FC7-97F80EDE740A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ghost_Pass_By_v3_variation_02_wav" ID="{6A31A30E-D5D4-46D4-A54C-25F8719C8C03}" ShortID="1038187322">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ghost_Pass_By_v3_variation_02_wav" ID="{88257C57-E5C7-4C04-9CF7-0E50192A3D43}">
+									<Language>SFX</Language>
+									<AudioFile>Ghost_Pass_By_v3_variation_02_wav.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="168262989"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ghost_Pass_By_v3_variation_02_wav" ID="{88257C57-E5C7-4C04-9CF7-0E50192A3D43}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ghost_Pass_By_v5_variation_02_wav" ID="{905BC50B-152E-47AB-B306-0E19400C3A8E}" ShortID="470012723">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ghost_Pass_By_v5_variation_02_wav" ID="{824F36BF-87C4-4360-8145-2EFDE0990439}">
+									<Language>SFX</Language>
+									<AudioFile>Ghost_Pass_By_v5_variation_02_wav.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="638313987"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ghost_Pass_By_v5_variation_02_wav" ID="{824F36BF-87C4-4360-8145-2EFDE0990439}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

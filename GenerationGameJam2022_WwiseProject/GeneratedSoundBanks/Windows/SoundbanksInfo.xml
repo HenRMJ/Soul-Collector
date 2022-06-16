@@ -16,24 +16,52 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2228651116" Language="SFX" Hash="947427662">
+		<SoundBank Id="2228651116" Language="SFX" Hash="2141179689">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="585247752" Name="Blue_Charge" ObjectPath="\Events\Default Work Unit\Blue_Charge" DurationType="OneShot" DurationMin="1.017943" DurationMax="1.017943">
+				<Event Id="585247752" Name="Blue_Charge" ObjectPath="\Events\Default Work Unit\Blue_Charge" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.125011">
 					<IncludedMemoryFiles>
-						<File Id="978633786" Language="SFX">
-							<ShortName>Big_Gun_charge_v2_wav.wav</ShortName>
-							<Path>SFX\Big_Gun_charge_v2_wav_10C4C929.wem</Path>
+						<File Id="113620854" Language="SFX">
+							<ShortName>Riser_v3_wav.wav</ShortName>
+							<Path>SFX\Riser_v3_wav_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3547709259" Name="Blue_Explode" ObjectPath="\Events\Default Work Unit\Blue_Explode" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+				<Event Id="3547709259" Name="Blue_Explode" ObjectPath="\Events\Default Work Unit\Blue_Explode" DurationType="OneShot" DurationMin="0.956531" DurationMax="0.956531">
 					<IncludedMemoryFiles>
-						<File Id="555851401" Language="SFX">
-							<ShortName>Balloon sound (Balloon pop) 1.wav</ShortName>
-							<Path>SFX\Balloon sound (Balloon pop) 1_10C4C929.wem</Path>
+						<File Id="849408175" Language="SFX">
+							<ShortName>mk_mft_magic_12.wav</ShortName>
+							<Path>SFX\mk_mft_magic_12_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3444629296" Name="Blue_Pickup" ObjectPath="\Events\Default Work Unit\Blue_Pickup" DurationType="OneShot" DurationMin="0.673492" DurationMax="0.673492">
+					<IncludedMemoryFiles>
+						<File Id="824454925" Language="SFX">
+							<ShortName>Destroy_Piece_Magical_v1_variation_01_wav.wav</ShortName>
+							<Path>SFX\Destroy_Piece_Magical_v1_variation_01_wav_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3086811463" Name="Flame_Talk" ObjectPath="\Events\Default Work Unit\Flame_Talk" DurationType="OneShot" DurationMin="2." DurationMax="2.5">
+					<IncludedMemoryFiles>
+						<File Id="177275669" Language="SFX">
+							<ShortName>Magical_Creature_v1_wav.wav</ShortName>
+							<Path>SFX\Magical_Creature_v1_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="816316675" Language="SFX">
+							<ShortName>Magical_Creature_v4_wav.wav</ShortName>
+							<Path>SFX\Magical_Creature_v4_wav_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="85912737" Name="Green_Pickup" ObjectPath="\Events\Default Work Unit\Green_Pickup" DurationType="OneShot" DurationMin="1.601814" DurationMax="1.601814">
+					<IncludedMemoryFiles>
+						<File Id="390129946" Language="SFX">
+							<ShortName>Destroy_Piece_Magical_v1_variation_03_wav.wav</ShortName>
+							<Path>SFX\Destroy_Piece_Magical_v1_variation_03_wav_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -53,11 +81,43 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="262701974" Name="Soul_Pickup_Event" ObjectPath="\Events\Default Work Unit\Soul_Pickup_Event" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+				<Event Id="4238973550" Name="Purple_Pickup" ObjectPath="\Events\Default Work Unit\Purple_Pickup" DurationType="OneShot" DurationMin="0.9" DurationMax="0.9">
+					<IncludedMemoryFiles>
+						<File Id="90842670" Language="SFX">
+							<ShortName>Destroy_Piece_Magical_v1_variation_02_wav.wav</ShortName>
+							<Path>SFX\Destroy_Piece_Magical_v1_variation_02_wav_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="874472897" Name="Red_Pickup" ObjectPath="\Events\Default Work Unit\Red_Pickup" DurationType="OneShot" DurationMin="1.2" DurationMax="1.2">
+					<IncludedMemoryFiles>
+						<File Id="990071857" Language="SFX">
+							<ShortName>Destroy_Piece_Magical_v1_wav.wav</ShortName>
+							<Path>SFX\Destroy_Piece_Magical_v1_wav_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="262701974" Name="Soul_Pickup_Event" ObjectPath="\Events\Default Work Unit\Soul_Pickup_Event" DurationType="OneShot" DurationMin="1." DurationMax="1.875011">
 					<IncludedMemoryFiles>
 						<File Id="73961009" Language="SFX">
 							<ShortName>Ghost_Laugh_v2_wav.wav</ShortName>
 							<Path>SFX\Ghost_Laugh_v2_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="168262989" Language="SFX">
+							<ShortName>Ghost_Pass_By_v3_variation_02_wav.wav</ShortName>
+							<Path>SFX\Ghost_Pass_By_v3_variation_02_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="638313987" Language="SFX">
+							<ShortName>Ghost_Pass_By_v5_variation_02_wav.wav</ShortName>
+							<Path>SFX\Ghost_Pass_By_v5_variation_02_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="881408917" Language="SFX">
+							<ShortName>Ghost_Pass_By_v1_variation_02_wav.wav</ShortName>
+							<Path>SFX\Ghost_Pass_By_v1_variation_02_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="1071928721" Language="SFX">
+							<ShortName>Ghost_Pass_By_v2_variation_02_wav.wav</ShortName>
+							<Path>SFX\Ghost_Pass_By_v2_variation_02_wav_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

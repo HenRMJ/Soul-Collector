@@ -5,11 +5,16 @@
 			<ChildrenList>
 				<SoundBank Name="Main_Soundbank" ID="{8E6BE217-D9B9-4CFF-8B5C-75C260583718}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Blue_Pickup" ID="{27511720-57F4-42ED-93B7-14FC8B787EC9}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump_Event" ID="{B62C4C09-12F3-43E8-973E-88ADF9BDD231}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Purple_Pickup" ID="{A790AD6A-4996-469D-B8ED-6E6705349AB9}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Red_Pickup" ID="{71B6BC26-6CFC-4790-85F3-CCFB258AC5E3}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Green_Pickup" ID="{62243DC7-F2AB-4909-A927-0D7EDF3FAFCD}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Blue_Explode" ID="{40551123-CD3C-4BE8-9134-EFB59FE435D1}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Soul_Pickup_Event" ID="{68885488-5655-4D7F-8253-9622F85B6CBB}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Next_Event" ID="{0119711B-6785-4E61-9D4A-CEFF210EC112}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Blue_Charge" ID="{EA089948-38E0-4E73-B80A-49EAC28427ED}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Flame_Talk" ID="{9956982F-BBF8-4EEF-B967-867A979C593F}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

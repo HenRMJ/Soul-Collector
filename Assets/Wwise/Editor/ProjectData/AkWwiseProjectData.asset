@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5bcf6075182bae4db9bf9cb0f06abb4d
     GuidInternal: 
-    m_lastTime: -8585462431829676546
+    m_lastTime: -8585462289011568604
     List:
     - name: Main_Soundbank
       guid: 17e26b8eb9d9ff4c8b5c75c260583718
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9c38aa3adf99d747af9d5b305da2f3a2
     GuidInternal: 
-    m_lastTime: -8585462430517295499
+    m_lastTime: -8585462289772712084
     List:
     - name: Blue_Charge
       guid: 489908eae038734eb80a49eac28427ed
@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 489908eae038734eb80a49eac28427ed
       Path: Events\Default Work Unit\Blue_Charge
       maxAttenuation: 0
-      maxDuration: 1.017943
-      minDuration: 1.017943
+      maxDuration: 1.125011
+      minDuration: 1.125011
     - name: Blue_Explode
       guid: 231155403ccde84b9134efb59fe435d1
       id: 3547709259
@@ -128,8 +128,59 @@ MonoBehaviour:
         guid: 231155403ccde84b9134efb59fe435d1
       Path: Events\Default Work Unit\Blue_Explode
       maxAttenuation: 0
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: 0.956531
+      minDuration: 0.956531
+    - name: Blue_Pickup
+      guid: 20175127f457ed4293b714fc8b787ec9
+      id: 3444629296
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: Blue_Pickup
+        ObjectType: 3
+        guid: 20175127f457ed4293b714fc8b787ec9
+      Path: Events\Default Work Unit\Blue_Pickup
+      maxAttenuation: 0
+      maxDuration: 0.673492
+      minDuration: 0.673492
+    - name: Flame_Talk
+      guid: 2f985699f8bbef4eb967867a979c593f
+      id: 3086811463
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: Flame_Talk
+        ObjectType: 3
+        guid: 2f985699f8bbef4eb967867a979c593f
+      Path: Events\Default Work Unit\Flame_Talk
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2
+    - name: Green_Pickup
+      guid: c73d2462abf20949a9270d7edf3fafcd
+      id: 85912737
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: Green_Pickup
+        ObjectType: 3
+        guid: c73d2462abf20949a9270d7edf3fafcd
+      Path: Events\Default Work Unit\Green_Pickup
+      maxAttenuation: 0
+      maxDuration: 1.601814
+      minDuration: 1.601814
     - name: Jump_Event
       guid: 094c2cb6f312e843973e88adf9bdd231
       id: 623275868
@@ -164,6 +215,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.633403
       minDuration: 2.633403
+    - name: Purple_Pickup
+      guid: 6aad90a796499d46b8ed6e6705349ab9
+      id: 4238973550
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: Purple_Pickup
+        ObjectType: 3
+        guid: 6aad90a796499d46b8ed6e6705349ab9
+      Path: Events\Default Work Unit\Purple_Pickup
+      maxAttenuation: 0
+      maxDuration: 0.9
+      minDuration: 0.9
+    - name: Red_Pickup
+      guid: 26bcb671fc6c904785f3ccfb258ac5e3
+      id: 874472897
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: Red_Pickup
+        ObjectType: 3
+        guid: 26bcb671fc6c904785f3ccfb258ac5e3
+      Path: Events\Default Work Unit\Red_Pickup
+      maxAttenuation: 0
+      maxDuration: 1.2
+      minDuration: 1.2
     - name: Soul_Pickup_Event
       guid: 8854886855567f4d82539622f85b6cbb
       id: 262701974
@@ -179,8 +264,8 @@ MonoBehaviour:
         guid: 8854886855567f4d82539622f85b6cbb
       Path: Events\Default Work Unit\Soul_Pickup_Event
       maxAttenuation: 0
-      maxDuration: 1.5
-      minDuration: 1.5
+      maxDuration: 1.875011
+      minDuration: 1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -238,7 +323,7 @@ MonoBehaviour:
     m_lastTime: -8585462500228221982
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c000000ee000000ef00000020010000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c000000ba000000bb000000ee000000ef000000200100002f01000030010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

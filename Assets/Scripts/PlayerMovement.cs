@@ -100,8 +100,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Run()
     {
-        if (myBody.velocity.x >= moveSpeed && moveInput.x > Mathf.Epsilon) { return; }
-        if (myBody.velocity.x <= -moveSpeed && moveInput.x < Mathf.Epsilon) { return; }
+        if (myBody.velocity.x > moveSpeed && moveInput.x > Mathf.Epsilon) { return; }
+        if (myBody.velocity.x < -moveSpeed && moveInput.x < Mathf.Epsilon) { return; }
         // Prevents player from flying
         Vector2 playerVelocity = new Vector2(myBody.velocity.x + moveInput.x*moveSpeed, myBody.velocity.y);
 

@@ -16,10 +16,10 @@
 				</Event>
 				<Event Name="Soul_Pickup_Event" ID="{68885488-5655-4D7F-8253-9622F85B6CBB}">
 					<ChildrenList>
-						<Action Name="" ID="{0AEDC7BD-F81F-4BCB-96EC-374F3858D8C7}" ShortID="855628010">
+						<Action Name="" ID="{A2A3DDEB-C2DA-4D8F-926E-8EF191012987}" ShortID="602129376">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ghost_Laugh_v2_wav" ID="{A31CA51B-C8CA-4555-9008-87AD6C04B697}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+									<ObjectRef Name="Pickup" ID="{C69AC262-8DCA-4B3F-BC0F-904F99FDBFEE}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -38,10 +38,10 @@
 				</Event>
 				<Event Name="Blue_Charge" ID="{EA089948-38E0-4E73-B80A-49EAC28427ED}">
 					<ChildrenList>
-						<Action Name="" ID="{4512EC7C-C9A9-4BAA-9AF4-AE4AD42BAE0B}" ShortID="408845213">
+						<Action Name="" ID="{BEB31D3F-CD9E-41FD-9B17-A37A044A1E97}" ShortID="867964293">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Big_Gun_charge_v2_wav" ID="{A593FE6A-0A93-4BC6-99C0-1F252A087EFA}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+									<ObjectRef Name="Riser_v3_wav" ID="{180D83A5-3F28-4334-B8FD-645BFE6102AE}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -49,10 +49,75 @@
 				</Event>
 				<Event Name="Blue_Explode" ID="{40551123-CD3C-4BE8-9134-EFB59FE435D1}">
 					<ChildrenList>
-						<Action Name="" ID="{D11C269E-AE97-4592-95F8-4B2D71DB2768}" ShortID="300135321">
+						<Action Name="" ID="{D7247B7E-1201-4029-A441-105A0A4730DE}" ShortID="153759679">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.03"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Balloon sound (Balloon pop) 1" ID="{5BDD547F-9907-4E6F-9F34-5600F09DB5CF}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+									<ObjectRef Name="mk_mft_magic_12" ID="{D4D460C0-6778-45C3-B055-A16ADBAFF93A}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{25092B1A-A34D-41F5-AEF1-B5F2811E8FCB}" ShortID="936388493">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magical_Loot_No_Chest_v1_wav" ID="{B0D7AE50-2450-46F2-9F7F-BCE2EE6E1EE2}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Flame_Talk" ID="{9956982F-BBF8-4EEF-B967-867A979C593F}">
+					<ChildrenList>
+						<Action Name="" ID="{C1E33DFE-E46B-4836-AE42-07C89C3790A6}" ShortID="464629170">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Flame" ID="{656B0152-C30F-49FD-BEB7-B2D86157F548}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blue_Pickup" ID="{27511720-57F4-42ED-93B7-14FC8B787EC9}">
+					<ChildrenList>
+						<Action Name="" ID="{B0E9235B-E4A6-46BB-BD9A-A388F4D3CAB5}" ShortID="816431181">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Destroy_Piece_Magical_v1_variation_01_wav" ID="{341B2033-39BC-4C63-B7B9-BB5B266D5BC8}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Purple_Pickup" ID="{A790AD6A-4996-469D-B8ED-6E6705349AB9}">
+					<ChildrenList>
+						<Action Name="" ID="{1DD0E90A-F4A6-423A-BB67-5733FEA1FF88}" ShortID="312838306">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Destroy_Piece_Magical_v1_variation_02_wav" ID="{C86C7315-DC6B-4402-A075-1B0EC4EEDA75}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Green_Pickup" ID="{62243DC7-F2AB-4909-A927-0D7EDF3FAFCD}">
+					<ChildrenList>
+						<Action Name="" ID="{05529C78-2EEC-4670-A549-C940F756B886}" ShortID="803366784">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Destroy_Piece_Magical_v1_variation_03_wav" ID="{B4441FCF-859A-49DB-B1F4-776A42C205D9}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Red_Pickup" ID="{71B6BC26-6CFC-4790-85F3-CCFB258AC5E3}">
+					<ChildrenList>
+						<Action Name="" ID="{343F6818-AEFB-4651-AE10-5DC8660014B0}" ShortID="271067195">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Destroy_Piece_Magical_v1_wav" ID="{870D1BFE-CF89-4689-A6FA-08F3D42A3494}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

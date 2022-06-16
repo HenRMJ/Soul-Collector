@@ -112,14 +112,17 @@ public class Consumable : MonoBehaviour
     {
         return oneCount;
     }
+
     public int GetTwoCount()
     {
         return twoCount;
     }
+
     public int GetThreeCount()
     {
         return threeCount;
     }
+
     public int GetFourCount()
     {
         return fourCount;

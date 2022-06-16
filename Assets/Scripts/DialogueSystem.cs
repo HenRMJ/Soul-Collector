@@ -52,11 +52,8 @@ public class DialogueSystem : MonoBehaviour
         {
             closeEnough = true;
             continueUI.SetActive(true);
-            currentText = dialogue.GetDialogueText()[pressed].Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
-            currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
-            currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
-            currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
-            currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
+            currentText = dialogue.GetDialogueText()[pressed];
+            DynamicDialogueSystem();
             dialogueText.text = currentText;
         }
     }
@@ -138,7 +135,7 @@ public class DialogueSystem : MonoBehaviour
             currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString() + " more");
             currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
 
-            if (currentText.Contains("You:")) { animator.SetTrigger("talked"); }
+            AnimateOrTalk();
 
             if (dialogueText.text == currentText) { return; }
             AkSoundEngine.PostEvent("Next_Event", gameObject);
@@ -160,14 +157,25 @@ public class DialogueSystem : MonoBehaviour
 
     private void DynamicDialogueSystem()
     {
+        AnimateOrTalk();
         currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
         currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
         currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
         currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
         currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
-
-        // Makes the players mouth move if the player is talking
-        if (currentText.Contains("You:")) { animator.SetTrigger("talked"); }
     }
 
+    private void AnimateOrTalk()
+    {
+        // Makes the players mouth move if the player is talking
+        if (currentText.Contains("You:"))
+        {
+            animator.SetTrigger("talked");
+        }
+        else
+        {
+            if (dialogueText.text == currentText) { return; }
+            AkSoundEngine.PostEvent("Flame_Talk", gameObject);
+        }
+    }
 }
