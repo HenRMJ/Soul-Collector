@@ -32,7 +32,7 @@ public class Shockwave : MonoBehaviour
         yield return new WaitForSeconds(delayInSeconds);
         Vector2 direction = (player.transform.position - this.transform.position);
         source.GenerateImpulse();
-        Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+        Instantiate(explosion, gameObject.transform.position, explosion.transform.rotation);
         AkSoundEngine.PostEvent("Blue_Explode", gameObject);
         direction.Normalize();
         playerBody.AddForce(direction * knockback, ForceMode2D.Impulse);
