@@ -6,6 +6,7 @@ public class Blackhole : MonoBehaviour
 {
     [SerializeField] float pull;
     [SerializeField] float delayInSeconds;
+    [SerializeField] GameObject suction;
 
     Rigidbody2D playerBody;
     GameObject player;
@@ -24,6 +25,8 @@ public class Blackhole : MonoBehaviour
 
     IEnumerator Inplode()
     {
+        Instantiate(suction, gameObject.transform);
+        AkSoundEngine.PostEvent("Purple_Crystal", gameObject);
         yield return new WaitForSeconds(delayInSeconds);
         Vector2 direction = (player.transform.position - this.transform.position);
         direction.Normalize();

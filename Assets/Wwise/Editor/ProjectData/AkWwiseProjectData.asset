@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5bcf6075182bae4db9bf9cb0f06abb4d
     GuidInternal: 
-    m_lastTime: -8585462289011568604
+    m_lastTime: -8585461180905456556
     List:
     - name: Main_Soundbank
       guid: 17e26b8eb9d9ff4c8b5c75c260583718
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9c38aa3adf99d747af9d5b305da2f3a2
     GuidInternal: 
-    m_lastTime: -8585461963021345735
+    m_lastTime: -8585461181061091067
     List:
     - name: Blue_Charge
       guid: 489908eae038734eb80a49eac28427ed
@@ -215,6 +215,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.633403
       minDuration: 2.633403
+    - name: Purple_Crystal
+      guid: eea7248dbc9ef9459d054f66d9914814
+      id: 4170490160
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: Purple_Crystal
+        ObjectType: 3
+        guid: eea7248dbc9ef9459d054f66d9914814
+      Path: Events\Default Work Unit\Purple_Crystal
+      maxAttenuation: 0
+      maxDuration: 3.129075
+      minDuration: 3.129075
     - name: Purple_Pickup
       guid: 6aad90a796499d46b8ed6e6705349ab9
       id: 4238973550
@@ -323,7 +340,7 @@ MonoBehaviour:
     m_lastTime: -8585462500228221982
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c000000ba000000bb000000ee000000ef000000200100002f01000030010000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c0000004700000048000000ba000000bb000000ee000000ef000000200100002f01000030010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

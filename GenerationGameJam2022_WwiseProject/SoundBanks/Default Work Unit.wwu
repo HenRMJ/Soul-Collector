@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Blue_Pickup" ID="{27511720-57F4-42ED-93B7-14FC8B787EC9}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump_Event" ID="{B62C4C09-12F3-43E8-973E-88ADF9BDD231}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Purple_Crystal" ID="{8D24A7EE-9EBC-45F9-9D05-4F66D9914814}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Purple_Pickup" ID="{A790AD6A-4996-469D-B8ED-6E6705349AB9}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Red_Pickup" ID="{71B6BC26-6CFC-4790-85F3-CCFB258AC5E3}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Green_Pickup" ID="{62243DC7-F2AB-4909-A927-0D7EDF3FAFCD}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>

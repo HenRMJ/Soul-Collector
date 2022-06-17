@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2228651116" Language="SFX" Hash="1777753030">
+		<SoundBank Id="2228651116" Language="SFX" Hash="644222999">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
@@ -82,6 +82,18 @@
 						<File Id="546864073" Language="SFX">
 							<ShortName>Find_Item_Press_Button_Reverb_v1_wav.wav</ShortName>
 							<Path>SFX\Find_Item_Press_Button_Reverb_v1_wav_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4170490160" Name="Purple_Crystal" ObjectPath="\Events\Default Work Unit\Purple_Crystal" DurationType="OneShot" DurationMin="3.129075" DurationMax="3.129075">
+					<IncludedMemoryFiles>
+						<File Id="897599136" Language="SFX">
+							<ShortName>Explosion Reverse 3.wav</ShortName>
+							<Path>SFX\Explosion Reverse 3_10C4C929.wem</Path>
+						</File>
+						<File Id="901777897" Language="SFX">
+							<ShortName>Wind_Spell_v1_Cast_wav.wav</ShortName>
+							<Path>SFX\Wind_Spell_v1_Cast_wav_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -123,6 +123,24 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Purple_Crystal" ID="{8D24A7EE-9EBC-45F9-9D05-4F66D9914814}">
+					<ChildrenList>
+						<Action Name="" ID="{737CB661-7C74-43E4-B65F-9CDD2F071B4D}" ShortID="300600384">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind_Spell_v1_Cast_wav" ID="{5CEB3086-9F1F-4608-947C-0F2357321209}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9E1A0D00-8FFA-4108-B219-25B4D3D276D1}" ShortID="1067337336">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosion Reverse 3" ID="{553E1765-8255-40F0-A489-9EF531704034}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

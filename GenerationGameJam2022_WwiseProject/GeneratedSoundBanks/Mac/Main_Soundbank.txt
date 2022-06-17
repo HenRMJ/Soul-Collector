@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3086811463	Flame_Talk			\Default Work Unit\Flame_Talk	
 	3444629296	Blue_Pickup			\Default Work Unit\Blue_Pickup	
 	3547709259	Blue_Explode			\Default Work Unit\Blue_Explode	
+	4170490160	Purple_Crystal			\Default Work Unit\Purple_Crystal	
 	4238973550	Purple_Pickup			\Default Work Unit\Purple_Pickup	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -25,6 +26,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	824454925	Destroy_Piece_Magical_v1_variation_01_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Mac\SFX\Destroy_Piece_Magical_v1_variation_01_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destroy_Piece_Magical_v1_variation_01_wav		118868
 	849408175	mk_mft_magic_12	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Mac\SFX\mk_mft_magic_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mk_mft_magic_12		168796
 	881408917	Ghost_Pass_By_v1_variation_02_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Mac\SFX\Ghost_Pass_By_v1_variation_02_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup\Ghost_Pass_By_v1_variation_02_wav		176464
+	897599136	Explosion Reverse 3	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Mac\SFX\Explosion Reverse 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosion Reverse 3		977896
+	901777897	Wind_Spell_v1_Cast_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Mac\SFX\Wind_Spell_v1_Cast_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind_Spell_v1_Cast_wav		463116
 	990071857	Destroy_Piece_Magical_v1_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Mac\SFX\Destroy_Piece_Magical_v1_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destroy_Piece_Magical_v1_wav		211744
 	1071928721	Ghost_Pass_By_v2_variation_02_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Mac\SFX\Ghost_Pass_By_v2_variation_02_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup\Ghost_Pass_By_v2_variation_02_wav		330816
 

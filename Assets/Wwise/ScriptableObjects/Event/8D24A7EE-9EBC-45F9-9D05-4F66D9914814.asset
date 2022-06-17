@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960a29973ee300240823454a5da2ced0, type: 3}
+  m_Name: 8D24A7EE-9EBC-45F9-9D05-4F66D9914814
+  m_EditorClassIdentifier: 
+  objectName: Purple_Crystal
+  id: 4170490160
+  guid: 8D24A7EE-9EBC-45F9-9D05-4F66D9914814
