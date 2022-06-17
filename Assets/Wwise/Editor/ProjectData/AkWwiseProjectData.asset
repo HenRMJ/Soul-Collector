@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9c38aa3adf99d747af9d5b305da2f3a2
     GuidInternal: 
-    m_lastTime: -8585462289772712084
+    m_lastTime: -8585461963021345735
     List:
     - name: Blue_Charge
       guid: 489908eae038734eb80a49eac28427ed
@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 489908eae038734eb80a49eac28427ed
       Path: Events\Default Work Unit\Blue_Charge
       maxAttenuation: 0
-      maxDuration: 1.125011
-      minDuration: 1.125011
+      maxDuration: 1.002271
+      minDuration: 1.002271
     - name: Blue_Explode
       guid: 231155403ccde84b9134efb59fe435d1
       id: 3547709259
@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: 231155403ccde84b9134efb59fe435d1
       Path: Events\Default Work Unit\Blue_Explode
       maxAttenuation: 0
-      maxDuration: 0.956531
-      minDuration: 0.956531
+      maxDuration: 2.25
+      minDuration: 2.25
     - name: Blue_Pickup
       guid: 20175127f457ed4293b714fc8b787ec9
       id: 3444629296
@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: 2f985699f8bbef4eb967867a979c593f
       Path: Events\Default Work Unit\Flame_Talk
       maxAttenuation: 0
-      maxDuration: 2.5
-      minDuration: 2
+      maxDuration: 2.888382
+      minDuration: 1.731073
     - name: Green_Pickup
       guid: c73d2462abf20949a9270d7edf3fafcd
       id: 85912737
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: 094c2cb6f312e843973e88adf9bdd231
       Path: Events\Default Work Unit\Jump_Event
       maxAttenuation: 0
-      maxDuration: 0.562517
-      minDuration: 0.562517
+      maxDuration: 0.631404
+      minDuration: 0.51583
     - name: Next_Event
       guid: 1b7119018567614e9d4aceff210ec112
       id: 3037934171

@@ -82,6 +82,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Magical_Loot_No_Chest_v1_wav" ID="{B0D7AE50-2450-46F2-9F7F-BCE2EE6E1EE2}" ShortID="103977554">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
@@ -129,6 +132,7 @@
 				</Sound>
 				<Sound Name="mk_mft_magic_12" ID="{D4D460C0-6778-45C3-B055-A16ADBAFF93A}" ShortID="145166709">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
 								<Value>730</Value>
@@ -251,6 +255,7 @@
 				</Sound>
 				<Sound Name="Riser_v3_wav" ID="{180D83A5-3F28-4334-B8FD-645BFE6102AE}" ShortID="337698449">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
 								<Value>45</Value>

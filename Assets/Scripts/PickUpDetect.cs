@@ -17,25 +17,25 @@ public class PickUpDetect : MonoBehaviour
 
         if (collision.CompareTag("one"))
         {
-            audioManager.PlaySound("blue");
+            AkSoundEngine.PostEvent("Blue_Pickup", gameObject);
             consumable.AddPickup(collision.tag);
             Destroy(collision.gameObject);
         }
         else if (collision.CompareTag("two"))
         {
-            audioManager.PlaySound("green");
+            AkSoundEngine.PostEvent("Green_Pickup", gameObject);
             consumable.AddPickup(collision.tag);
             Destroy(collision.gameObject);
         }
         else if (collision.CompareTag("three"))
         {
-            audioManager.PlaySound("purple");
+            AkSoundEngine.PostEvent("Purple_Pickup", gameObject);
             consumable.AddPickup(collision.tag);
             Destroy(collision.gameObject);
         }
         else if (collision.CompareTag("four"))
         {
-            audioManager.PlaySound("red");
+            AkSoundEngine.PostEvent("Red_Pickup", gameObject);
             consumable.AddPickup(collision.tag);
             Destroy(collision.gameObject);
         }

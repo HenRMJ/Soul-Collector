@@ -53,7 +53,14 @@ public class DialogueSystem : MonoBehaviour
             closeEnough = true;
             continueUI.SetActive(true);
             currentText = dialogue.GetDialogueText()[pressed];
-            DynamicDialogueSystem();
+            if (currentText.Contains("You:"))
+            {
+                animator.SetTrigger("talked");
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Flame_Talk", gameObject);
+            }
             dialogueText.text = currentText;
         }
     }

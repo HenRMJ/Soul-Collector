@@ -10,6 +10,9 @@ TagManager:
   - three
   - four
   - flame
+  - flame3
+  - flame1
+  - flame2
   layers:
   - Default
   - TransparentFX
@@ -49,4 +52,10 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2861477489
+    locked: 0
+  - name: Dialogue
+    uniqueID: 2878023395
     locked: 0

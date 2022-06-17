@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Shockwave : MonoBehaviour
 {
@@ -9,11 +10,13 @@ public class Shockwave : MonoBehaviour
 
     Rigidbody2D playerBody;
     GameObject player;
+    CinemachineImpulseSource source;
 
     IEnumerator coroutine;
 
     private void OnEnable()
     {
+        source = GetComponent<CinemachineImpulseSource>();
         playerBody = FindObjectOfType<PlayerMovement>().GetComponent<Rigidbody2D>();
         player = playerBody.gameObject;
         coroutine = Pexplode();
@@ -27,6 +30,7 @@ public class Shockwave : MonoBehaviour
         AkSoundEngine.PostEvent("Blue_Charge", gameObject);
         yield return new WaitForSeconds(delayInSeconds);
         Vector2 direction = (player.transform.position - this.transform.position);
+        source.GenerateImpulse();
         AkSoundEngine.PostEvent("Blue_Explode", gameObject);
         direction.Normalize();
         playerBody.AddForce(direction * knockback, ForceMode2D.Impulse);

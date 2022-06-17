@@ -16,12 +16,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2228651116" Language="SFX" Hash="2141179689">
+		<SoundBank Id="2228651116" Language="SFX" Hash="1777753030">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="585247752" Name="Blue_Charge" ObjectPath="\Events\Default Work Unit\Blue_Charge" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.125011">
+				<Event Id="585247752" Name="Blue_Charge" ObjectPath="\Events\Default Work Unit\Blue_Charge" DurationType="OneShot" DurationMin="1.002271" DurationMax="1.002271">
 					<IncludedMemoryFiles>
 						<File Id="113620854" Language="SFX">
 							<ShortName>Riser_v3_wav.wav</ShortName>
@@ -29,8 +29,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3547709259" Name="Blue_Explode" ObjectPath="\Events\Default Work Unit\Blue_Explode" DurationType="OneShot" DurationMin="0.956531" DurationMax="0.956531">
+				<Event Id="3547709259" Name="Blue_Explode" ObjectPath="\Events\Default Work Unit\Blue_Explode" DurationType="OneShot" DurationMin="2.25" DurationMax="2.25">
 					<IncludedMemoryFiles>
+						<File Id="152754635" Language="SFX">
+							<ShortName>Magical_Loot_No_Chest_v1_wav.wav</ShortName>
+							<Path>SFX\Magical_Loot_No_Chest_v1_wav_10C4C929.wem</Path>
+						</File>
 						<File Id="849408175" Language="SFX">
 							<ShortName>mk_mft_magic_12.wav</ShortName>
 							<Path>SFX\mk_mft_magic_12_10C4C929.wem</Path>
@@ -45,7 +49,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3086811463" Name="Flame_Talk" ObjectPath="\Events\Default Work Unit\Flame_Talk" DurationType="OneShot" DurationMin="2." DurationMax="2.5">
+				<Event Id="3086811463" Name="Flame_Talk" ObjectPath="\Events\Default Work Unit\Flame_Talk" DurationType="OneShot" DurationMin="1.731073" DurationMax="2.888382">
 					<IncludedMemoryFiles>
 						<File Id="177275669" Language="SFX">
 							<ShortName>Magical_Creature_v1_wav.wav</ShortName>
@@ -65,7 +69,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="623275868" Name="Jump_Event" ObjectPath="\Events\Default Work Unit\Jump_Event" DurationType="OneShot" DurationMin="0.562517" DurationMax="0.562517">
+				<Event Id="623275868" Name="Jump_Event" ObjectPath="\Events\Default Work Unit\Jump_Event" DurationType="OneShot" DurationMin="0.51583" DurationMax="0.631404">
 					<IncludedMemoryFiles>
 						<File Id="71373671" Language="SFX">
 							<ShortName>Medium_Jump_v3_wav.wav</ShortName>

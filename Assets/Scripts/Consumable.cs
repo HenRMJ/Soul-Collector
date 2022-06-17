@@ -33,6 +33,23 @@ public class Consumable : MonoBehaviour
 
     void OnItem(InputValue value)
     {
+        if (currentItem == itemOne)
+        {
+            currentCount = oneCount;
+        }
+        else if (currentItem == itemTwo)
+        {
+            currentCount = twoCount;
+        }
+        else if (currentItem == itemThree)
+        {
+            currentCount = threeCount;
+        }
+        else if (currentItem == itemFour)
+        {
+            currentCount = fourCount;
+        }
+
         if (currentCount <= 0) { return; }
 
         GameObject item = Instantiate(currentItem, spawn.transform.position, Quaternion.identity);
@@ -40,22 +57,18 @@ public class Consumable : MonoBehaviour
         if (currentItem == itemOne)
         {
             oneCount--;
-            currentCount = oneCount;
         }
         else if (currentItem == itemTwo)
         {
             twoCount--;
-            currentCount = twoCount;
         }
         else if (currentItem == itemThree)
         {
             threeCount--;
-            currentCount = threeCount;
         }
         else if (currentItem == itemFour)
         {
             fourCount--;
-            currentCount = fourCount;
         }
 
         if (item.GetComponent<Rigidbody2D>() == null) { return; }
@@ -96,15 +109,27 @@ public class Consumable : MonoBehaviour
         if (cTag == "one")
         {
             oneCount++;
+            selectedItem = _ONE;
+            currentItem = itemOne;
+            currentCount = oneCount;
         } else if (cTag == "two")
         {
             twoCount++;
+            selectedItem = _TWO;
+            currentItem = itemTwo;
+            currentCount = twoCount;
         } else if (cTag == "three")
         {
             threeCount++;
+            selectedItem = _THREE;
+            currentItem = itemThree;
+            currentCount = threeCount;
         } else if (cTag == "four")
         {
             fourCount++;
+            selectedItem = _FOUR;
+            currentItem = itemFour;
+            currentCount = fourCount;
         }
     }
 
