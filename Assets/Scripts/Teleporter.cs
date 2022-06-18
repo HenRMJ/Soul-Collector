@@ -22,6 +22,7 @@ public class Teleporter : MonoBehaviour
 
     IEnumerator Teleplode()
     {
+        AkSoundEngine.PostEvent("Green_Crystal", gameObject);
         yield return new WaitForSeconds(delayInSeconds);
         player.transform.position = gameObject.transform.position;
         playerBody.velocity = gameObject.GetComponent<Rigidbody2D>().velocity;

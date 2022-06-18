@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID BLUE_EXPLODE = 3547709259U;
         static const AkUniqueID BLUE_PICKUP = 3444629296U;
         static const AkUniqueID FLAME_TALK = 3086811463U;
+        static const AkUniqueID GREEN_CRYSTAL = 2513134197U;
         static const AkUniqueID GREEN_PICKUP = 85912737U;
         static const AkUniqueID JUMP_EVENT = 623275868U;
         static const AkUniqueID NEXT_EVENT = 3037934171U;

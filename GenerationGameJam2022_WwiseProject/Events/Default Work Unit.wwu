@@ -192,6 +192,47 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Green_Crystal" ID="{917874D2-E750-435E-B449-642927E552F9}">
+					<ChildrenList>
+						<Action Name="" ID="{9A59A780-E769-4843-AFD6-8432ED84B303}" ShortID="466361644">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind_Spell_v2_wav" ID="{E250BC3E-CF5C-4CA1-BD51-50C6347B9DF2}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D49A3415-C8A5-49A1-B928-1F57E426D598}" ShortID="447493565">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ray_Spell_No_Magic_v5_wav" ID="{6E3DC2D2-CFA5-4235-8EEB-D2447E50E276}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4A4370C6-7B1A-4D19-8B97-0B655D060238}" ShortID="660697767">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_01_wav" ID="{B1410994-067C-4704-9309-D93A84B8D9AF}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{30672F8E-B4BF-4086-8CBC-8BA7A4B7B4E2}" ShortID="722758790">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_01_wav" ID="{B1410994-067C-4704-9309-D93A84B8D9AF}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -631,6 +631,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Click_v3_variation_01_wav" ID="{B1410994-067C-4704-9309-D93A84B8D9AF}" ShortID="148025179">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
@@ -723,6 +726,81 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Magic_v1_wav" ID="{86547FB4-3332-4946-A805-688CAEE3138C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Dash_v1_variation_02_wav" ID="{BCB03075-8D23-4310-980C-EC4A4F352C53}" ShortID="1043072225">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Dash_v1_variation_02_wav" ID="{87D9C2B6-5B74-4BE6-9A8B-189B916F47BD}">
+							<Language>SFX</Language>
+							<AudioFile>Dash_v1_variation_02_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="918975007"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Dash_v1_variation_02_wav" ID="{87D9C2B6-5B74-4BE6-9A8B-189B916F47BD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Ray_Spell_No_Magic_v5_wav" ID="{6E3DC2D2-CFA5-4235-8EEB-D2447E50E276}" ShortID="387308529">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ray_Spell_No_Magic_v5_wav" ID="{BF6D4BFD-9218-470F-8703-F1679F56B74C}">
+							<Language>SFX</Language>
+							<AudioFile>Ray_Spell_No_Magic_v5_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="856620691"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Ray_Spell_No_Magic_v5_wav" ID="{BF6D4BFD-9218-470F-8703-F1679F56B74C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Wind_Spell_v2_wav" ID="{E250BC3E-CF5C-4CA1-BD51-50C6347B9DF2}" ShortID="640923631">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Wind_Spell_v2_wav" ID="{E94D82F5-B10A-4C7F-B8A2-D0818561C003}">
+							<Language>SFX</Language>
+							<AudioFile>Wind_Spell_v2_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="625478906"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Wind_Spell_v2_wav" ID="{E94D82F5-B10A-4C7F-B8A2-D0818561C003}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

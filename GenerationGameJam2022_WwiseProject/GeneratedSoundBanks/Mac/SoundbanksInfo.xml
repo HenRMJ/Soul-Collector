@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2228651116" Language="SFX" Hash="1578505922">
+		<SoundBank Id="2228651116" Language="SFX" Hash="1464714504">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
@@ -58,6 +58,22 @@
 						<File Id="816316675" Language="SFX">
 							<ShortName>Magical_Creature_v4_wav.wav</ShortName>
 							<Path>SFX\Magical_Creature_v4_wav_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2513134197" Name="Green_Crystal" ObjectPath="\Events\Default Work Unit\Green_Crystal" DurationType="OneShot" DurationMin="3.875011" DurationMax="3.875011">
+					<IncludedMemoryFiles>
+						<File Id="266700315" Language="SFX">
+							<ShortName>Click_v3_variation_01_wav.wav</ShortName>
+							<Path>SFX\Click_v3_variation_01_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="625478906" Language="SFX">
+							<ShortName>Wind_Spell_v2_wav.wav</ShortName>
+							<Path>SFX\Wind_Spell_v2_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="856620691" Language="SFX">
+							<ShortName>Ray_Spell_No_Magic_v5_wav.wav</ShortName>
+							<Path>SFX\Ray_Spell_No_Magic_v5_wav_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
