@@ -548,6 +548,11 @@
 								<Value>0</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -574,6 +579,11 @@
 				<Sound Name="Wind_Spell_v1_Cast_wav" ID="{5CEB3086-9F1F-4608-947C-0F2357321209}" ShortID="607782629">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -618,6 +628,101 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Frost_Spell_Cast_v1_wav" ID="{9A2499CA-16A3-4572-A817-17F3D705420E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Click_v3_variation_01_wav" ID="{B1410994-067C-4704-9309-D93A84B8D9AF}" ShortID="148025179">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Click_v3_variation_01_wav" ID="{D4F38BB4-8875-465C-B0FD-E6B2140BA2AF}">
+							<Language>SFX</Language>
+							<AudioFile>Click_v3_variation_01_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="266700315"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Click_v3_variation_01_wav" ID="{D4F38BB4-8875-465C-B0FD-E6B2140BA2AF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Click_v3_variation_02_wav" ID="{53CB5420-074E-4617-8FB2-2C912D26AE1B}" ShortID="708188015">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Click_v3_variation_02_wav" ID="{B8AF4033-EF11-4A91-89C1-4455E4715C1B}">
+							<Language>SFX</Language>
+							<AudioFile>Click_v3_variation_02_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="521779838"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Click_v3_variation_02_wav" ID="{B8AF4033-EF11-4A91-89C1-4455E4715C1B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Magic_v3_wav" ID="{2F70173B-FA3E-464A-B43B-5A917C16BD7A}" ShortID="904824865">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Magic_v3_wav" ID="{6344726B-C103-4610-81E5-281ACBC95D70}">
+							<Language>SFX</Language>
+							<AudioFile>Magic_v3_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="979382771"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Magic_v3_wav" ID="{6344726B-C103-4610-81E5-281ACBC95D70}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Magic_v1_wav" ID="{200BF901-DD9A-4324-87BB-3FD87274881A}" ShortID="300395840">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{CA5D0A78-1836-4996-96C5-F9A56A9C62D1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B039ABD4-C2DF-44FE-94F6-2C5BF478A44E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Magic_v1_wav" ID="{86547FB4-3332-4946-A805-688CAEE3138C}">
+							<Language>SFX</Language>
+							<AudioFile>Magic_v1_wav.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="55369523"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Magic_v1_wav" ID="{86547FB4-3332-4946-A805-688CAEE3138C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

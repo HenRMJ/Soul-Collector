@@ -142,9 +142,8 @@ public class DialogueSystem : MonoBehaviour
             currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString() + " more");
             currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
 
-            AnimateOrTalk();
-
             if (dialogueText.text == currentText) { return; }
+            AnimateOrTalk();
             AkSoundEngine.PostEvent("Next_Event", gameObject);
             dialogueText.text = currentText;
         }
@@ -154,22 +153,27 @@ public class DialogueSystem : MonoBehaviour
         {
             continueUI.SetActive(false);
             currentText = dialogue.GetSuccessText();
-            DynamicDialogueSystem();
+            currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
+            currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
+            currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
+            currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
+            currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
 
             if (dialogueText.text == currentText) { return; }
             AkSoundEngine.PostEvent("Next_Event", gameObject);
+            AnimateOrTalk();
             dialogueText.text = currentText;
         }
     }
 
     private void DynamicDialogueSystem()
     {
-        AnimateOrTalk();
         currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
         currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
         currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
         currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
         currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
+        AnimateOrTalk();
     }
 
     private void AnimateOrTalk()

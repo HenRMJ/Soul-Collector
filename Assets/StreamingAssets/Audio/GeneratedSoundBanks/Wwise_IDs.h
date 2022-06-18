@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID NEXT_EVENT = 3037934171U;
         static const AkUniqueID PURPLE_CRYSTAL = 4170490160U;
         static const AkUniqueID PURPLE_PICKUP = 4238973550U;
+        static const AkUniqueID RED_CRYSTAL = 3712923413U;
         static const AkUniqueID RED_PICKUP = 874472897U;
         static const AkUniqueID SOUL_PICKUP_EVENT = 262701974U;
     } // namespace EVENTS

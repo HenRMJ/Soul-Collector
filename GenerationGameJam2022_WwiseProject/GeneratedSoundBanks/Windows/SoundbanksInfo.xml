@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2228651116" Language="SFX" Hash="644222999">
+		<SoundBank Id="2228651116" Language="SFX" Hash="1578505922">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
@@ -102,6 +102,22 @@
 						<File Id="90842670" Language="SFX">
 							<ShortName>Destroy_Piece_Magical_v1_variation_02_wav.wav</ShortName>
 							<Path>SFX\Destroy_Piece_Magical_v1_variation_02_wav_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3712923413" Name="Red_Crystal" ObjectPath="\Events\Default Work Unit\Red_Crystal" DurationType="OneShot" DurationMin="13.75" DurationMax="13.75">
+					<IncludedMemoryFiles>
+						<File Id="55369523" Language="SFX">
+							<ShortName>Magic_v1_wav.wav</ShortName>
+							<Path>SFX\Magic_v1_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="521779838" Language="SFX">
+							<ShortName>Click_v3_variation_02_wav.wav</ShortName>
+							<Path>SFX\Click_v3_variation_02_wav_10C4C929.wem</Path>
+						</File>
+						<File Id="979382771" Language="SFX">
+							<ShortName>Magic_v3_wav.wav</ShortName>
+							<Path>SFX\Magic_v3_wav_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

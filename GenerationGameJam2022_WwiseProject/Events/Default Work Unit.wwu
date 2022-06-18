@@ -141,6 +141,57 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Red_Crystal" ID="{47BFB4D3-5668-4D55-97C4-AE9281534E23}">
+					<ChildrenList>
+						<Action Name="" ID="{9F975639-6681-44B7-8DEF-C4D6C19C12D5}" ShortID="551079093">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magic_v1_wav" ID="{200BF901-DD9A-4324-87BB-3FD87274881A}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E84C3B1B-5423-4995-97D3-E1DBCD600C50}" ShortID="1018738852">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_02_wav" ID="{53CB5420-074E-4617-8FB2-2C912D26AE1B}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{44B4994F-4D15-40F3-AE76-E3082BB29514}" ShortID="1043437981">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="10"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_02_wav" ID="{53CB5420-074E-4617-8FB2-2C912D26AE1B}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9F9C0F76-4C4B-44D2-8156-0E357D3F73EE}" ShortID="802218397">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="11"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_02_wav" ID="{53CB5420-074E-4617-8FB2-2C912D26AE1B}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E356D3C3-86D6-4210-9A16-86CD39BA6843}" ShortID="880975673">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="12"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magic_v3_wav" ID="{2F70173B-FA3E-464A-B43B-5A917C16BD7A}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

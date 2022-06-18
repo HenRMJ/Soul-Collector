@@ -20,6 +20,7 @@ public class Anchor : MonoBehaviour
 
     IEnumerator Teleplode()
     {
+        AkSoundEngine.PostEvent("Red_Crystal", gameObject);
         yield return new WaitForSeconds(delayInSeconds);
         player.transform.position = gameObject.transform.position;
         Destroy(gameObject);

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5bcf6075182bae4db9bf9cb0f06abb4d
     GuidInternal: 
-    m_lastTime: -8585461180905456556
+    m_lastTime: -8585460501733244041
     List:
     - name: Main_Soundbank
       guid: 17e26b8eb9d9ff4c8b5c75c260583718
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9c38aa3adf99d747af9d5b305da2f3a2
     GuidInternal: 
-    m_lastTime: -8585461181061091067
+    m_lastTime: -8585460502717100155
     List:
     - name: Blue_Charge
       guid: 489908eae038734eb80a49eac28427ed
@@ -249,6 +249,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.9
       minDuration: 0.9
+    - name: Red_Crystal
+      guid: d3b4bf476856554d97c4ae9281534e23
+      id: 3712923413
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: Red_Crystal
+        ObjectType: 3
+        guid: d3b4bf476856554d97c4ae9281534e23
+      Path: Events\Default Work Unit\Red_Crystal
+      maxAttenuation: 0
+      maxDuration: 13.75
+      minDuration: 13.75
     - name: Red_Pickup
       guid: 26bcb671fc6c904785f3ccfb258ac5e3
       id: 874472897
