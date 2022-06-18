@@ -830,6 +830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Cam
       objectReference: {fileID: 0}
+    - target: {fileID: 4055071604439195507, guid: 3ae3796c9499fc8429e1f4ca15bd2b53, type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4055071604439195508, guid: 3ae3796c9499fc8429e1f4ca15bd2b53, type: 3}
       propertyPath: m_RootOrder
       value: 0
