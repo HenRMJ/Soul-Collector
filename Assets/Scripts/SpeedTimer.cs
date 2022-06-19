@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class SpeedTimer : MonoBehaviour
 {
     [SerializeField] TMP_Text timerText;
 
-    float timer;
+    double timer;
 
     private void Awake()
     {
@@ -24,10 +25,10 @@ public class SpeedTimer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         timer += Time.deltaTime;
-        float time = (Mathf.Round(timer * 100) * .01f);
+        float time = Convert.ToSingle(Math.Round(timer, 2));
 
 
         timerText.text = time.ToString();
