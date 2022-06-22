@@ -212,6 +212,37 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &4779147645597095314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4962670120452405947}
+  m_Layer: 0
+  m_Name: Move Towards Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4962670120452405947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4779147645597095314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.031, y: 0.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7512619170302216399}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4928560087699759708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1162,7 @@ RectTransform:
   m_Children:
   - {fileID: 7512619169351976800}
   m_Father: {fileID: 7512619170302216399}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2283,7 +2314,7 @@ RectTransform:
   - {fileID: 8767428064277192720}
   - {fileID: 3641684759915118694}
   m_Father: {fileID: 7512619170302216399}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3285,7 +3316,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7512619170302216399}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7512619170240536578
 BoxCollider2D:
@@ -3489,6 +3520,7 @@ Transform:
   m_Children:
   - {fileID: 7512619170333333679}
   - {fileID: 7512619170339143661}
+  - {fileID: 4962670120452405947}
   - {fileID: 7512619170240536579}
   - {fileID: 7512619169210359030}
   - {fileID: 7512619169702697432}
@@ -3747,6 +3779,8 @@ MonoBehaviour:
   itemThree: {fileID: 8667813124527853301, guid: 43ac8c3427ba7d9479758950dec0a3a9, type: 3}
   itemFour: {fileID: 7095427688665014467, guid: e703defa508de5344b454572f73f6363, type: 3}
   spawn: {fileID: 7512619170339143658}
+  moveToward: {fileID: 4962670120452405947}
+  speed: 20
 --- !u!114 &7512619170302217013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4245,7 +4279,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7512619170339143661}
-  m_Layer: 0
+  - component: {fileID: 17594493504427977}
+  - component: {fileID: 8877653663910188419}
+  m_Layer: 3
   m_Name: Item Spawnpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4261,12 +4297,49 @@ Transform:
   m_GameObject: {fileID: 7512619170339143658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.031, y: 0.125, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7512619170302216399}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &17594493504427977
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7512619170339143658}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.170001
+--- !u!50 &8877653663910188419
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7512619170339143658}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &7512619170365882345
 GameObject:
   m_ObjectHideFlags: 0

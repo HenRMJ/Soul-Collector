@@ -10,6 +10,8 @@ public class Consumable : MonoBehaviour
     [SerializeField] GameObject itemThree;
     [SerializeField] GameObject itemFour;
     [SerializeField] GameObject spawn;
+    [SerializeField] Transform moveToward;
+    [SerializeField] float speed;
 
     string selectedItem;
 
@@ -26,10 +28,18 @@ public class Consumable : MonoBehaviour
     GameObject currentItem;
     int currentCount;
 
+
     Vector2 up = new Vector2(0, 1);
     Vector2 right = new Vector2(1, 0);
     Vector2 down = new Vector2(0, -1);
     Vector2 left = new Vector2(-1, 0);
+
+    private void Update()
+    {
+        float step = speed * Time.deltaTime;
+
+        spawn.transform.position = Vector2.MoveTowards(spawn.transform.position, moveToward.position, step);
+    }
 
     void OnItem(InputValue value)
     {
