@@ -3781,6 +3781,7 @@ MonoBehaviour:
   spawn: {fileID: 7512619170339143658}
   moveToward: {fileID: 4962670120452405947}
   speed: 20
+  distance: 2
 --- !u!114 &7512619170302217013
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class Consumable : MonoBehaviour
     [SerializeField] GameObject spawn;
     [SerializeField] Transform moveToward;
     [SerializeField] float speed;
+    [SerializeField] float distance;
 
     string selectedItem;
 
@@ -36,6 +37,11 @@ public class Consumable : MonoBehaviour
 
     private void Update()
     {
+        if (Vector2.Distance(spawn.transform.position, moveToward.position) > distance)
+        {
+            spawn.transform.position = gameObject.transform.position;
+        }
+
         float step = speed * Time.deltaTime;
 
         spawn.transform.position = Vector2.MoveTowards(spawn.transform.position, moveToward.position, step);
