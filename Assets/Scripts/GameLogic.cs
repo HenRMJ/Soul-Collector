@@ -6,8 +6,6 @@ public class GameLogic : MonoBehaviour
 {
     GameObject[] collectables;
 
-    AudioManager audioManager;
-
     [Tooltip("If 0, you have to collect all collectables")] [SerializeField] int collectsLeftToWin;
 
     int numberOfCollectables;
@@ -15,8 +13,6 @@ public class GameLogic : MonoBehaviour
     
     private void Start()
     {
-        audioManager = FindObjectOfType<AudioManager>();
-
         collectables = GameObject.FindGameObjectsWithTag("collectable"); // fills collectables array with object that have the tag "collectable"
 
         numberOfCollectables = collectables.Length;
@@ -80,10 +76,5 @@ public class GameLogic : MonoBehaviour
         { 
             return false;
         }
-    }
-
-    public AudioManager GetAudio()
-    {
-        return audioManager;
     }
 }

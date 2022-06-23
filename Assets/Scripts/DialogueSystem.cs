@@ -14,7 +14,6 @@ public class DialogueSystem : MonoBehaviour
     
     GameLogic gameLogic;
     Animator animator;
-    AudioManager audioManager;
 
     string currentText;
     bool closeEnough;
@@ -28,7 +27,6 @@ public class DialogueSystem : MonoBehaviour
         playerInputAction = new GenereationGameJam2022();
         animator = FindObjectOfType<PlayerMovement>().gameObject.GetComponent<Animator>();
         gameLogic = FindObjectOfType<GameLogic>();
-        audioManager = FindObjectOfType<AudioManager>();
     }
 
     private void OnEnable()

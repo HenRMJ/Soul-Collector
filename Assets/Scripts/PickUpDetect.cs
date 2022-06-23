@@ -5,12 +5,6 @@ using UnityEngine;
 public class PickUpDetect : MonoBehaviour
 {
     [SerializeField] Consumable consumable;
-    AudioManager audioManager;
-
-    private void Awake()
-    {
-        audioManager = FindObjectOfType<AudioManager>();
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
