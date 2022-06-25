@@ -21,6 +21,7 @@ public class Collectable : MonoBehaviour
             if (gameLogic.GetNumberOfCollectables() == 0) // this destroys the parent if there is no more collectables
             {
                 AkSoundEngine.PostEvent("Soul_Pickup_Event", gameObject);
+                AkSoundEngine.PostEvent("All_Souls", gameObject);
                 Destroy(gameObject.transform.parent.gameObject);
             } else
             {

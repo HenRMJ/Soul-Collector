@@ -16,11 +16,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2228651116" Language="SFX" Hash="1464714504">
+		<SoundBank Id="2228651116" Language="SFX" Hash="3434050939">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1405974339" Name="All_Souls" ObjectPath="\Events\Default Work Unit\All_Souls" DurationType="OneShot" DurationMin="3.466354" DurationMax="3.466354">
+					<IncludedMemoryFiles>
+						<File Id="471281296" Language="SFX">
+							<ShortName>Success 1.wav</ShortName>
+							<Path>SFX\Success 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="585247752" Name="Blue_Charge" ObjectPath="\Events\Default Work Unit\Blue_Charge" DurationType="OneShot" DurationMin="1.002271" DurationMax="1.002271">
 					<IncludedMemoryFiles>
 						<File Id="113620854" Language="SFX">
@@ -98,6 +106,14 @@
 						<File Id="546864073" Language="SFX">
 							<ShortName>Find_Item_Press_Button_Reverb_v1_wav.wav</ShortName>
 							<Path>SFX\Find_Item_Press_Button_Reverb_v1_wav_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1447584249" Name="Portal_Unlocked" ObjectPath="\Events\Default Work Unit\Portal_Unlocked" DurationType="OneShot" DurationMin="2.774042" DurationMax="2.774042">
+					<IncludedMemoryFiles>
+						<File Id="701161077" Language="SFX">
+							<ShortName>Success 6.wav</ShortName>
+							<Path>SFX\Success 6_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

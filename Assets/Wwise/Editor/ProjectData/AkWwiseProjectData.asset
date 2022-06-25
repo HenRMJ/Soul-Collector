@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5bcf6075182bae4db9bf9cb0f06abb4d
     GuidInternal: 
-    m_lastTime: -8585456950368443010
+    m_lastTime: -8585455048803716294
     List:
     - name: Main_Soundbank
       guid: 17e26b8eb9d9ff4c8b5c75c260583718
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9c38aa3adf99d747af9d5b305da2f3a2
     GuidInternal: 
-    m_lastTime: -8585456950434335833
+    m_lastTime: -8585455048803881453
     List:
+    - name: All_Souls
+      guid: 3ca2180cfde06e4fa9d01a15277a4ffd
+      id: 1405974339
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: All_Souls
+        ObjectType: 3
+        guid: 3ca2180cfde06e4fa9d01a15277a4ffd
+      Path: Events\Default Work Unit\All_Souls
+      maxAttenuation: 0
+      maxDuration: 3.466354
+      minDuration: 3.466354
     - name: Blue_Charge
       guid: 489908eae038734eb80a49eac28427ed
       id: 585247752
@@ -232,6 +249,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.633403
       minDuration: 2.633403
+    - name: Portal_Unlocked
+      guid: 5133cbd1f07b414aa16d6aec61b3a892
+      id: 1447584249
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9c38aa3adf99d747af9d5b305da2f3a2
+      - ElementName: Portal_Unlocked
+        ObjectType: 3
+        guid: 5133cbd1f07b414aa16d6aec61b3a892
+      Path: Events\Default Work Unit\Portal_Unlocked
+      maxAttenuation: 0
+      maxDuration: 2.774042
+      minDuration: 2.774042
     - name: Purple_Crystal
       guid: eea7248dbc9ef9459d054f66d9914814
       id: 4170490160
@@ -374,7 +408,7 @@ MonoBehaviour:
     m_lastTime: -8585456950368053723
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 1600000017000000
+  ExpandedWaapiItemIds: 050000000600000007000000160000001700000057000000580000008b0000008c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -12,12 +12,14 @@
 						<ObjectRef Name="Purple_Pickup" ID="{A790AD6A-4996-469D-B8ED-6E6705349AB9}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Red_Pickup" ID="{71B6BC26-6CFC-4790-85F3-CCFB258AC5E3}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Green_Pickup" ID="{62243DC7-F2AB-4909-A927-0D7EDF3FAFCD}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Portal_Unlocked" ID="{D1CB3351-7BF0-4A41-A16D-6AEC61B3A892}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Blue_Explode" ID="{40551123-CD3C-4BE8-9134-EFB59FE435D1}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Red_Crystal" ID="{47BFB4D3-5668-4D55-97C4-AE9281534E23}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Soul_Pickup_Event" ID="{68885488-5655-4D7F-8253-9622F85B6CBB}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Next_Event" ID="{0119711B-6785-4E61-9D4A-CEFF210EC112}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Blue_Charge" ID="{EA089948-38E0-4E73-B80A-49EAC28427ED}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Flame_Talk" ID="{9956982F-BBF8-4EEF-B967-867A979C593F}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="All_Souls" ID="{0C18A23C-E0FD-4F6E-A9D0-1A15277A4FFD}" WorkUnitID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

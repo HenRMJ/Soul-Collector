@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALL_SOULS = 1405974339U;
         static const AkUniqueID BLUE_CHARGE = 585247752U;
         static const AkUniqueID BLUE_EXPLODE = 3547709259U;
         static const AkUniqueID BLUE_PICKUP = 3444629296U;
@@ -21,6 +22,7 @@ namespace AK
         static const AkUniqueID GREEN_PICKUP = 85912737U;
         static const AkUniqueID JUMP_EVENT = 623275868U;
         static const AkUniqueID NEXT_EVENT = 3037934171U;
+        static const AkUniqueID PORTAL_UNLOCKED = 1447584249U;
         static const AkUniqueID PURPLE_CRYSTAL = 4170490160U;
         static const AkUniqueID PURPLE_PICKUP = 4238973550U;
         static const AkUniqueID RED_CRYSTAL = 3712923413U;

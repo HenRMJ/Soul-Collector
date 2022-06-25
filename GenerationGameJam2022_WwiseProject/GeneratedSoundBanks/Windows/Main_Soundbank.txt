@@ -4,6 +4,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	585247752	Blue_Charge			\Default Work Unit\Blue_Charge	
 	623275868	Jump_Event			\Default Work Unit\Jump_Event	
 	874472897	Red_Pickup			\Default Work Unit\Red_Pickup	
+	1405974339	All_Souls			\Default Work Unit\All_Souls	
+	1447584249	Portal_Unlocked			\Default Work Unit\Portal_Unlocked	
 	2513134197	Green_Crystal			\Default Work Unit\Green_Crystal	
 	3037934171	Next_Event			\Default Work Unit\Next_Event	
 	3086811463	Flame_Talk			\Default Work Unit\Flame_Talk	
@@ -24,10 +26,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	177275669	Magical_Creature_v1_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Magical_Creature_v1_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flame\Magical_Creature_v1_wav		441064
 	266700315	Click_v3_variation_01_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Click_v3_variation_01_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Click_v3_variation_01_wav		198516
 	390129946	Destroy_Piece_Magical_v1_variation_03_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Destroy_Piece_Magical_v1_variation_03_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destroy_Piece_Magical_v1_variation_03_wav		282624
+	471281296	Success 1	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Success 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success 1		665748
 	521779838	Click_v3_variation_02_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Click_v3_variation_02_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Click_v3_variation_02_wav		264664
 	546864073	Find_Item_Press_Button_Reverb_v1_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Find_Item_Press_Button_Reverb_v1_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Find_Item_Press_Button_Reverb_v1_wav		220564
 	625478906	Wind_Spell_v2_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Wind_Spell_v2_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wind_Spell_v2_wav		352864
 	638313987	Ghost_Pass_By_v5_variation_02_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Ghost_Pass_By_v5_variation_02_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup\Ghost_Pass_By_v5_variation_02_wav		220564
+	701161077	Success 6	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Success 6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Success 6		532744
 	816316675	Magical_Creature_v4_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Magical_Creature_v4_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flame\Magical_Creature_v4_wav		352864
 	824454925	Destroy_Piece_Magical_v1_variation_01_wav	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\Destroy_Piece_Magical_v1_variation_01_wav_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Destroy_Piece_Magical_v1_variation_01_wav		118868
 	849408175	mk_mft_magic_12	D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\SFX\mk_mft_magic_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\mk_mft_magic_12		168796

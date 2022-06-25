@@ -233,6 +233,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Portal_Unlocked" ID="{D1CB3351-7BF0-4A41-A16D-6AEC61B3A892}">
+					<ChildrenList>
+						<Action Name="" ID="{0E70D81A-1CA6-45F4-9648-CE96B5868382}" ShortID="564887118">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Success 6" ID="{0523C92E-00E8-4DB3-89F7-6052199E98D2}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="All_Souls" ID="{0C18A23C-E0FD-4F6E-A9D0-1A15277A4FFD}">
+					<ChildrenList>
+						<Action Name="" ID="{A95DF1B2-EE81-4A5F-A23B-259AF4A4DDE4}" ShortID="232627224">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Success 1" ID="{B4ECEC9E-6EC7-4F45-AF61-A54CEEB563C0}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

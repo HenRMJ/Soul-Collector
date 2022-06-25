@@ -27,6 +27,7 @@ public class NextLevel : MonoBehaviour
         // If the player has collected all the collectables, this visually turns on the portal
         if (gameLogic.HasWon())
         {
+            AkSoundEngine.PostEvent("Portal_Unlocked", gameObject);
             render.color = on;
         }
     }

@@ -27,8 +27,5 @@ public class SpeedRunTime : MonoBehaviour
 
         fastestTime.text = PlayerPrefs.GetString("HighSpeed");
         timerText.text = PlayerPrefs.GetString("Run");
-        Debug.Log("Set run time");
-        Debug.Log(PlayerPrefs.GetFloat("Fastest_Time"));
-        Debug.Log(PlayerPrefs.GetFloat("Speed"));
     }
 }
