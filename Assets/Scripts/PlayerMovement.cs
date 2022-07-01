@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     // Adjust the move speed of the player with a slider
     [Range(0f, 20f)] [SerializeField] float moveSpeed;
     [Range(0f, 20f)] [SerializeField] float jumpHeight;
+    [SerializeField] float acceleration;
     [Tooltip("Lower the more severe")][Range(0f, 1f)][SerializeField] float cancelJumpAmount;
     [SerializeField] float coyoteTime;
     [SerializeField] float jumpBufferTime;
@@ -103,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
         if (myBody.velocity.x > moveSpeed && moveInput.x > Mathf.Epsilon) { return; }
         if (myBody.velocity.x < -moveSpeed && moveInput.x < Mathf.Epsilon) { return; }
         // Prevents player from flying
-        Vector2 playerVelocity = new Vector2(myBody.velocity.x + moveInput.x*moveSpeed, myBody.velocity.y);
+        Vector2 playerVelocity = new Vector2(myBody.velocity.x + moveInput.x*acceleration, myBody.velocity.y);
 
         // Adds velocity to player's X value
         myBody.velocity = playerVelocity;

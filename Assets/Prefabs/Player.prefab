@@ -3755,6 +3755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpHeight: 16
+  acceleration: 7
   cancelJumpAmount: 0.557
   coyoteTime: 0.2
   jumpBufferTime: 0.15
