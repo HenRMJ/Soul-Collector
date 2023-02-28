@@ -11,7 +11,7 @@ public class SpeedRunTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timerText.text == PlayerPrefs.GetString("Run")) { return; }
+        if (timerText.text == PlayerPrefs.GetString("Run")) return;
 
         if (!(PlayerPrefs.HasKey("Fastest_Time")) || PlayerPrefs.GetFloat("Fastest_Time") == 0f)
         {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{90097377-6236-4CBC-8674-5DCD3194FDA8}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{90097377-6236-4CBC-8674-5DCD3194FDA8}" SchemaVersion="110">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{90097377-6236-4CBC-8674-5DCD3194FDA8}" PersistMode="Standalone">
 			<ChildrenList>
@@ -36,7 +36,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Medium_Jump_v3_wav" ID="{C402EBA5-218A-49DD-B348-982B6F646A25}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -76,7 +75,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Find_Item_Press_Button_Reverb_v1_wav" ID="{738CB33C-AF94-4AB4-9082-BBEC9D4980AE}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -102,7 +100,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Magical_Loot_No_Chest_v1_wav" ID="{0D8CD393-08D1-4F48-8833-82C8A124CBF8}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -125,7 +122,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Shooting Magic 11" ID="{F4191122-7015-4139-BF07-D6EABF9B965E}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -156,7 +152,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="mk_mft_magic_12" ID="{0E8E78AC-99C3-467A-A574-2AAC3D10BDFD}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -179,7 +174,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Destroy_Piece_Magical_v1_variation_01_wav" ID="{602DC00D-65FD-40A0-A305-56BD774099C5}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -202,7 +196,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Destroy_Piece_Magical_v1_variation_02_wav" ID="{935B3418-F603-412D-A618-2A3481FE5899}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -225,7 +218,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Destroy_Piece_Magical_v1_variation_03_wav" ID="{1D19F2D4-DD61-41F9-A029-430F26E2623D}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -248,7 +240,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Destroy_Piece_Magical_v1_wav" ID="{2BDB2F17-B277-4EFA-9EEA-EB07187C201B}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -294,7 +285,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Riser_v3_wav" ID="{575EACE4-1564-4161-9CBB-A1097D228002}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -343,7 +333,6 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Magical_Creature_v1_wav" ID="{F943987E-D71A-4689-ACF2-368E8A1AC456}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -379,13 +368,11 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Magical_Creature_v4_wav" ID="{1BE6D912-CB1F-4DA4-B79C-9A5E71739753}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-					<ObjectLists/>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Pickup" ID="{C69AC262-8DCA-4B3F-BC0F-904F99FDBFEE}" ShortID="680028066">
 					<PropertyList>
@@ -435,7 +422,6 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Ghost_Laugh_v2_wav" ID="{DE86711C-99D9-4854-8083-C613EC97FF9D}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -458,7 +444,6 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Ghost_Pass_By_v1_variation_02_wav" ID="{7D22C8D1-2501-4DFC-8F68-9C0CE2FB5A4B}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -481,7 +466,6 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Ghost_Pass_By_v2_variation_02_wav" ID="{B0FAD237-A6B5-4972-8FC7-97F80EDE740A}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -504,7 +488,6 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Ghost_Pass_By_v3_variation_02_wav" ID="{88257C57-E5C7-4C04-9CF7-0E50192A3D43}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -527,13 +510,11 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Ghost_Pass_By_v5_variation_02_wav" ID="{824F36BF-87C4-4360-8145-2EFDE0990439}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-					<ObjectLists/>
 				</RandomSequenceContainer>
 				<Sound Name="Explosion Reverse 3" ID="{553E1765-8255-40F0-A489-9EF531704034}" ShortID="547031473">
 					<PropertyList>
@@ -571,7 +552,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Explosion Reverse 3" ID="{9E290C38-9477-4652-9640-567B75B17C12}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -602,7 +582,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Wind_Spell_v1_Cast_wav" ID="{36C6C6D2-2F9C-4326-A4ED-19F8FF0A5E69}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -625,7 +604,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Frost_Spell_Cast_v1_wav" ID="{9A2499CA-16A3-4572-A817-17F3D705420E}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -651,7 +629,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Click_v3_variation_01_wav" ID="{D4F38BB4-8875-465C-B0FD-E6B2140BA2AF}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -677,7 +654,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Click_v3_variation_02_wav" ID="{B8AF4033-EF11-4A91-89C1-4455E4715C1B}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -700,7 +676,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Magic_v3_wav" ID="{6344726B-C103-4610-81E5-281ACBC95D70}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -723,7 +698,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Magic_v1_wav" ID="{86547FB4-3332-4946-A805-688CAEE3138C}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -746,7 +720,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Dash_v1_variation_02_wav" ID="{87D9C2B6-5B74-4BE6-9A8B-189B916F47BD}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -772,7 +745,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Ray_Spell_No_Magic_v5_wav" ID="{BF6D4BFD-9218-470F-8703-F1679F56B74C}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -798,7 +770,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Wind_Spell_v2_wav" ID="{E94D82F5-B10A-4C7F-B8A2-D0818561C003}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -821,7 +792,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Success 6" ID="{01D5645A-82B2-4891-AEE1-0A94994CC015}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -844,7 +814,6 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
-					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Success 1" ID="{77B45FCB-45F0-4396-963A-E61DBD3BE8B9}" Platform="Linked"/>
 					</ActiveSourceList>

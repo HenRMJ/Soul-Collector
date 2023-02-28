@@ -29,12 +29,6 @@ public class Consumable : MonoBehaviour
     GameObject currentItem;
     int currentCount;
 
-
-    Vector2 up = new Vector2(0, 1);
-    Vector2 right = new Vector2(1, 0);
-    Vector2 down = new Vector2(0, -1);
-    Vector2 left = new Vector2(-1, 0);
-
     private void Update()
     {
         if (Vector2.Distance(spawn.transform.position, moveToward.position) > distance)
@@ -96,22 +90,22 @@ public class Consumable : MonoBehaviour
 
     void OnChoose(InputValue value)
     {
-        if (value.Get<Vector2>() == up)
+        if (value.Get<Vector2>() == Vector2.up)
         {
             selectedItem = _ONE;
             currentItem = itemOne;
             currentCount = oneCount;
-        } else if (value.Get<Vector2>() == right)
+        } else if (value.Get<Vector2>() == Vector2.right)
         {
             selectedItem = _TWO;
             currentItem = itemTwo;
             currentCount = twoCount;
-        } else if (value.Get<Vector2>() == down)
+        } else if (value.Get<Vector2>() == Vector2.down)
         {
             selectedItem = _THREE;
             currentItem = itemThree;
             currentCount = threeCount;
-        } else if (value.Get<Vector2>() == left)
+        } else if (value.Get<Vector2>() == Vector2.left)
         {
             selectedItem = _FOUR;
             currentItem = itemFour;
@@ -121,56 +115,38 @@ public class Consumable : MonoBehaviour
 
     public void AddPickup(string cTag)
     {
-
-        if (cTag == "one")
+        switch (cTag)
         {
-            oneCount++;
-            selectedItem = _ONE;
-            currentItem = itemOne;
-            currentCount = oneCount;
-        } else if (cTag == "two")
-        {
-            twoCount++;
-            selectedItem = _TWO;
-            currentItem = itemTwo;
-            currentCount = twoCount;
-        } else if (cTag == "three")
-        {
-            threeCount++;
-            selectedItem = _THREE;
-            currentItem = itemThree;
-            currentCount = threeCount;
-        } else if (cTag == "four")
-        {
-            fourCount++;
-            selectedItem = _FOUR;
-            currentItem = itemFour;
-            currentCount = fourCount;
+            case _ONE:
+                oneCount++;
+                selectedItem = _ONE;
+                currentItem = itemOne;
+                currentCount = oneCount;
+                break;
+            case _TWO:
+                twoCount++;
+                selectedItem = _TWO;
+                currentItem = itemTwo;
+                currentCount = twoCount;
+                break;
+            case _THREE:
+                threeCount++;
+                selectedItem = _THREE;
+                currentItem = itemThree;
+                currentCount = threeCount;
+                break;
+            case _FOUR:
+                fourCount++;
+                selectedItem = _FOUR;
+                currentItem = itemFour;
+                currentCount = fourCount;
+                break;
         }
     }
 
-    public int GetOneCount()
-    {
-        return oneCount;
-    }
-
-    public int GetTwoCount()
-    {
-        return twoCount;
-    }
-
-    public int GetThreeCount()
-    {
-        return threeCount;
-    }
-
-    public int GetFourCount()
-    {
-        return fourCount;
-    }
-
-    public string GetSelectedItem()
-    {
-        return selectedItem;
-    }
+    public int GetOneCount() => oneCount;
+    public int GetTwoCount() => twoCount;
+    public int GetThreeCount() => threeCount;
+    public int GetFourCount() => fourCount;
+    public string GetSelectedItem() => selectedItem;
 }

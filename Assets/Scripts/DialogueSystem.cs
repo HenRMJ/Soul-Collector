@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,27 +7,26 @@ using UnityEngine.InputSystem;
 
 public class DialogueSystem : MonoBehaviour
 {
+    public event EventHandler OnPlayerSpeaks;
+    public event EventHandler OnNPCSpeaks;
+
     // These variables cache the UI elements for the dialogue
     [SerializeField] TMP_Text dialogueText;
     [SerializeField] Dialogue dialogue;
     [SerializeField] GameObject canvas;
     [SerializeField] GameObject continueUI;
-    
-    GameLogic gameLogic;
+
     Animator animator;
 
     string currentText;
     bool closeEnough;
     int pressed = 1; // This is set to one so it skips over the first element. The unity GUI doesn't display element 0 well for string in an array
-
-
     private GenereationGameJam2022 playerInputAction;
 
     private void Awake()
     {
         playerInputAction = new GenereationGameJam2022();
         animator = FindObjectOfType<PlayerMovement>().gameObject.GetComponent<Animator>();
-        gameLogic = FindObjectOfType<GameLogic>();
     }
 
     private void OnEnable()
@@ -53,11 +53,13 @@ public class DialogueSystem : MonoBehaviour
             currentText = dialogue.GetDialogueText()[pressed];
             if (currentText.Contains("You:"))
             {
+                OnPlayerSpeaks?.Invoke(this, EventArgs.Empty);
                 animator.SetTrigger("talked");
             }
             else
             {
                 AkSoundEngine.PostEvent("Flame_Talk", gameObject);
+                OnNPCSpeaks?.Invoke(this, EventArgs.Empty);
             }
             dialogueText.text = currentText;
         }
@@ -84,7 +86,7 @@ public class DialogueSystem : MonoBehaviour
         {
             if (dialogue == null)
             {
-                Debug.LogWarning("There is no dialogue in " + gameObject.transform.parent.name);
+                Debug.LogWarning("There is no dialogue in " + transform.parent.name);
                 return;
             }
 
@@ -96,8 +98,8 @@ public class DialogueSystem : MonoBehaviour
     private void NextText(InputAction.CallbackContext obj)
     {
         // this checks if the player is close enough. If not then the rest of the code doesn't run
-        if (!closeEnough) { return; }
-        if (dialogue == null) { return; }
+        if (!closeEnough) return;
+        if (dialogue == null) return;
         
         continueUI.SetActive(true);
 
@@ -116,7 +118,7 @@ public class DialogueSystem : MonoBehaviour
 
             // This actually changes the text to the correct text
             dialogueText.text = currentText;
-        } else if (!gameLogic.HaveCollected()) // this section checks if the player has collected any collectable and if they have it adds the more in the string
+        } else if (!GameLogic.Instance.HaveCollected()) // this section checks if the player has collected any collectable and if they have it adds the more in the string
         {
             // This turns off the continue UI so players don't think there's more text
             continueUI.SetActive(false);
@@ -125,20 +127,20 @@ public class DialogueSystem : MonoBehaviour
             DynamicDialogueSystem();
 
             // If the text is the same, there is no need to play the next sound or replace the text
-            if (dialogueText.text == currentText) { return; }
+            if (dialogueText.text == currentText) return;
             AkSoundEngine.PostEvent("Next_Event", gameObject);
             dialogueText.text = currentText;
 
-        } else if (gameLogic.HaveCollected() && !gameLogic.HasWon())
+        } else if (GameLogic.Instance.HaveCollected() && !GameLogic.Instance.HasWon())
         {
             continueUI.SetActive(false);
 
             // Very slight adjustment on the DynamicDialogueSystem code with the addition of " more"
-            currentText = dialogue.GetRepeatingText().Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
-            currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
-            currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
-            currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString() + " more");
-            currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
+            currentText = dialogue.GetRepeatingText().Replace("(total number)", GameLogic.Instance.GetTotalCollectables().ToString());
+            currentText = currentText.Replace("(collected number)", GameLogic.Instance.GetCollected().ToString());
+            currentText = currentText.Replace("(total to win)", GameLogic.Instance.GetTotalToWin().ToString());
+            currentText = currentText.Replace("(current to win)", GameLogic.Instance.GetCurrentToWin().ToString() + " more");
+            currentText = currentText.Replace("(current number)", GameLogic.Instance.GetNumberOfCollectables().ToString());
 
             if (dialogueText.text == currentText) { return; }
             AnimateOrTalk();
@@ -147,15 +149,15 @@ public class DialogueSystem : MonoBehaviour
         }
 
         // if the player has collected all the collectables it shows the success text stored in the dialogue scriptable object
-        else if (gameLogic.HasWon() && pressed == dialogue.GetDialogueText().Length - 1)
+        else if (GameLogic.Instance.HasWon() && pressed == dialogue.GetDialogueText().Length - 1)
         {
             continueUI.SetActive(false);
             currentText = dialogue.GetSuccessText();
-            currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
-            currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
-            currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
-            currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
-            currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
+            currentText = currentText.Replace("(current number)", GameLogic.Instance.GetNumberOfCollectables().ToString());
+            currentText = currentText.Replace("(collected number)", GameLogic.Instance.GetCollected().ToString());
+            currentText = currentText.Replace("(total number)", GameLogic.Instance.GetTotalCollectables().ToString());
+            currentText = currentText.Replace("(total to win)", GameLogic.Instance.GetTotalToWin().ToString());
+            currentText = currentText.Replace("(current to win)", GameLogic.Instance.GetCurrentToWin().ToString());
 
             if (dialogueText.text == currentText) { return; }
             AkSoundEngine.PostEvent("Next_Event", gameObject);
@@ -166,11 +168,11 @@ public class DialogueSystem : MonoBehaviour
 
     private void DynamicDialogueSystem()
     {
-        currentText = currentText.Replace("(current number)", gameLogic.GetNumberOfCollectables().ToString());
-        currentText = currentText.Replace("(collected number)", gameLogic.GetCollected().ToString());
-        currentText = currentText.Replace("(total number)", gameLogic.GetTotalCollectables().ToString());
-        currentText = currentText.Replace("(total to win)", gameLogic.GetTotalToWin().ToString());
-        currentText = currentText.Replace("(current to win)", gameLogic.GetCurrentToWin().ToString());
+        currentText = currentText.Replace("(current number)", GameLogic.Instance.GetNumberOfCollectables().ToString());
+        currentText = currentText.Replace("(collected number)", GameLogic.Instance.GetCollected().ToString());
+        currentText = currentText.Replace("(total number)", GameLogic.Instance.GetTotalCollectables().ToString());
+        currentText = currentText.Replace("(total to win)", GameLogic.Instance.GetTotalToWin().ToString());
+        currentText = currentText.Replace("(current to win)", GameLogic.Instance.GetCurrentToWin().ToString());
         AnimateOrTalk();
     }
 
@@ -180,11 +182,13 @@ public class DialogueSystem : MonoBehaviour
         if (currentText.Contains("You:"))
         {
             animator.SetTrigger("talked");
+            OnPlayerSpeaks?.Invoke(this, EventArgs.Empty);
         }
         else
         {
             if (dialogueText.text == currentText) { return; }
             AkSoundEngine.PostEvent("Flame_Talk", gameObject);
+            OnNPCSpeaks?.Invoke(this, EventArgs.Empty);
         }
     }
 }

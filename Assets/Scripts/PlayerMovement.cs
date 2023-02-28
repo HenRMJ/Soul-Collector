@@ -6,26 +6,37 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance { get; private set; }
+
     // Adjust the move speed of the player with a slider
     [Range(0f, 20f)] [SerializeField] float moveSpeed;
     [Range(0f, 20f)] [SerializeField] float jumpHeight;
     [SerializeField] float acceleration;
-    [Tooltip("Lower the more severe")][Range(0f, 1f)][SerializeField] float cancelJumpAmount;
+    [Tooltip("Lower for more severe behavior")][Range(0f, 1f)][SerializeField] float cancelJumpAmount;
     [SerializeField] float coyoteTime;
     [SerializeField] float jumpBufferTime;
 
     [SerializeField] Rigidbody2D myBody;
     [SerializeField] BoxCollider2D groundCheck;
-    [SerializeField] GameLogic gameLogic;
+
 
     Vector2 moveInput;
     GenereationGameJam2022 playerInputAction;
 
     float coyoteTimer;
+    float direction = 1;
     float jumpBufferTimer;
 
     private void Awake()
     {
+        if (Instance != null)
+        {
+            Debug.LogError("There is another PlayerMovement Instance " + Instance + " -" + transform);
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+
         playerInputAction = new GenereationGameJam2022();
     }
 
@@ -76,7 +87,6 @@ public class PlayerMovement : MonoBehaviour
 
             myBody.velocity = playerVelocity; // replaces the player velocity with (player velocity + jump height)
             AkSoundEngine.PostEvent("Jump_Event", gameObject);
-            // gameLogic.GetAudio().PlaySound("jump");
             jumpBufferTimer = 0f;
         }
     }
@@ -114,9 +124,19 @@ public class PlayerMovement : MonoBehaviour
     {
         bool playerIsMoving = Mathf.Abs(myBody.velocity.x) > Mathf.Epsilon;
 
+        if (moveInput.x > 0)
+        {
+            direction = 1f;
+        }
+
+        if (moveInput.x < 0)
+        {
+            direction = -1f;
+        }
+
         if (playerIsMoving)
         {
-            transform.localScale = new Vector2(Mathf.Sign(myBody.velocity.x), 1f);
+            transform.localScale = new Vector2(direction, 1f);
         }
     }
 }

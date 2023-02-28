@@ -8,30 +8,30 @@ public class PickUpDetect : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        string cTag = collision.tag;
 
-        if (collision.CompareTag("one"))
+        switch (cTag)
         {
-            AkSoundEngine.PostEvent("Blue_Pickup", gameObject);
-            consumable.AddPickup(collision.tag);
-            Destroy(collision.gameObject);
-        }
-        else if (collision.CompareTag("two"))
-        {
-            AkSoundEngine.PostEvent("Green_Pickup", gameObject);
-            consumable.AddPickup(collision.tag);
-            Destroy(collision.gameObject);
-        }
-        else if (collision.CompareTag("three"))
-        {
-            AkSoundEngine.PostEvent("Purple_Pickup", gameObject);
-            consumable.AddPickup(collision.tag);
-            Destroy(collision.gameObject);
-        }
-        else if (collision.CompareTag("four"))
-        {
-            AkSoundEngine.PostEvent("Red_Pickup", gameObject);
-            consumable.AddPickup(collision.tag);
-            Destroy(collision.gameObject);
+            case "one":
+                AkSoundEngine.PostEvent("Blue_Pickup", gameObject);
+                consumable.AddPickup(cTag);
+                Destroy(collision.gameObject);
+                break;
+            case "two":
+                AkSoundEngine.PostEvent("Green_Pickup", gameObject);
+                consumable.AddPickup(cTag);
+                Destroy(collision.gameObject);
+                break;
+            case "three":
+                AkSoundEngine.PostEvent("Purple_Pickup", gameObject);
+                consumable.AddPickup(cTag);
+                Destroy(collision.gameObject);
+                break;
+            case "four":
+                AkSoundEngine.PostEvent("Red_Pickup", gameObject);
+                consumable.AddPickup(cTag);
+                Destroy(collision.gameObject);
+                break;
         }
     }
 }

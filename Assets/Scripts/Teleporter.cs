@@ -13,7 +13,7 @@ public class Teleporter : MonoBehaviour
 
     private void OnEnable()
     {
-        playerBody = FindObjectOfType<PlayerMovement>().GetComponent<Rigidbody2D>();
+        playerBody = PlayerMovement.Instance.GetComponent<Rigidbody2D>();
         player = playerBody.gameObject;
         coroutine = Teleplode();
         StartCoroutine(coroutine);

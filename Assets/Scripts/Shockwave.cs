@@ -18,7 +18,7 @@ public class Shockwave : MonoBehaviour
     private void OnEnable()
     {
         source = GetComponent<CinemachineImpulseSource>();
-        playerBody = FindObjectOfType<PlayerMovement>().GetComponent<Rigidbody2D>();
+        playerBody = PlayerMovement.Instance.GetComponent<Rigidbody2D>();
         player = playerBody.gameObject;
         coroutine = Pexplode();
         StartCoroutine(coroutine);
@@ -30,11 +30,10 @@ public class Shockwave : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Blue_Charge", gameObject);
         yield return new WaitForSeconds(delayInSeconds);
-        Vector2 direction = (player.transform.position - this.transform.position);
+        Vector2 direction = (player.transform.position - this.transform.position).normalized;
         source.GenerateImpulse();
         Instantiate(explosion, gameObject.transform.position, explosion.transform.rotation);
         AkSoundEngine.PostEvent("Blue_Explode", gameObject);
-        direction.Normalize();
         playerBody.AddForce(direction * knockback, ForceMode2D.Impulse);
         Destroy(gameObject);
     }

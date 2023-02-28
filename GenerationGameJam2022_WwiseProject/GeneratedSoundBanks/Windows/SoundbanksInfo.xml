@@ -1,191 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<RootPaths>
-		<ProjectRoot>D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Game Jam\GameJam2022\GenereationGameJam2022\GenerationGameJam2022\GenerationGameJam2022_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
-	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
-			<ObjectPath>Init</ObjectPath>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
 		</SoundBank>
-		<SoundBank Id="2228651116" Language="SFX" Hash="3434050939">
-			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{313BF4A6-6DD8-E06D-0440-404549F6C38B}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1405974339" Name="All_Souls" ObjectPath="\Events\Default Work Unit\All_Souls" DurationType="OneShot" DurationMin="3.466354" DurationMax="3.466354">
-					<IncludedMemoryFiles>
-						<File Id="471281296" Language="SFX">
-							<ShortName>Success 1.wav</ShortName>
-							<Path>SFX\Success 1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+			<Media>
+				<File Id="55369523" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magic_v1_wav.wav</ShortName>
+					<CachePath>SFX/Magic_v1_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="71373671" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Medium_Jump_v3_wav.wav</ShortName>
+					<CachePath>SFX/Medium_Jump_v3_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="73961009" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ghost_Laugh_v2_wav.wav</ShortName>
+					<CachePath>SFX/Ghost_Laugh_v2_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="90842670" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Destroy_Piece_Magical_v1_variation_02_wav.wav</ShortName>
+					<CachePath>SFX/Destroy_Piece_Magical_v1_variation_02_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="113620854" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Riser_v3_wav.wav</ShortName>
+					<CachePath>SFX/Riser_v3_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="152754635" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magical_Loot_No_Chest_v1_wav.wav</ShortName>
+					<CachePath>SFX/Magical_Loot_No_Chest_v1_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="168262989" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ghost_Pass_By_v3_variation_02_wav.wav</ShortName>
+					<CachePath>SFX/Ghost_Pass_By_v3_variation_02_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="177275669" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magical_Creature_v1_wav.wav</ShortName>
+					<CachePath>SFX/Magical_Creature_v1_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="266700315" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Click_v3_variation_01_wav.wav</ShortName>
+					<CachePath>SFX/Click_v3_variation_01_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="390129946" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Destroy_Piece_Magical_v1_variation_03_wav.wav</ShortName>
+					<CachePath>SFX/Destroy_Piece_Magical_v1_variation_03_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="471281296" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Success 1.wav</ShortName>
+					<CachePath>SFX/Success 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="521779838" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Click_v3_variation_02_wav.wav</ShortName>
+					<CachePath>SFX/Click_v3_variation_02_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="546864073" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Find_Item_Press_Button_Reverb_v1_wav.wav</ShortName>
+					<CachePath>SFX/Find_Item_Press_Button_Reverb_v1_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="625478906" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Spell_v2_wav.wav</ShortName>
+					<CachePath>SFX/Wind_Spell_v2_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="638313987" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ghost_Pass_By_v5_variation_02_wav.wav</ShortName>
+					<CachePath>SFX/Ghost_Pass_By_v5_variation_02_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="701161077" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Success 6.wav</ShortName>
+					<CachePath>SFX/Success 6_10C4C929.wem</CachePath>
+				</File>
+				<File Id="816316675" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magical_Creature_v4_wav.wav</ShortName>
+					<CachePath>SFX/Magical_Creature_v4_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="824454925" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Destroy_Piece_Magical_v1_variation_01_wav.wav</ShortName>
+					<CachePath>SFX/Destroy_Piece_Magical_v1_variation_01_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="849408175" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mk_mft_magic_12.wav</ShortName>
+					<CachePath>SFX/mk_mft_magic_12_10C4C929.wem</CachePath>
+				</File>
+				<File Id="856620691" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ray_Spell_No_Magic_v5_wav.wav</ShortName>
+					<CachePath>SFX/Ray_Spell_No_Magic_v5_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="881408917" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ghost_Pass_By_v1_variation_02_wav.wav</ShortName>
+					<CachePath>SFX/Ghost_Pass_By_v1_variation_02_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="897599136" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explosion Reverse 3.wav</ShortName>
+					<CachePath>SFX/Explosion Reverse 3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="901777897" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Spell_v1_Cast_wav.wav</ShortName>
+					<CachePath>SFX/Wind_Spell_v1_Cast_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="979382771" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Magic_v3_wav.wav</ShortName>
+					<CachePath>SFX/Magic_v3_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="990071857" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Destroy_Piece_Magical_v1_wav.wav</ShortName>
+					<CachePath>SFX/Destroy_Piece_Magical_v1_wav_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1071928721" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ghost_Pass_By_v2_variation_02_wav.wav</ShortName>
+					<CachePath>SFX/Ghost_Pass_By_v2_variation_02_wav_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1405974339" Name="All_Souls" DurationType="OneShot" DurationMin="3.4663541" DurationMax="3.4663541">
+					<MediaRefs>
+						<MediaRef Id="471281296"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="585247752" Name="Blue_Charge" ObjectPath="\Events\Default Work Unit\Blue_Charge" DurationType="OneShot" DurationMin="1.002271" DurationMax="1.002271">
-					<IncludedMemoryFiles>
-						<File Id="113620854" Language="SFX">
-							<ShortName>Riser_v3_wav.wav</ShortName>
-							<Path>SFX\Riser_v3_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="585247752" Name="Blue_Charge" DurationType="OneShot" DurationMin="1.0022712" DurationMax="1.0022712">
+					<MediaRefs>
+						<MediaRef Id="113620854"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3547709259" Name="Blue_Explode" ObjectPath="\Events\Default Work Unit\Blue_Explode" DurationType="OneShot" DurationMin="2.25" DurationMax="2.25">
-					<IncludedMemoryFiles>
-						<File Id="152754635" Language="SFX">
-							<ShortName>Magical_Loot_No_Chest_v1_wav.wav</ShortName>
-							<Path>SFX\Magical_Loot_No_Chest_v1_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="849408175" Language="SFX">
-							<ShortName>mk_mft_magic_12.wav</ShortName>
-							<Path>SFX\mk_mft_magic_12_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3547709259" Name="Blue_Explode" DurationType="OneShot" DurationMin="2.25" DurationMax="2.25">
+					<MediaRefs>
+						<MediaRef Id="152754635"/>
+						<MediaRef Id="849408175"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3444629296" Name="Blue_Pickup" ObjectPath="\Events\Default Work Unit\Blue_Pickup" DurationType="OneShot" DurationMin="0.673492" DurationMax="0.673492">
-					<IncludedMemoryFiles>
-						<File Id="824454925" Language="SFX">
-							<ShortName>Destroy_Piece_Magical_v1_variation_01_wav.wav</ShortName>
-							<Path>SFX\Destroy_Piece_Magical_v1_variation_01_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3444629296" Name="Blue_Pickup" DurationType="OneShot" DurationMin="0.6734921" DurationMax="0.6734921">
+					<MediaRefs>
+						<MediaRef Id="824454925"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3086811463" Name="Flame_Talk" ObjectPath="\Events\Default Work Unit\Flame_Talk" DurationType="OneShot" DurationMin="1.731073" DurationMax="2.888382">
-					<IncludedMemoryFiles>
-						<File Id="177275669" Language="SFX">
-							<ShortName>Magical_Creature_v1_wav.wav</ShortName>
-							<Path>SFX\Magical_Creature_v1_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="816316675" Language="SFX">
-							<ShortName>Magical_Creature_v4_wav.wav</ShortName>
-							<Path>SFX\Magical_Creature_v4_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3086811463" Name="Flame_Talk" DurationType="OneShot" DurationMin="1.7310731" DurationMax="2.8883817">
+					<MediaRefs>
+						<MediaRef Id="177275669"/>
+						<MediaRef Id="816316675"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="2513134197" Name="Green_Crystal" ObjectPath="\Events\Default Work Unit\Green_Crystal" DurationType="OneShot" DurationMin="3.875011" DurationMax="3.875011">
-					<IncludedMemoryFiles>
-						<File Id="266700315" Language="SFX">
-							<ShortName>Click_v3_variation_01_wav.wav</ShortName>
-							<Path>SFX\Click_v3_variation_01_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="625478906" Language="SFX">
-							<ShortName>Wind_Spell_v2_wav.wav</ShortName>
-							<Path>SFX\Wind_Spell_v2_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="856620691" Language="SFX">
-							<ShortName>Ray_Spell_No_Magic_v5_wav.wav</ShortName>
-							<Path>SFX\Ray_Spell_No_Magic_v5_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="2513134197" Name="Green_Crystal" DurationType="OneShot" DurationMin="3.8750114" DurationMax="3.8750114">
+					<MediaRefs>
+						<MediaRef Id="266700315"/>
+						<MediaRef Id="625478906"/>
+						<MediaRef Id="856620691"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="85912737" Name="Green_Pickup" ObjectPath="\Events\Default Work Unit\Green_Pickup" DurationType="OneShot" DurationMin="1.601814" DurationMax="1.601814">
-					<IncludedMemoryFiles>
-						<File Id="390129946" Language="SFX">
-							<ShortName>Destroy_Piece_Magical_v1_variation_03_wav.wav</ShortName>
-							<Path>SFX\Destroy_Piece_Magical_v1_variation_03_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="85912737" Name="Green_Pickup" DurationType="OneShot" DurationMin="1.601814" DurationMax="1.601814">
+					<MediaRefs>
+						<MediaRef Id="390129946"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="623275868" Name="Jump_Event" ObjectPath="\Events\Default Work Unit\Jump_Event" DurationType="OneShot" DurationMin="0.51583" DurationMax="0.631404">
-					<IncludedMemoryFiles>
-						<File Id="71373671" Language="SFX">
-							<ShortName>Medium_Jump_v3_wav.wav</ShortName>
-							<Path>SFX\Medium_Jump_v3_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="623275868" Name="Jump_Event" DurationType="OneShot" DurationMin="0.51583034" DurationMax="0.631404">
+					<MediaRefs>
+						<MediaRef Id="71373671"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3037934171" Name="Next_Event" ObjectPath="\Events\Default Work Unit\Next_Event" DurationType="OneShot" DurationMin="2.633403" DurationMax="2.633403">
-					<IncludedMemoryFiles>
-						<File Id="546864073" Language="SFX">
-							<ShortName>Find_Item_Press_Button_Reverb_v1_wav.wav</ShortName>
-							<Path>SFX\Find_Item_Press_Button_Reverb_v1_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3037934171" Name="Next_Event" DurationType="OneShot" DurationMin="2.6334026" DurationMax="2.6334026">
+					<MediaRefs>
+						<MediaRef Id="546864073"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="1447584249" Name="Portal_Unlocked" ObjectPath="\Events\Default Work Unit\Portal_Unlocked" DurationType="OneShot" DurationMin="2.774042" DurationMax="2.774042">
-					<IncludedMemoryFiles>
-						<File Id="701161077" Language="SFX">
-							<ShortName>Success 6.wav</ShortName>
-							<Path>SFX\Success 6_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="1447584249" Name="Portal_Unlocked" DurationType="OneShot" DurationMin="2.7740417" DurationMax="2.7740417">
+					<MediaRefs>
+						<MediaRef Id="701161077"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="4170490160" Name="Purple_Crystal" ObjectPath="\Events\Default Work Unit\Purple_Crystal" DurationType="OneShot" DurationMin="3.129075" DurationMax="3.129075">
-					<IncludedMemoryFiles>
-						<File Id="897599136" Language="SFX">
-							<ShortName>Explosion Reverse 3.wav</ShortName>
-							<Path>SFX\Explosion Reverse 3_10C4C929.wem</Path>
-						</File>
-						<File Id="901777897" Language="SFX">
-							<ShortName>Wind_Spell_v1_Cast_wav.wav</ShortName>
-							<Path>SFX\Wind_Spell_v1_Cast_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="4170490160" Name="Purple_Crystal" DurationType="OneShot" DurationMin="3.1290746" DurationMax="3.1290746">
+					<MediaRefs>
+						<MediaRef Id="897599136"/>
+						<MediaRef Id="901777897"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="4238973550" Name="Purple_Pickup" ObjectPath="\Events\Default Work Unit\Purple_Pickup" DurationType="OneShot" DurationMin="0.9" DurationMax="0.9">
-					<IncludedMemoryFiles>
-						<File Id="90842670" Language="SFX">
-							<ShortName>Destroy_Piece_Magical_v1_variation_02_wav.wav</ShortName>
-							<Path>SFX\Destroy_Piece_Magical_v1_variation_02_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="4238973550" Name="Purple_Pickup" DurationType="OneShot" DurationMin="0.9" DurationMax="0.9">
+					<MediaRefs>
+						<MediaRef Id="90842670"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="3712923413" Name="Red_Crystal" ObjectPath="\Events\Default Work Unit\Red_Crystal" DurationType="OneShot" DurationMin="13.75" DurationMax="13.75">
-					<IncludedMemoryFiles>
-						<File Id="55369523" Language="SFX">
-							<ShortName>Magic_v1_wav.wav</ShortName>
-							<Path>SFX\Magic_v1_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="521779838" Language="SFX">
-							<ShortName>Click_v3_variation_02_wav.wav</ShortName>
-							<Path>SFX\Click_v3_variation_02_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="979382771" Language="SFX">
-							<ShortName>Magic_v3_wav.wav</ShortName>
-							<Path>SFX\Magic_v3_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3712923413" Name="Red_Crystal" DurationType="OneShot" DurationMin="13.75" DurationMax="13.75">
+					<MediaRefs>
+						<MediaRef Id="55369523"/>
+						<MediaRef Id="521779838"/>
+						<MediaRef Id="979382771"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="874472897" Name="Red_Pickup" ObjectPath="\Events\Default Work Unit\Red_Pickup" DurationType="OneShot" DurationMin="1.2" DurationMax="1.2">
-					<IncludedMemoryFiles>
-						<File Id="990071857" Language="SFX">
-							<ShortName>Destroy_Piece_Magical_v1_wav.wav</ShortName>
-							<Path>SFX\Destroy_Piece_Magical_v1_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="874472897" Name="Red_Pickup" DurationType="OneShot" DurationMin="1.2" DurationMax="1.2">
+					<MediaRefs>
+						<MediaRef Id="990071857"/>
+					</MediaRefs>
 				</Event>
-				<Event Id="262701974" Name="Soul_Pickup_Event" ObjectPath="\Events\Default Work Unit\Soul_Pickup_Event" DurationType="OneShot" DurationMin="1." DurationMax="1.875011">
-					<IncludedMemoryFiles>
-						<File Id="73961009" Language="SFX">
-							<ShortName>Ghost_Laugh_v2_wav.wav</ShortName>
-							<Path>SFX\Ghost_Laugh_v2_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="168262989" Language="SFX">
-							<ShortName>Ghost_Pass_By_v3_variation_02_wav.wav</ShortName>
-							<Path>SFX\Ghost_Pass_By_v3_variation_02_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="638313987" Language="SFX">
-							<ShortName>Ghost_Pass_By_v5_variation_02_wav.wav</ShortName>
-							<Path>SFX\Ghost_Pass_By_v5_variation_02_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="881408917" Language="SFX">
-							<ShortName>Ghost_Pass_By_v1_variation_02_wav.wav</ShortName>
-							<Path>SFX\Ghost_Pass_By_v1_variation_02_wav_10C4C929.wem</Path>
-						</File>
-						<File Id="1071928721" Language="SFX">
-							<ShortName>Ghost_Pass_By_v2_variation_02_wav.wav</ShortName>
-							<Path>SFX\Ghost_Pass_By_v2_variation_02_wav_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="262701974" Name="Soul_Pickup_Event" DurationType="OneShot" DurationMin="1" DurationMax="1.8750113">
+					<MediaRefs>
+						<MediaRef Id="73961009"/>
+						<MediaRef Id="168262989"/>
+						<MediaRef Id="638313987"/>
+						<MediaRef Id="881408917"/>
+						<MediaRef Id="1071928721"/>
+					</MediaRefs>
 				</Event>
-			</IncludedEvents>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
+	<FileHash>{7DBC19CC-E989-C847-8F8F-8085FE8AAE5A}</FileHash>
 </SoundBanksInfo>

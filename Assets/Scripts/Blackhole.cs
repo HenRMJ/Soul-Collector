@@ -19,9 +19,7 @@ public class Blackhole : MonoBehaviour
         player = playerBody.gameObject;
         coroutine = Inplode();
         StartCoroutine(coroutine);
-
     }
-
 
     IEnumerator Inplode()
     {

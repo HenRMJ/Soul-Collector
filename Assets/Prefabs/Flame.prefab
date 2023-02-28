@@ -514,7 +514,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &8610846818924347200
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -531,7 +531,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &8610846819125881833
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +544,7 @@ GameObject:
   - component: {fileID: 8610846819125881845}
   - component: {fileID: 8610846819125881846}
   - component: {fileID: 8610846819125881847}
+  - component: {fileID: 3952971282877825330}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -633,6 +634,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3952971282877825330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8610846819125881833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648175a067ad4364e99559f4aab0defe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSystem: {fileID: 8610846819353004112}
 --- !u!1 &8610846819353004114
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +830,10 @@ PrefabInstance:
     - target: {fileID: 4055071604439195507, guid: 3ae3796c9499fc8429e1f4ca15bd2b53, type: 3}
       propertyPath: m_Lens.FieldOfView
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055071604439195507, guid: 3ae3796c9499fc8429e1f4ca15bd2b53, type: 3}
+      propertyPath: m_Lens.NearClipPlane
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 4055071604439195508, guid: 3ae3796c9499fc8429e1f4ca15bd2b53, type: 3}
       propertyPath: m_RootOrder

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{3AAA389C-99DF-47D7-AF9D-5B305DA2F3A2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Jump_Event" ID="{B62C4C09-12F3-43E8-973E-88ADF9BDD231}">
+					<ChildrenList>
+						<Action Name="" ID="{FEB2E38A-A422-4074-988E-B55C537A25D4}" ShortID="1022634880">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Medium_Jump_v3_wav" ID="{25ADF37F-92BE-4F23-BD4D-3A470980E4D1}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Soul_Pickup_Event" ID="{68885488-5655-4D7F-8253-9622F85B6CBB}">
+					<ChildrenList>
+						<Action Name="" ID="{A2A3DDEB-C2DA-4D8F-926E-8EF191012987}" ShortID="602129376">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pickup" ID="{C69AC262-8DCA-4B3F-BC0F-904F99FDBFEE}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Next_Event" ID="{0119711B-6785-4E61-9D4A-CEFF210EC112}">
+					<ChildrenList>
+						<Action Name="" ID="{2B6F3A3F-2B79-452E-A163-8A360D8942FA}" ShortID="467021356">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Find_Item_Press_Button_Reverb_v1_wav" ID="{0F46B901-E8C4-493F-88C7-0223F09E05C9}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blue_Charge" ID="{EA089948-38E0-4E73-B80A-49EAC28427ED}">
+					<ChildrenList>
+						<Action Name="" ID="{BEB31D3F-CD9E-41FD-9B17-A37A044A1E97}" ShortID="867964293">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Riser_v3_wav" ID="{180D83A5-3F28-4334-B8FD-645BFE6102AE}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blue_Explode" ID="{40551123-CD3C-4BE8-9134-EFB59FE435D1}">
+					<ChildrenList>
+						<Action Name="" ID="{D7247B7E-1201-4029-A441-105A0A4730DE}" ShortID="153759679">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.03"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mk_mft_magic_12" ID="{D4D460C0-6778-45C3-B055-A16ADBAFF93A}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{25092B1A-A34D-41F5-AEF1-B5F2811E8FCB}" ShortID="936388493">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magical_Loot_No_Chest_v1_wav" ID="{B0D7AE50-2450-46F2-9F7F-BCE2EE6E1EE2}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Flame_Talk" ID="{9956982F-BBF8-4EEF-B967-867A979C593F}">
+					<ChildrenList>
+						<Action Name="" ID="{C1E33DFE-E46B-4836-AE42-07C89C3790A6}" ShortID="464629170">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Flame" ID="{656B0152-C30F-49FD-BEB7-B2D86157F548}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blue_Pickup" ID="{27511720-57F4-42ED-93B7-14FC8B787EC9}">
+					<ChildrenList>
+						<Action Name="" ID="{B0E9235B-E4A6-46BB-BD9A-A388F4D3CAB5}" ShortID="816431181">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Destroy_Piece_Magical_v1_variation_01_wav" ID="{341B2033-39BC-4C63-B7B9-BB5B266D5BC8}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Purple_Pickup" ID="{A790AD6A-4996-469D-B8ED-6E6705349AB9}">
+					<ChildrenList>
+						<Action Name="" ID="{1DD0E90A-F4A6-423A-BB67-5733FEA1FF88}" ShortID="312838306">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Destroy_Piece_Magical_v1_variation_02_wav" ID="{C86C7315-DC6B-4402-A075-1B0EC4EEDA75}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Green_Pickup" ID="{62243DC7-F2AB-4909-A927-0D7EDF3FAFCD}">
+					<ChildrenList>
+						<Action Name="" ID="{05529C78-2EEC-4670-A549-C940F756B886}" ShortID="803366784">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Destroy_Piece_Magical_v1_variation_03_wav" ID="{B4441FCF-859A-49DB-B1F4-776A42C205D9}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Red_Pickup" ID="{71B6BC26-6CFC-4790-85F3-CCFB258AC5E3}">
+					<ChildrenList>
+						<Action Name="" ID="{343F6818-AEFB-4651-AE10-5DC8660014B0}" ShortID="271067195">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Destroy_Piece_Magical_v1_wav" ID="{870D1BFE-CF89-4689-A6FA-08F3D42A3494}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Purple_Crystal" ID="{8D24A7EE-9EBC-45F9-9D05-4F66D9914814}">
+					<ChildrenList>
+						<Action Name="" ID="{737CB661-7C74-43E4-B65F-9CDD2F071B4D}" ShortID="300600384">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind_Spell_v1_Cast_wav" ID="{5CEB3086-9F1F-4608-947C-0F2357321209}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9E1A0D00-8FFA-4108-B219-25B4D3D276D1}" ShortID="1067337336">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosion Reverse 3" ID="{553E1765-8255-40F0-A489-9EF531704034}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Red_Crystal" ID="{47BFB4D3-5668-4D55-97C4-AE9281534E23}">
+					<ChildrenList>
+						<Action Name="" ID="{9F975639-6681-44B7-8DEF-C4D6C19C12D5}" ShortID="551079093">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magic_v1_wav" ID="{200BF901-DD9A-4324-87BB-3FD87274881A}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E84C3B1B-5423-4995-97D3-E1DBCD600C50}" ShortID="1018738852">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_02_wav" ID="{53CB5420-074E-4617-8FB2-2C912D26AE1B}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{44B4994F-4D15-40F3-AE76-E3082BB29514}" ShortID="1043437981">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="10"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_02_wav" ID="{53CB5420-074E-4617-8FB2-2C912D26AE1B}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9F9C0F76-4C4B-44D2-8156-0E357D3F73EE}" ShortID="802218397">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="11"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_02_wav" ID="{53CB5420-074E-4617-8FB2-2C912D26AE1B}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E356D3C3-86D6-4210-9A16-86CD39BA6843}" ShortID="880975673">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="12"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magic_v3_wav" ID="{2F70173B-FA3E-464A-B43B-5A917C16BD7A}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Green_Crystal" ID="{917874D2-E750-435E-B449-642927E552F9}">
+					<ChildrenList>
+						<Action Name="" ID="{9A59A780-E769-4843-AFD6-8432ED84B303}" ShortID="466361644">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind_Spell_v2_wav" ID="{E250BC3E-CF5C-4CA1-BD51-50C6347B9DF2}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D49A3415-C8A5-49A1-B928-1F57E426D598}" ShortID="447493565">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ray_Spell_No_Magic_v5_wav" ID="{6E3DC2D2-CFA5-4235-8EEB-D2447E50E276}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4A4370C6-7B1A-4D19-8B97-0B655D060238}" ShortID="660697767">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_01_wav" ID="{B1410994-067C-4704-9309-D93A84B8D9AF}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{30672F8E-B4BF-4086-8CBC-8BA7A4B7B4E2}" ShortID="722758790">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click_v3_variation_01_wav" ID="{B1410994-067C-4704-9309-D93A84B8D9AF}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Portal_Unlocked" ID="{D1CB3351-7BF0-4A41-A16D-6AEC61B3A892}">
+					<ChildrenList>
+						<Action Name="" ID="{0E70D81A-1CA6-45F4-9648-CE96B5868382}" ShortID="564887118">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Success 6" ID="{0523C92E-00E8-4DB3-89F7-6052199E98D2}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="All_Souls" ID="{0C18A23C-E0FD-4F6E-A9D0-1A15277A4FFD}">
+					<ChildrenList>
+						<Action Name="" ID="{A95DF1B2-EE81-4A5F-A23B-259AF4A4DDE4}" ShortID="232627224">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Success 1" ID="{B4ECEC9E-6EC7-4F45-AF61-A54CEEB563C0}" WorkUnitID="{90097377-6236-4CBC-8674-5DCD3194FDA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

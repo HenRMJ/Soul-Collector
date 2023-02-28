@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Water : MonoBehaviour
 {
-    // Values you want each to be when you enter water
-    [SerializeField] Rigidbody2D player;
+    [Header("In water values")]
     [SerializeField] float gravity;
     [SerializeField] float drag;
     [SerializeField] float mass;
 
+    Rigidbody2D player;
     float startingGravity;
     float startingDrag;
     float startingMass;
@@ -17,6 +17,7 @@ public class Water : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = PlayerMovement.Instance.GetComponent<Rigidbody2D>();
         startingGravity = player.gravityScale;
         startingDrag = player.drag;
         startingMass = player.mass;

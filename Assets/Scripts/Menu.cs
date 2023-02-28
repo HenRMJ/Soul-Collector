@@ -54,7 +54,6 @@ public class Menu : MonoBehaviour
             Time.timeScale = 1;
             canvas.SetActive(false);
         }
-        
     }
 }
 

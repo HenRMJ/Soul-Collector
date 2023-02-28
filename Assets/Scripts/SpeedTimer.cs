@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class SpeedTimer : MonoBehaviour
 {
+    public static SpeedTimer Instance { get; private set; }
+
     [SerializeField] TMP_Text timerText;
 
     double timer;
@@ -14,29 +16,29 @@ public class SpeedTimer : MonoBehaviour
 
     private void Awake()
     {
-        int numBackgroundAudio = FindObjectsOfType<SpeedTimer>().Length;
-
-        if (numBackgroundAudio > 1)
+        if (Instance != null)
         {
+            Debug.LogError("Too many instances of SpeedTimer");
             Destroy(gameObject);
+            return;
         }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
+
+        Instance = this;
+        DontDestroyOnLoad(Instance);
     }
 
-    private void OnLevelWasLoaded()
+    private void OnEnable()
     {
-        string currentScene = SceneManager.GetActiveScene().name;
+        SceneManager.activeSceneChanged += NewLevelLoaded;
+    }
 
-        if (currentScene.Contains("Level"))
-        {
-            return;
-        } else
+    private void NewLevelLoaded(Scene currentScene, Scene nextScene)
+    {
+        if (!nextScene.name.Contains("Level"))
         {
             PlayerPrefs.SetString("Run", runTime);
             PlayerPrefs.SetFloat("Speed", Convert.ToSingle(timer));
+            SceneManager.activeSceneChanged -= NewLevelLoaded;
             Destroy(gameObject);
         }
     }

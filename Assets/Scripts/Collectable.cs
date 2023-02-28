@@ -4,21 +4,13 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    GameLogic gameLogic;
-
-    private void Awake()
-    {
-        // this finds the game logic script so we don't have to hook it up for every collectable
-        gameLogic = FindObjectOfType<GameLogic>();
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) // this line checks if the player is colliding
         {
-            gameLogic.Collect();
+            GameLogic.Instance.Collect();
 
-            if (gameLogic.GetNumberOfCollectables() == 0) // this destroys the parent if there is no more collectables
+            if (GameLogic.Instance.GetNumberOfCollectables() == 0) // this destroys the parent if there is no more collectables
             {
                 AkSoundEngine.PostEvent("Soul_Pickup_Event", gameObject);
                 AkSoundEngine.PostEvent("All_Souls", gameObject);
